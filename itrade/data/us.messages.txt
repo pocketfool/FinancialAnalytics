@@ -1,0 +1,618 @@
+main_file;&File
+main_open;&Open ...
+main_desc_open; Open a Portfolio
+main_new;&New
+main_desc_new; Create a new Portfolio
+main_delete;&Delete
+main_desc_delete; Delete a Portfolio
+main_save;&Save
+main_desc_save; Save current Portfolio data
+main_saveas;&Save as ...
+main_desc_saveas; Save Portfolio under new name
+main_edit;&Properties
+main_desc_edit; edit the current portfolio's properties
+main_exit;E&xit
+main_desc_exit; Terminate iTrade application
+main_close;&Close
+main_desc_close; Close the window
+main_managelist;&Manage Symbols
+main_desc_managelist; Manage the List of Symbols (update by downloading, editing, etc.)
+
+main_window;&Window
+
+main_view;&Views
+main_quote;&Quote
+main_matrix;&Matrix
+
+main_view_portfolio;&Portfolio
+main_view_desc_portfolio; Change current view to Portfolio view
+main_view_quotes;&Quotes
+main_view_desc_quotes; Change current view to Quotes view
+main_view_stops;&Stops
+main_view_desc_stops; Change current view to Stops view
+main_view_indicators;&Indicators
+main_view_desc_indicators; Change current view to Indicators view
+
+main_view_operations;&Transactions
+main_view_desc_operations; Manage the transactions on the current portfolio
+main_view_money;&Money Management
+main_view_desc_money; Money Management
+main_view_evaluation;&Performance
+main_view_desc_evaluation; Performance evaluation of the portfolio
+main_view_trading;&Trading
+main_view_desc_trading; Display general Trading information for the portfolio
+
+main_view_compute;&Computer
+main_view_desc_compute; Computer
+
+main_view_refresh;&Refresh now
+main_view_desc_refresh; Refresh now the current view
+main_view_autorefresh;Auto Refresh
+main_view_desc_autorefresh; Refresh the current view automatically
+
+main_view_small;Small Text
+main_view_desc_small; Use small text size to display the matrix
+main_view_normal;Normal Text
+main_view_desc_normal; Use normal text size to display the matrix
+main_view_big;Big Text
+main_view_desc_big; Use big text size to display the matrix
+
+main_quote_add;Add ...
+main_quote_desc_add; Add a quote in the list
+main_quote_remove;Remove
+main_quote_desc_remove; Remove current select Quote from the list
+main_quote_graph;Historical Graphs
+main_quote_desc_graph; Display historical graphs for the current selected Quote
+main_quote_live;Live
+main_quote_desc_live; Display notebook for the current selected Quote
+main_quote_intraday;Intraday
+main_quote_desc_intraday; Display intraday for the current selected Quote
+main_quote_news;Informations
+main_quote_desc_news; Display news for the current selected Quote
+main_quote_table;Raw Data
+main_quote_desc_table; Display raw data for the current selected Quote
+main_quote_analysis;Analyses
+main_quote_desc_analysis; Display Technical Analysis for the current selected Quote
+main_quote_buy;Buy
+main_quote_desc_buy; Buy operation for the current selected Quote
+main_quote_sell;Sell
+main_quote_desc_sell; Sell operation for the current selected Quote
+main_quote_property;Properties
+main_quote_desc_property; Display properties for the current selected Quote
+
+main_options;&Options
+
+main_options_access;&Access
+main_options_desc_access; Access parameters for some connectors
+
+main_options_lang;&Language
+main_options_desc_lang; Select language used by this software
+main_options_lang_default;System Language
+main_options_lang_english;English
+main_options_lang_french;French
+main_options_lang_portuguese;Portuguese
+main_options_lang_deutch;Deutch
+
+main_options_cache;&Caching
+main_options_desc_cache; Caching management
+main_cache_erase_data;Erase &History Data
+main_cache_desc_erase_data;Erase all history data from the cache folder
+main_cache_erase_news;Erase &News
+main_cache_desc_erase_news;Erase all news from the cache folder
+main_cache_erase_all;Erase &All
+main_cache_desc_erase_all; Erase all data (news, historic, ...) from the cache folder
+
+main_options_connexion;&Connection
+main_options_desc_connexion; Connection Settings (Proxy)
+
+main_help;&Help
+main_help_contents;&Contents
+main_help_desc_contents; Help Contents
+main_help_support;&Technical Support ...
+main_help_desc_support; How to get Technical Support ?
+main_help_bugs;Create &Bug Report ...
+main_help_desc_bugs; Create bug report in the project bug tracker
+main_help_forum;Go to &Forum
+main_help_desc_forum; Participate to the iTrade communauty forum (english / french)
+main_help_donors;&Donate Money ...
+main_help_desc_donors; How to Donate Money to support this project
+main_help_checksoftware;&Check for Upgrade ...
+main_help_desc_checksoftware; Check if a new software release available for downloading
+
+checksoftware_needupdate;The software need to be updated ! Do you want download the new release ?
+checksoftware_uptodate;You have the latest known official release.
+checksoftware_title;Checking for Upgrade
+checksoftware_development;You have a release under development.
+checksoftware_error;Can't get release information for the software (network issue ?)
+
+main_about;&About ...
+main_desc_about; Information about iTrade
+
+main_title_portfolio;iTrade - Portfolio %s:%s
+main_title_quotes;iTrade - Matrix %s:%s
+main_title_stops;iTrade - Stops %s:%s
+main_title_indicators;iTrade - Indicators %s:%s
+main_title_evaluation;iTrade - Performance %s:%s
+main_title_trading;iTrade - Trading %s:%s
+
+main_refreshing;Refreshing data
+
+main_popup_refreshall;Refresh All
+main_popup_buy;Buy
+main_popup_sell;Sell
+main_popup_remove;Remove
+main_popup_add;Add ...
+main_popup_view;View
+main_popup_live;Live
+main_popup_properties;Properties
+main_popup_edit;Edit
+main_popup_add_stops;Add Stops ...
+main_popup_edit_stops;Modify Stops ...
+main_popup_remove_stops;Remove Stops
+
+main_valuation;Portfolio Value
+
+html_connecting;Connecting ...
+html_noconnect;No connection
+
+ok;OK
+ok_desc;This button validates then completes the dialog
+valid;Apply
+valid_desc;This button validates then completes the dialog
+cancel;Cancel
+cancel_desc;The Cancel button cancels the dialog (Duh!)
+close;Close
+close_desc;The Close button close the dialog
+yes;Yes
+no;No
+
+isin;ISIN
+ticker;Ticker
+quote;Quote
+variation;Var.
+date;
+time;at
+name;Name
+volume;Volume
+last;Last
+open;Open
+low;Low
+high;High
+prev;Prev.
+pivots;Pivots
+status;Status
+reopen;Reopen
+high_threshold;Thres H
+low_threshold;Thres L
+cmp;WAQ
+qty;Qty
+perfday;Day %
+perfper;Perf %
+profit;Profit
+sell;Sell
+buy;Buy
+UPP;UPP
+USP;USP
+market;Market
+place;Place
+all_markets;All markets
+invalid_isin;ISIN code %s is invalid
+symbol_not_found;ISIN code %s or name %s not found
+risk;Risk
+stop_plus;Stop+
+stop_minus;Stop-
+clive;Live
+cimport;Import
+
+download_symbols_onelist;Update List
+download_symbols_onedesc;Update the list of symbols by downloading data from the network
+download_symbols_alllists;Update All Lists
+download_symbols_alldesc;Update all lists of symbols by downloading data from the network
+clear_symbols_onelist;Clear List
+clear_symbols_onedesc;Clear all symbols for this list
+clear_symbols_alllists;Clear All Lists
+clear_symbols_alldesc;Clear all symbols for all the lists
+listquote_clear_confirm_title;Undoable Operation
+listquote_clear_confirm;For %s, do you confirm the operation (%s) ?
+listquote_new;New
+listquote_edit;Edit
+listquote_delete;Delete
+listquote_new_desc;Create a new symbol
+listquote_edit_desc;Edit current symbol on the list
+listquote_delete_desc;Delete current symbol on the list
+listquote_duplicate_ref;Symbol %s already exists !
+listquote_save;Save
+listquote_save_desc;Save the list of symbols
+listquote_saved;The list of symbols has been saved
+listquote_dirty_save;Do you want to save the modification you have done to the list of symbols ?
+listquote_nodirty_save;Your modifications have not been saved and will not persist the current session
+
+listquote_items_zero;None quote found
+listquote_items_one;One quote found
+listquote_items_n;%s quotes found
+
+listquote_modify_title;Edit %s Symbol
+listquote_new_title;New Symbol
+listquote_delete_title;Delete %s Symbol
+
+quote_title;iTrade - Quote
+quote_select_title;Select a Symbol
+quote_list_title;Manage Symbols
+
+quote_select_isin;ISIN :
+quote_select_ticker;Ticker / Name :
+quote_select_market;Market :
+quote_select_list;List :
+quote_select_alllist;No filter
+quote_select_syslist;Stocks
+quote_select_usrlist;User Edited
+quote_select_indiceslist;Indices
+quote_select_trackerslist;Trackers
+quote_select_filterfield;Only traded quotes
+
+quote_graphdaily;Daily
+quote_live;Live
+quote_graphweekly;Weekly
+quote_news;News
+quote_analysis;Analysis
+quote_table;Table
+quote_intraday;Intraday
+quote_properties;Properties
+
+alerts_title;iTrade - News and Alerts
+alerts_alerts;Alerts
+alerts_news;News
+
+money_title;iTrade - Money Management
+
+money_evaluation;Performance
+money_compute;Compute
+money_evaluationchart;Chart
+money_money;Risk Management
+main_view_alerts;&News and Alerts
+main_view_desc_alerts; News and Alerts
+main_view_currencies;&Currencies
+main_view_desc_currencies; Currencies
+
+portfolio_title;iTrade - Transaction
+portfolio_select_title;Select a Portfolio
+portfolio_delete_title;Delete a Portfolio
+portfolio_properties_edit;Edit Portfolio Properties
+portfolio_properties_create;Create a new Portfolio
+portfolio_properties_delete;Delete Portfolio
+portfolio_properties_rename;Rename Portfolio
+
+portfolio_delete_confirm;Do you really want porfolio '%s' deletion ?
+portfolio_delete_confirm_title;Delete Portfolio
+portfolio_exist_info;Portfolio file reference '%s' already exists !
+portfolio_exist_info_title;Create Portfolio
+portfolio_rename_confirm;Do you confirm the new reference '%s' ?
+portfolio_rename_confirm_title;Rename Portfolio
+
+portfolio_properties_btncreate;Create
+portfolio_properties_btncreatedesc;Create the new Portfolio
+portfolio_properties_btndelete;Delete
+portfolio_properties_btndeletedesc;Delete this Portfolio (not undoable)
+portfolio_properties_btnedit;Modify
+portfolio_properties_btneditdesc;Validate new properties of this Portfolio
+portfolio_properties_btnrename;Rename
+portfolio_properties_btnrenamedesc;Rename this Portfolio name
+portfolio_properties_btnselect;Open
+portfolio_properties_btnselectdesc;Open this Portfolio
+
+portfolio_filename;Reference :
+portfolio_name;Description :
+portfolio_accountref;Account Number :
+portfolio_market;Main Market :
+portfolio_select_textfield;Reference :
+portfolio_currency;Main Currency :
+portfolio_indicator;Main Indicator :
+portfolio_vat;VAT (in %) :
+portfolio_list_filename;Reference
+portfolio_list_name;Description
+portfolio_list_accountref;Account Number
+
+portfolio_modify;Modify
+portfolio_new;New
+portfolio_delete;Delete
+portfolio_date;Date of transaction :
+portfolio_operation;Transaction :
+portfolio_description;Description :
+portfolio_quote;Quote :
+portfolio_pre_expenses1;incl.
+portfolio_pre_expenses2;and
+portfolio_post_expenses; of Expenses
+portfolio_quantity;Quantity :
+
+portfolio_field_credit;Credit :
+portfolio_field_debit;Debit :
+portfolio_field_freeofcharges;Free of Charges
+portfolio_field_valorization;Valorization :
+
+portfolio_ctrl_sell;Sell
+portfolio_ctrl_sell_srd;Sell SDR
+portfolio_ctrl_buy;Buy
+portfolio_ctrl_buy_srd;Buy SDR
+portfolio_ctrl_debit;Withdraw
+portfolio_ctrl_credit;Deposit
+portfolio_ctrl_fee;Fee
+portfolio_ctrl_interest;Interest
+portfolio_ctrl_detachment;Detachment (non taxable)
+portfolio_ctrl_dividend;Dividend (taxable)
+portfolio_ctrl_liquidation;Liquidation SDR
+portfolio_ctrl_quote;Dividend with shares
+portfolio_ctrl_register;Public Registration
+
+portfolio_list_date;Date
+portfolio_list_operation;Transaction
+portfolio_list_description;Description
+portfolio_list_number; Quantity
+portfolio_list_debit;   Debit
+portfolio_list_credit;  Credit
+portfolio_list_expense;Expense
+portfolio_list_balance; Balance
+portfolio_list_srd;    SRD
+
+Portfolio_sell;sell
+Portfolio_sell_srd;sell SRD
+Portfolio_buy;buy
+Portfolio_buy_srd;buy SRD
+Portfolio_credit;deposit
+Portfolio_debit;withdraw
+Portfolio_fee;fee
+Portfolio_interest;interest
+Portfolio_split;split
+Portfolio_detachment;detachment
+Portfolio_dividend;dividend
+Portfolio_liquidation;liquidation
+Portfolio_quote;dividend in shares
+Portfolio_register;enregistrement public
+
+portfolio_dispall;&All
+portfolio_desc_dispall; Display list of all transactions
+portfolio_dispquotes;&Quotes
+portfolio_desc_dispquotes; Display list of quotes related transactions
+portfolio_dispcash;&Cash
+portfolio_desc_dispcash; Display list of cash related transactions
+portfolio_dispvalues;&Values
+portfolio_desc_dispvalues; Display list of +/- values related transactions
+portfolio_dispsrd;&SRD
+portfolio_desc_dispsrd; Display list of SRD related transactions
+
+portfolio_opadd;&Add ...
+portfolio_desc_opadd; Add a new transaction
+portfolio_opdelete;&Delete
+portfolio_desc_opdelete; Delete the current transaction
+portfolio_opmodify;&Modify
+portfolio_desc_opmodify; Modify the current transaction
+
+portfolio_view_small;Small Text
+portfolio_view_desc_small; Use small text size to display the transactions
+portfolio_view_normal;Normal Text
+portfolio_view_desc_normal; Use normal text size to display the transactions
+portfolio_view_big;Big Text
+portfolio_view_desc_big; Use big text size to display the transactions
+
+portfolio_per30days;&30 days
+portfolio_desc_per30days; Display last 30 days
+portfolio_per90days;&90 days
+portfolio_desc_per90days; Display last 90 days
+portfolio_peryear;Current &Year
+portfolio_desc_peryear; Display current year
+portfolio_perall;&All
+portfolio_desc_perall; Display all transactions since the beginning
+
+portfolio_menu_file;&File
+portfolio_menu_disp;&Display
+portfolio_menu_op;&Transactions
+portfolio_menu_per;&Filter
+
+graph_price;Price
+graph_volume;Volume
+graph_period;Period :
+graph_days;days
+
+backtolist;Back to list
+
+popup_open;Open
+popup_high;High
+popup_low;Low
+popup_close;Last
+popup_percent;Var. (%s)
+popup_volume;Volume
+popup_notrade;no trade
+
+save_to_file;Save to file
+export_to_file;Export to file
+import_from_file;Import from file
+exported_to_file;File %s has been exported
+imported_from_file;File %s has been imported
+
+tb_pan_left;Pan on the left
+tb_pan_right;Pan on the right
+tb_save_file;Save plot contents to file
+tb_config;Chart configuration
+tb_home;Restore default position
+tb_zoom_out;period Zoom out
+tb_zoom_in;period Zoom in
+tb_setup;Printing Configuration
+tb_print;Print
+tb_preview;Preview
+
+tb_tool_ind;Display Popup
+tb_tool_hline;Draw Horizontal line
+tb_tool_vline;Draw Vertical line
+tb_tool_oline;Draw Oblique line
+tb_tool_trash;Suppress object
+tb_tool_fibo;Draw Fibonacci object
+tb_tool_text;Draw Text
+tb_tool_prop;Object properties
+
+quote_popup_dispMA150;Moving Average 150 days
+quote_popup_dispSto;Stochastic
+quote_popup_dispRSI14;RSI 14 days
+quote_popup_dispBollinger;Bollinger Bands
+quote_popup_dispOverlaidVolume;Overlaid Volumes
+quote_popup_dispLegend;Legend
+quote_popup_dispGrid;Grid
+quote_popup_dispChart1Candlestick;Candlesticks
+quote_popup_dispChart1OHLC;OHLC bars
+quote_popup_dispChart1Line;Lines
+
+prop_reference;Reference
+prop_marketandconnector;Market and Connector
+prop_tradingstyle;Trading Information
+prop_ref;Reference :
+prop_isin;ISIN :
+prop_name;Name :
+prop_ticker;Ticker :
+prop_reload;Reload
+prop_desc_reload;Reload all the data
+prop_rename;Rename
+prop_desc_rename;Rename the ticker of this quote
+prop_import;Import
+prop_desc_importe;Import quote's data
+prop_export;Export
+prop_desc_exporte;Export quote's data
+prop_restore;Default
+prop_desc_restore;Restore default value
+prop_market;Exchange :
+prop_country;Country :
+prop_place;Place :
+prop_currency;Currency :
+prop_typeofclock;Delay :
+prop_islive;Real time
+prop_isslive;Live
+prop_isdiffered;Differed
+prop_isnotlive;Differed time (%d minuts)
+prop_liveconnector;Live Connector :
+prop_impconnector;Import Connector :
+prop_set;Set
+prop_desc_set;Set new market and connector information
+prop_term;Average Investment period (in month) :
+prop_risk;Acceptable Risk level per line (in %) :
+prop_connhelp;Think to force the refresh of the quote so the connector change will occur.
+
+live_busy;One moment please, waiting live connection to die ...
+live_notebook;Notebook
+live_lasttrades;Last Trades
+live_hours;Hours
+live_qty;Qty
+live_price;Price
+live_buy;Buy
+live_sell;Sell
+live_number;Nb
+live_CMP;PMP
+live_FMP;PMR
+
+wxversion_title;wxPython Version Error
+wxversion_msg;The requested version of wxPython is not installed. Please install version %d.%d UNICODE
+
+money_fiscal_year;Fiscal Year
+money_amount_of_taxes;Amount of Taxes
+money_taxable_amounts;Taxable Amounts
+money_financial_appreciation;Financial Appreciation
+money_total_of_transfers;Total of Transfers
+money_expenses_vat;Expenses (VAT, ...)
+money_portfolio;Portfolio
+money_description;Description
+money_account_number;Account number
+money_percent_of_portfolio;% of portfolio
+money_quote;Quotes
+money_srd;SRD
+money_cash;Cash
+money_initial_investment;Initial Investment
+money_value;Value
+money_performance;Performance
+money_investment_evaluation;Evaluation
+
+currencies_title;Currencies
+currency_menu_file;&File
+currency_menu_view;&View
+
+currency_to;To
+currency_from;Convert
+currency_rate;Rate
+currency_refreshing;Refreshing currency data
+
+cache_erase_confirm_title; Erase cache data
+cache_erase_confirm_data; Erase all historic data from the cache ? (data will be regenerated)
+cache_erase_confirm_news; Erase all news from the cache ? (data will be regenerated)
+cache_erase_confirm_all; Erase all data (historic, news, ...) from the cache ? (data will be regenerated)
+
+indicator_autorefresh;Auto Refresh
+indicator_noautorefresh;Manual Refresh
+indicator_disconnected;Disconnected
+
+login_title;Account Access
+login_fortuneo_desc;Enter your Fortuneo account number (real or demonstration account)
+login_boursorama_desc;Enter your Boursorama account number (Customer account or nickname)
+login_set;Set
+login_setdesc; Set the entered access information
+login_username;User idendity :
+login_password;User password :
+login_test;Test
+login_testdesc; Try service's access using the entered information
+login_test_ok;Access to the service is working
+login_test_nok;Access to the service is not working
+
+page_portfolio;Portfolio
+page_quotes;Matrix
+page_stops;Stops
+page_indicators;Indicators
+page_evaluation;Performance
+page_trading;Trading
+
+print_preview;Print Preview
+print_printing;Printing
+print_errprinting;There was a problem printing.\nPerhaps your current printer is not set correctly ?
+print_page;Page: %d
+
+about_url;Please point your browser at : %s
+about_title;About iTrade
+
+info_caption;iTrade - Information
+alert_caption;iTrade - Error
+
+stops_remove_caption;Remove Stops
+stops_remove_text;Do you confirm stops removing for quote %s ?
+stops_edit_caption;%s - Stops modification
+stops_add_caption;%s - Stops creation
+stops_last;Last trade :
+stops_portfolio;%s owned shares for a value of %s
+stops_shares_loss;Sales Threshold to cut the losses :
+stops_shares_win;Sales Threshold to take the profits :
+stops_noshares_loss;Purchase range - Low Threshold :
+stops_noshares_win;Purchase range - High Threshold :
+stops_add;Add
+stops_edit;Modify
+stops_add_desc;Add Stops information
+stops_edit_desc;Modify Stops information
+
+decision_positiononquote_cash;Cash Position
+decision_positiononquote_credit;Marging Position
+decision_purchasingpower;Purchasing Power
+decision_numofshares;Number of shares :
+decision_upp;Price Paid per Share :
+decision_pp;Total Price Paid :
+decision_profit;Latent Profit in %s :
+decision_profitpercent;Latent Profit in % :
+decision_availablecash;Available Cash in %s :
+decision_committedcredit;Committed Margin in %s :
+decision_availablecredit;Available for Margin in %s :
+
+connection_title;Connection Settings
+proxy_server_ip;Proxy IP address (empty if none) :
+proxy_server_port;Proxy Port (empty if none) :
+proxy_auth_user;Proxy User Authentication (empty if none) :
+proxy_auth_pwd;Proxy Password Authentication (empty if none) :
+connection_timeout;Timeout delay before error (in seconds, typ. 25) :
+
+rss_clear;Clear
+rss_scan;Scan
+rss_freshness;Last scan :
+
+remove_quote_title;Remove the Quote
+remove_quote_info;Do you confirm the remove of the quote %s from the matrix ?
+
+test;test message

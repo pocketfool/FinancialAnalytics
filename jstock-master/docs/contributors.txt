@@ -1,0 +1,49 @@
+People who have contributed to JStock
+-------------------------------------
+
+Project Admin:
+* Yan Cheng CHEOK <yccheok@yahoo.com>
+
+Graphic Designer:
+* The IconBlock Ltd <naga220@users.sourceforge.net>
+
+Programmer:
+* Yan Cheng CHEOK <yccheok@yahoo.com>
+* Shuwn Yuan Tee <sytee@users.sourceforge.net>
+
+German Translator:
+* Stefan Angrick
+
+English Translator:
+* Stefan Angrick
+
+Italian Translator:
+* Maurizio Da Lio
+
+Malaysia History Data Feed Sponsor:
+* http://www.klse.info/
+
+Web Designer:
+* Shuwn Yuan Tee <sytee@users.sourceforge.net>
+
+Code Contributors: 
+* Peter Gransdorfer <gransi@users.sourceforge.net>
+* Nanne Baars <nb76@users.sourceforge.net>
+* Carlo de Wolf
+* bbuelte
+* Mark DeSpain <mdespain@users.sourceforge.net>
+* Vetsper Felix
+* Peter Kane
+
+Mac Packager:
+* Karl Heinz Putz <puzzz@users.sourceforge.net>
+
+JStock includes code from:
+* JHotDraw (http://sourceforge.net/projects/jhotdraw/)
+
+
+*** NOTE ***
+If your name is missing please send email us to:
+yccheok@yahoo.com
+
+Thanks!

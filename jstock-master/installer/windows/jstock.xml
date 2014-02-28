@@ -1,0 +1,36 @@
+<launch4jConfig>
+  <dontWrapJar>false</dontWrapJar>
+  <headerType>gui</headerType>
+  <jar>c:\yocto\jstock\dist\jstock.jar</jar>
+  <outfile>c:\yocto\jstock\installer\windows\jstock.exe</outfile>
+  <errTitle></errTitle>
+  <cmdLine></cmdLine>
+  <chdir></chdir>
+  <priority>normal</priority>
+  <downloadUrl>http://java.com/download</downloadUrl>
+  <supportUrl></supportUrl>
+  <customProcName>true</customProcName>
+  <stayAlive>false</stayAlive>
+  <manifest></manifest>
+  <icon>c:\yocto\jstock\installer\windows\chart.ico</icon>
+  <jre>
+    <path></path>
+    <minVersion>1.6.0</minVersion>
+    <maxVersion></maxVersion>
+    <jdkPreference>preferJre</jdkPreference>
+    <initialHeapSize>64</initialHeapSize>
+    <maxHeapSize>512</maxHeapSize>
+  </jre>
+  <versionInfo>
+    <fileVersion>1.1.1.3</fileVersion>
+    <txtFileVersion>1.1.1.3</txtFileVersion>
+    <fileDescription>JStock - Stock Market Software</fileDescription>
+    <copyright>Yan Cheng CHEOK &lt;yccheok@yahoo.com&gt;</copyright>
+    <productVersion>1.1.1.3</productVersion>
+    <txtProductVersion>1.1.1.3</txtProductVersion>
+    <productName>JStock - Stock Market Software</productName>
+    <companyName>Yan Cheng CHEOK &lt;yccheok@yahoo.com&gt;</companyName>
+    <internalName>jstock</internalName>
+    <originalFilename>jstock.exe</originalFilename>
+  </versionInfo>
+</launch4jConfig>

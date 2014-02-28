@@ -1,0 +1,856 @@
+This file summarizes changes in JStock releases.
+Numbers in parentheses refer to SourceForge.net tracker item numbers (#XXXXX)
+
+JStock 1.0.7j - 2014-02-19
+  Bugfix:  New Yahoo! feed URL.
+  
+JStock 1.0.7i - 2014-01-12
+  Feature: Migrate India stock market to Google Finance. (Remember to tackle
+           FIXME tag in the future)
+  Feature: Added absolute and square functions for indicator editor.
+  Feature: Support Czech Republic Koruna in currency exchange.
+  Feature: Auto update JStock internal stock database.  
+  Bugfix:  Enable back currency exchange option.
+  Bugfix:  Fix on AEX index.
+  Bugfix:  Handle case when brokerage fee maximum value is 0.
+  Bugfix:  Prompt to save edited indicator during application exit.
+  
+JStock 1.0.7h-fix - 2013-12-31
+  Bugfix:  Fix broken stock history server.
+  
+JStock 1.0.7h - 2013-09-19
+  Feature: Auto dividend calculation.
+
+JStock 1.0.7g - 2013-09-12
+  Bugfix:  Fix on unable to perform sell when localization is in french.
+  
+JStock 1.0.7f - 2013-08-18
+  Bugfix:  Fix on portfolio sorting.
+  
+JStock 1.0.7e - 2013-08-15
+  Feature: Supports up to 4 decimal places.
+  Bugfix:  Summary chart data is now sorted.
+  
+JStock 1.0.7d - 2013-07-08
+  Bugfix:  Use Google Finance as India stock market (NSE) backup feed.
+  
+JStock 1.0.7c - 2013-06-18
+  Bugfix:  Forget perform zip file cleanup after loadFromGoogleDoc.
+  Bugfix:  Netherlands' AEX fixed.
+  Bugfix:  Portugal's PSI 20 fixed.
+  Bugfix:  Change Sweeden's Stockholm General to OMX 30.
+  Bugfix:  Slight improvement on our very core RealTimeStockMonitor.
+  Bugfix:  Avoid refreshing UI if there is no stock in the list.
+  Bugfix:  Fix on YahooStockFormat on edge case (LCC US stock). We use CSVParser 
+           to perform parsing. Although it might slower than String.split, it is 
+           more reliable.
+  Bugfix:  Use new UK database contributed by user.
+ 
+JStock 1.0.7b - 2013-05-21
+  Bugfix:  Dividend dialog wouldn't pop up.
+  
+JStock 1.0.7a - 2013-05-18
+  Feature: Support chinese stock name for Taiwan.
+  Bugfix:  Critical bug fix during stock deletion.
+  Bugfix:  Bug fix on edit sell transaction.
+  Bugfix:  Fix buy dialog box UI.
+  Bugfix:  Use StockInfo data structure for Dividend. This is for optimization
+           purpose.
+  Bugfix:  Taiwan uses red to indicate up. Same as China.
+  Bugfix:  Update warning_message_running_2_jstock to clearer message.
+  Bugfix:  Better UI. We will scroll and highlight the newly added stock.
+  
+JStock 1.0.7 - 2013-03-10
+  Feature: Added currency exchange on investment flow chart.
+  Feature: Request focus on combo box for Stock Watchlist.
+  Feature: Prepare watchlist and portfolio info for future Android usage.
+  Feature: Right aligned stock price to have cleaner UI look.
+  Bugfix:  Cleanup unused XML indicator files.
+  Bugfix:  Bug fix on stockprices.csv.
+  Bugfix:  Bug fix on adding user defined stock.
+  
+JStock 1.0.6z - 2012-01-02
+  Bugfix:  Fix new year handling for Malaysia stock market.
+  
+JStock 1.0.6Y - 2012-12-31
+  Feature: Added Israel stock market.
+  Bugfix:  Added startNewThreadsIfNecessary.
+  Bugfix:  Better way to restrict 1 instance of JStock.
+  Bugfix:  Fix column missing bug.
+  Bugfix:  Spain stock market no longer supported.
+  
+JStock 1.0.6x - 2012-12-26
+  Bugfix:  Only allow single instance of JStock to prevent data corruption. 
+           (For Windows only)
+  Bugfix:  Hide intraday chart by default, as it is not a popular feature. We
+           make more room for useful information.
+  Bugfix:  Remove redundant dummy information (volume, value, up, down, unchanged)
+           out from top area.
+  Bugfix:  Bugfix on indicator renaming.
+  Bugfix:  It is common to use Open, High, Low, Close for history charting.
+           Currently, we are using Prev, Last, High, Low, which is not correct.
+  Bugfix:  Use 5 seconds instead of 2 seconds for Yahoo! server retrying, in
+           order to reduce server pressure.
+  Bugfix:  Further break down purchase fee to purchase broker, purchase clearing
+           fee and purchase stamp duty. 
+  Bugfix:  UI re-arrangement for Stock Indicator Scanner wizard.
+  Bugfix:  Bugfix on sell dialog box's profit percentage calculation.
+  Bugfix:  Make news window and indicator install window resizable.
+
+JStock 1.0.6w - 2012-12-09
+  Feature: Display "Last update" time information in status bar.
+  Feature: Added Ctrl+R shortcut key for "Refresh Stock Prices".
+  Feature: Added Ctrl+W shortcut key for "Watchlist Switching"
+  Feature: Added Ctrl+P shortcut key for "Portfolio Switching"
+  
+JStock 1.0.6v - 2012-11-19
+  Feature: Added Italian language. Contributed by Maurizio Da Lio.
+  Feature: Added "Refresh Stock Prices". Please refer to 
+           http://jstock.sourceforge.net/help_real_time_info.html#scanning-speed
+  Feature: UI cleanup, by removing unused buyer/seller information.
+  Bugfix:  Bugfix on edit sell transaction. Buy cost should be adjusted after
+           adjusting quantity.
+  
+JStock 1.0.6u - 2012-10-15
+  Bugfix:  Critical bugfix. JStock overwrites sell transactions' sell date to buy 
+           date mistakenly. Affected users may need to edit their sell 
+           transactions' date 1 by 1.
+           
+JStock 1.0.6t - 2012-10-08
+  Feature: Added "Support JStock".
+  Bugfix:  Fix on color change mechanism when there is price change.
+  Bugfix:  Fix on broker fee, stamp duty and clearing fee calcuation, when
+           performing batch selling.
+           
+JStock 1.0.6s - 2012-09-24
+  Feature: Able to change stock symbol, during stock purchasing.
+  Feature: In order to make JStock further fun and easy, we decide to present
+           broker fee/ stamp duty/ clearing fee in a better way. We will either
+           show them and include them in the calculation, or hide them and 
+           exclude them from the calculation. But not both. All depend on user option. 
+           Meaning, we will not show "Net Purchase Value, Net Gain/Loss 
+           Value, ..." anymore.
+  Feature: Migrate stock database from XML to CSV. This is part of strategy to
+           port JStock to Android.
+  Feature: Provides latest stock database for Australia, HongKong, Malaysia, 
+           Singapore and UnitedStates. Thanks to http://eoddata.com/
+  Feature: Remember the last selected item, for buy summary chart and sell 
+           summary chart.
+  Bugfix : Bug fixed on isToleranceAllowed. It may cause JStock failed to retrieve
+           stock quote sometimes.
+  Bugfix:  Bug fixed on unable to add user defined stock as we are using 
+           immutable list.
+  Bugfix:  Bug fixed on portfolio management title. Portfolio management title
+           doesn't update after switching portfolio.
+
+JStock 1.0.6r - 2012-09-04
+  Bugfix:  Fix an old alert sound bug. Thanks for the testing effort by
+           Kerry & Karen Reeves.
+  Bugfix:  Proper icon used in Windows 8.
+  
+JStock 1.0.6q - 2012-08-28
+  Feature: Provides new color dark theme option for history charting.
+  Bugfix:  Fix Dow Jones and Nasdaq index.
+  Bugfix:  Stock scanning becomes more responsive. Yet, we try to minimize
+           wastage of CPU and network resource.
+  Bugfix:  Go green, by increasing minimum scanning speed from 1 second to 2 
+           seconds.
+  Bugfix:  Fix sort by stock bug in dividend dialog.
+  Bugfix:  Fix on investment flow chart for UK pence to pound conversion.
+  Bugfix:  Stock price in watchlist is not updating after loading from cloud.
+  
+JStock 1.0.6p - 2012-06-04
+  Feature: Able to perform sorting on Stock Portfolio Management's buy and sell
+           records.
+  Feature: Complete migration from XML to CSV, for Stock Watchlist and Stock
+           Portfolio Management. This enables us to migrate JStock to Android
+           platform.
+  Bugfix:  Fix Mac OSX application quit bug. If we quit the application through
+           keyboard shortcut, or through "taskbar", no information will be 
+           saved. (#3490453)
+           
+JStock 1.0.6o - 2012-05-11
+  Bugfix:  We do not want to keep history server too busy. We implement a very 
+           efficient history data caching mechanism, to reduce history server 
+           load.
+  Bugfix:  Use Boolean.valueOf for minor optimization. Contributed by Mark 
+           DeSpain.
+  Bugfix:  Ensure during combo box selection, investment flow chart dialog will
+           not resize suddenly.
+           
+JStock 1.0.6n - 2012-04-05
+  Feature: Added MACD to Stock Relative History Information and Stock History
+           Information. (#3510973)
+  Bugfix:  Spelling fix. Change "UnitedState" to "UnitedStates".
+  
+JStock 1.0.6m - 2012-03-29
+  Feature: Enhacement on stock indicator editor, by adding "N-days ago" feature
+           on stock relative history information. (#3424813)
+  Feature: Dividend dialog default sorted by date.
+  Bugfix:  Update dividend total immediately after deletion.
+  
+JStock 1.0.6L - 2012-02-15
+  Bugfix:  Fix on Dow Jone Indexes due to incorrect regular expression.
+  
+JStock 1.0.6k - 2012-02-06
+  Bugfix:  Critical bugfix on stock server engine.
+  
+JStock 1.0.6j - 2012-01-30
+  Feature: Migrating cloud storage to Google Doc. (#3474108)
+  Bugfix:  Fix SMS feature.
+  
+JStock 1.0.6i - 2012-01-15
+  Feature: Let Gmail as default email for cloud feaure.
+  Feature: Use Google server to retrieve Malaysia's index.
+  Feature: Immediate price update for investment flow chart. (#3463226)
+  Feature: Pence to pound feature will be on country basic.
+  Bugfix:  GUI not being displayed correctly in OS X. Contributed by Peter Kane.
+           (#3036822 and #2876960)
+  Bugfix:  Wrong displayed number format for France users. (#3437350)
+  Bugfix:  Support Java 7, by using XStream 1.4.2. (#3464436)
+  
+JStock 1.0.6h - 2011-10-26
+  Bugfix:  Fix on incorrect Malaysia stock history, which listed for less than 
+           10 years.
+           
+JStock 1.0.6g - 2011-10-19
+  Feature: History data feed sponsored by http://www.klse.info/. With this, we
+           had overcame Yahoo! history data feed problem for Malaysia market.
+           
+JStock 1.0.6f - 2011-09-24
+  Bugfix:  Bug fixed on combo box drop down. We ensure its drop down width is
+           sufficient enough to display entire information. This bug will appear,
+           if you are using Java 6u25 or later.
+           
+JStock 1.0.6e - 2011-09-16
+  Feature: Supports German (Contributed by Stefan Angrick) and Traditional 
+           Chinese language.
+  Bugfix:  Filter corrupted data returned from Yahoo! server.
+  Bugfix:  Fix on BuyPortfolioTreeTableModel's updateStockLastPrice, which may
+           cause redundant information being inserted.
+  Bugfix:  Introduce get-time.py from Google App Engine, which may yield 
+           accurate server timing compared to unstable public Network Time 
+           Server.
+  Bugfix:  Prevent NPE in ToolTipHighlighter.
+  
+JStock 1.0.6d - 2011-07-21
+  Bugfix:  Filter corrupted data returned from Yahoo! server.
+  
+JStock 1.0.6c - 2011-06-27
+  Bugfix:  Fix on blank stock combo box drop down. (#3325192)
+  Bugfix:  Avoid having empty symbol being displayed for user defined stock.
+  
+JStock 1.0.6b - 2011-05-24
+  Feature: Supports New Zealand stock market. (#3295570)
+  
+JStock 1.0.6a - 2011-05-18
+  Feature: Currency exchange rate feature. Able to display stock wealth in your 
+           local currency.
+  Bugfix:  Fix on the wrong behavior and appearance of language buttons. 
+           Contributed by Vetsper Felix.
+  Bugfix:  Better usability in auto complete combo box, by displaying busy
+           indicator in both indicator editor and buy dialog box.
+  Bugfix:  Better usability in buy dialog box, by making sure the first
+           character of stock symbol is always being displayed.
+  Bugfix:  Avoid duplicated custom TA for CCI, RSI and MFI.
+  
+JStock 1.0.6 - 2011-03-30
+  Feature: Able to find new stock which is not included in offline database,
+           through an easy way. We no longer need to open up Stock Databse
+           dialog box.
+  Feature: Able to choose either 1 columns stock suggestion list or 2 columns
+           stock suggestion list.
+  Feature: We will allow user to view stock history, event though offline 
+           database isn't ready yet.
+  Feature: Investment flow chart able to show the investment activities of
+           individual stock.  
+  Feature: Able to restore previous position and size of JStock. (#3178010)
+  Feature: Supports stock buy and sell units in floating point. (#3193411)
+  Feature: Supports stock merging and splitting.
+  Feature: We will reload table GUI option from cloud, for Stock Watchlist and
+           Stock Indicator Scanner.  
+  Bugfix:  Although it will consume more network resource, portfolio will be
+           updated although it is not being viewed. We want user able to view 
+           his latest portfolio when he switches to portfolio page, without
+           any waiting.
+  Bugfix:  Avoid empty record in dividend chart. (#3198728)
+  Bugfix:  Change Italy stock index from S&P/MIB to FTSE MIB. FTSE MIB replaces
+           S&P/MIB since June 2009. (#3106655)
+  Bugfix:  Avoid having java.util.ConcurrentModificationException in 
+           AbstractCompositeFigure's removeAll. This happens when you try to
+           delete more than 1 indicator at a time. (#3045128)
+  Bugfix:  Remove splash screen for better simplicity user experience. 
+           (#3047943)
+  
+JStock 1.0.5y - 2011-02-15
+  Bugfix:  There is change in stock server policy. Stock server may return empty
+           stock symbol for certain stocks, especially for United State stock
+           market. We will ignore those empty stock symbols, and replace them
+           with our own offline stock database's.
+           
+JStock 1.0.5x - 2011-02-12
+  Feature: Stock Watchlist will able to load result saved from Stock Indicator
+           Scanner. (#3176566)
+  Feature: Able to use left/right arrow key to move around yellow information
+           boxes of Investment Flow Chart.
+  Feature: Make the stock purchase process smoother, by doesn't require user to
+           press ENTER explicitly.
+  Feature: Automatic switch to the particular page, when user tries to activate 
+           a portfolio or watchlist.
+  Feature: Having a confirmation dialog box, to avoid user from clicking 
+           uninstall icon accidentally.
+  Feature: Indicator scanning completion progress will be displayed at status
+           bar.
+  Bugfix:  Able to suspend and resume network activity in 
+           PortfolioManagementJPanel when not in used, so that network resource
+           is being preserved.
+  Bugfix:  Adjust combo box popup width, so that horizontal scrollbar will not
+           displayed.
+  Bugfix:  Instead of limiting currency decimal places to 2 only, we allow them 
+           to float between 2 to 3, to avoid from losing precision.
+  Bugfix:  Prevent user from uploading Stock Watchlist file with too many stocks
+           to cloud server.
+  Bugfix:  Under dividend dialog box, the stock selection through combo box will 
+           be sorted in alphabetical order.
+                        
+JStock 1.0.5w - 2010-11-26
+  Bugfix:  If we perform server re-connecting explicitly, there might be chance
+           where the entire stock database will be corrupted due to empty stock
+           list returned from stock server.
+           
+JStock 1.0.5v - 2010-11-25
+  Bugfix:  Remember to update currency symbol after we change the country.
+  Bugfix:  Prevent exception, when inserting new column through right clicked
+           menu.  The newly inserted column will now at the right side of 
+           clicked column instead of left.
+  Bugfix:  Unable to load CSV and Excel file into Stock Watchlist.
+  
+JStock 1.0.5u - 2010-11-08
+  Bugfix:  Fix on MFI calculation error during stock indicator scanning.
+  
+JStock 1.0.5t - 2010-11-05
+  Bugfix:  Critical fix on Mac platform, where user is facing ClassCastException
+           during startup.
+  
+JStock 1.0.5s - 2010-11-02
+  Feature: Having consistent decimal places for portfolio page. (#3092882)
+  Feature: When user try to add stocks through Stock Database, they will able to 
+           make query to Online Stock Database, to ensure the added stocks is
+           always up-to-date.
+  Feature: Support "Open Price" column in Stock Watchlist and Stock Indicator
+           Scanner.
+  Feature: Enhancement on charting, by providing daily, weekly and monthly 
+           chart.
+  Feature: Able to use left/right arrow key to move around yellow information
+           box.
+  Bugfix:  Even when there is no stock being selected in Stock Watchlist and
+           Stock Indicator Scanner, right clicked menu is still shown.
+  Bugfix:  Provide a better usability experience, by doesn't not require user to
+           press ENTER, after finish editing. This will affect deposit dialog,
+           dividend dialog, stock database dialog, and property dialog for
+           stock indicator editor.
+  Bugfix:  No longer using horizontal scroll bar for stock input text field.
+           Instead, we will automatically enlarge the drop down field when there
+           is a need.
+  Bugfix:  We forget to trim the input in StockDatabaseJDialog.
+  Bugfix:  Trim the string input in AutoCompleteJComboBox.
+  
+JStock 1.0.5r - 2010-09-19
+  Feature: Enable cash withdrawal by entering -ve amount. (#2924161)
+  Feature: Remember position of portfolio horizontal split bar. (#3060396)
+  Feature: Last selected portfolio should be per country basic. (#3062599)
+  Feature: To have currency amount in Cash and Dividend right aligned, so that
+           they look more neat.
+  Bugfix:  Yahoo! Finance no longer provide current information for Dow Jones
+           Index. We will be getting the information from Google Finance.
+  Bugfix:  Prevent most stocks from returning 0 for Buy and Sell price.
+  Bugfix:  China users unable to add UserDefined stocks due to 
+           ClassCastException.
+  
+JStock 1.0.5q - 2010-09-6
+  Bugfix:  Due to incorrect implementation of XML write encoding, the entire
+           JStock application may corrupted if we are switching language to 
+           Chinese or switching country to China.
+
+JStock 1.0.5p - 2010-09-03
+  Bugfix:  Critical bug fix. Due to incorrect usage of DomDriver, stock server
+           connecting process is extremely slow. Fixing this bug will improve
+           application start-up time dramatically.
+  Bugfix:  Incorrect email encoding while we are in Chinese language.
+  Bugfix:  Added missing Labels_en.properties.
+  Bugfix:  Able to send SMS in Chinese, by using a shorter message content.
+  Bugfix:  Avoid possible NPE during unboxing. Contributed by Mark DeSpain. 
+           (#3051989)
+
+JStock 1.0.5n - 2010-08-25
+  Feature: Support China stock market. (#3049597)
+  Feature: Different colors for fall below alert and rise above alert. 
+           (#3005532)
+  Feature: User may choose their preferred currency symbol, per country basic.
+           (#3002019)
+  Feature: Improve cloud storage speed and space, by saving only UserDefined
+           stocks, instead of the entire database.
+  Bugfix:  Wrong returned value by AbstractYahooStockHistoryServer.parse.
+           Contributed by Mark DeSpain. (#3031918)
+  Bugfix:  Avoid unnecessary instantiation of Double objects. Contributed by 
+           Mark DeSpain.(#3037411)
+  Bugfix:  No duplicated items will be allowed in TSTSearchEngine.
+  Bugfix:  Cancelation doesn't work, in LoadFromCloudJDialog and 
+           SaveToCloudJDialog.
+  Bugfix:  Avoid possible NPE caused by null StockCodeAndSymbolDatabase.
+  
+JStock 1.0.5m - 2010-07-03
+  Feature: Internationalization and localization. Currently, only Simplified
+           Chinese is supported. (#2214275)
+  Bugfix:  When chart dialog is being re-sized big enough, yellow box will not 
+           be able to move toward right most. (#2969416)
+  Bugfix:  Highlight the stock, when the stock is already in the list. 
+           (#3011843)
+  Bugfix:  Do not change the table cell color, when last price is 0, and causing
+           Fall Below and Rise Above alert condition to be triggered.
+  Bugfix:  Deposit and dividend may contains meaningless records due to
+           incorrect data structure handling by their respective dialog boxes.
+           
+JStock 1.0.5L - 2010-05-14
+  Feature: Support multiple watchlists. Manage your favorite stock watchlist, by
+           splitting them into high growth stocks and dividend gained stocks.
+  Feature: User will have much better hint on what portfolio he is in, by 
+           looking at the label, instead of having to click on the drop-down 
+           menu. (#2957729)
+  Feature: User may launch calculator through Help menu. (#2919440)
+  Bugfix:  MFI calculation causing infinity loop. (#2989168)
+  Bugfix:  Load cloud files fail in Linux, if the cloud files are saved from
+           Windows. (#2979338)
+  Bugfix:  When changing to a new country, the previous country's portfolio name
+           will be carried over to new country. The new country's portfolio name
+           shouldn't have any relation with old country's.
+  Bugfix:  Rename "Real-Time Info" to "Stock Watchlist".
+  Bugfix:  Avoid potential OutOfMemory exception caused by endless add operation
+           into the same button group.
+
+JStock 1.0.5k - 2010-03-27
+  Bugfix:  During "Save to Cloud" and "Load from Cloud", Google will prompt for
+           captcha verification sometimes. We will support captcha right now.
+           
+JStock 1.0.5j - 2010-03-15
+  Bugfix:  Critical bug fixed, when color changed options is being enabled, the
+           entire Real-Time Info tab will freeze. (#2968754) (#2970454)
+           
+JStock 1.0.5i - 2010-03-07
+  Feature: Having predefined range for history chart. (#2954753) During
+           buy-low-sell-high strategy, it answers the question liked "what is 
+           the lowest and highest price during last 3 months?"
+  Feature: Support any type of email alert (Yahoo! Mail, your company mail...),
+           not just GMail email alert. (#2920400)
+  Feature: Remember the technical analysis settings and GUI options of history
+           chart. User needs not to manual select his favorite technical 
+           analysis whenever a new history chart pops up.
+  Feature: Embedded with online help, so that user may always get the most 
+           up-to-date help.
+  Bugfix:  Portfolio column doesn't stay when switching to another portfolio.
+           (#2957712)
+  Bugfix:  We want to avoid information box from keep changing its width while
+           user moves along the mouse. This will prevent user from feeling,
+           information box is flickering, which is uncomfortable to user's eye.
+           Also, instead of using "Monday, December", we use "Mon, Dec".
+  Bugfix:  Remove unused XStockServerFactory in Malaysia. This will make our
+           data feed speed slightly faster.
+  Bugfix:  Use long instead of int for volume. This is just a partial fix. We
+           still need to do it for the rest.
+           
+JStock 1.0.5h - 2010-02-10
+  Feature: Interactive chart with real-time information tracing, together with
+           yellow information box.
+  Feature: Remove cash flow chart. Added investment flow chart, to keep track of
+           your investment time line.
+  Feature: Better usability of auto drop down combo box. Instead of having to
+           press enter, using one time mouse click will enable stock selection.
+  Feature: Better candlestick chart, with larger candle width. (But slower 
+           during zoom-in and zoom-out)
+  Bugfix:  Unparseable date: "Date". Contributed by bbuelte. (#2830487)
+  Bugfix:  Cannot enter email password. (#2924737)
+  
+JStock 1.0.5g - 2009-12-29
+  Feature: Support Brazil stock market. Contributed by sytee. (#2875071)
+  Feature: Able to play sound for alert. (#2902067)
+  Feature: Able to add indicator scanner result into real-time info tab.
+  Bugfix:  IndicatorProjectManager's directory may become invalid when loaded
+           from cloud. This bug is fixed in 1.0.5c. But is being remove 
+           accidentally after that.
+  Bugfix:  Avoid using adjustedClosePrice from Yahoo, due to badly constructed
+           charting look.
+           
+JStock 1.0.5f - 2009-12-13
+  Feature: Added Money Flow Index indicator, to detect whether there is a lot or
+           little interest in a trade.
+  Bugfix:  Use adjustedClosePrice intead of closePrice in history information.
+  Bugfix:  Reduce CPU usage, during indicator scanning process.
+  Bugfix:  Save stock history in Excel with correct column format.
+  
+JStock 1.0.5e - 2009-12-09
+  Bugfix:  Speed improvement in Stock Indicator Scanner.
+  
+JStock 1.0.5d - 2009-12-07
+  Feature: View yearly dividend summary. (#2908966)
+  Feature: Enable user to specific symbol in user defined database (#2909586)
+  Feature: Right-click and buy stocks from the Stock Indicator Scanner.
+           (#2891657)  
+  Feature: Pressing ESC, will enable user to deselect table in Real-Time Info, 
+           Stock Indicator Scanner and Portfolio Management.
+  Feature: Added "JStock Home" menu.
+  Bugfix:  Incorrect Hong Kong Database. (#2909595)
+  Bugfix:  Wrong information for Spain Market database. (#2892990)
+  
+JStock 1.0.5c - 2009-11-05
+  Bugfix:  Speed optimization on save to cloud process.
+  Bugfix:  IndicatorProjectManager's directory may become invalid when loaded
+           from cloud.
+
+JStock 1.0.5b - 2009-11-04
+  Feature: Able to save JStock files into cloud. (#2833216)
+  Bugfix:  United Kingdom portfolio issue. (#2807941)           
+  Bugfix:  SMS Alert doesn't work if System Tray Alert is not enabled.(#2889592)
+  Bugfix:  RSI is miscalculated. (#2886976)
+  
+JStock 1.0.5a - 2009-10-23
+  Bugfix:  Bug fixed for CCI and RSI charting. Stock information will interrupt
+           with each others.
+           
+JStock 1.0.5 - 2009-10-22
+  Feature: Added SMA, EMA, RSI, CCI on history charting. Please note that this 
+           feature request ticket shall not be closed yet. As this is an ongoing
+           long term task. (#2602842)
+  Feature: Let user able to view last update news. (#2876930)
+  Feature: Auto download and install indicators from web. (#2880375)
+  Feature: Improve Buy Portolio Dialog Box usability case for
+           https://sourceforge.net/projects/jstock/forums/forum/723855/topic/3337603
+  Feature: Improvement on multiple portfolios. Double click will active selected
+           portfolio.
+  Bugfix:  Real-Time Info page is not updated when user not viewing it. 
+           (#2876894)
+
+JStock 1.0.4j - 2009-09-26
+  Feature: Multiple portfolios. (#2694145)
+  Feature: Able to save/load Portfolio in Excel/CSV format. Able to save 
+           Indicator scan result in Excel/CSV format. (#2797840). Patched by 
+           gransi.
+  Feature: SMS enhancement to reduce the number of sms messages. (#2856559)
+  Feature: CSV for history chart. (#2850571)
+  Feature: Avoid annoying update news. (#2840794)
+  Feature: New realiable real-time stock server for Malaysia market.
+  Bugfix : Treat Prev Price and Open Price as two different things.
+  Bugfix : Remove annoying "You have previous built indicators, do you want to 
+           re-use them?" message box.
+  Bugfix : Remove password indicator protection feature. Replaced with indicator
+           options.
+  Bugfix : Minor speed improvement, by using thread unsafe StringBuilder, 
+           instead of thread safe StringBuffer.
+  Bugfix : Use Google App Engine to host static files.
+           
+JStock 1.0.4i - 2009-08-18
+  Feature: Use SwingWorker to perform connection, email, sms checking (#2839440)
+  Feature: Auto detect proxy server (#1771740). Patched by nb76
+  Feature: Google Analytics Campaign (#2839391)
+  Bugfix : JStock uses up all network resource (#2836422)
+  Bugfix : Stock Indicator Scanner freeze during scanning (#2839065)
+  Bugfix : Unable to display image icon during server health checking (#2839362)
+  Bugfix : ClassCastException in AboutBox (#2818878)
+
+JStock 1.0.4h-bugfix - 2009-08-07
+  Bugfix: Switching among servers has no effect on market index (#2833030)
+  Bugfix: java.lang.IllegalArgumentException for KLCI index (#2833029)
+  
+JStock 1.0.4h - 2009-08-06
+  Select multiple servers when one of the server goes down (#2832887)
+  Bugfix: Unable to set stock scanning speed to minute (#2832423)
+  
+JStock 1.0.4g - 2009-08-04
+  Displaying history for index (#2831881)
+  Bugfix: Not able to connect to KLSE data (#2831804)
+  Bugfix: Fall Below and Rise Above false alarm (#2826327)
+  
+==============
+version 1.0.4f
+==============
+1. SMS feature.
+
+==============
+version 1.0.4e
+==============                                                                      
+1. Re-factor on ActivitySummary, DepositSummary and DividendSummary. In order 
+   to achieve backward compatible, we start to use xstream 1.3.1. Previous 
+   version doesn't work well with 'transient'. If we remove previous fields 
+   in new class, it still can goes wrong although we mark the fields as 
+   transient.
+
+2. Bug fixed. Update user preferred GUI look when changing country.
+
+3. [2804310] Bug fixed. Lazy evaluation x work in DividendSummary 
+   DepositSummary.
+   
+4. [2803284] Bug fixed. NPE In RealTimeStockMonitor. (Partial fixed)
+   
+==============
+version 1.0.4d
+==============
+1. [2787608] Feature added. A better About Box with auto update detector , 
+   credit, license and blobsallad.
+
+2. [2797839] Feature added. Note field in portfolio, for user to add note on 
+   every transactions.
+
+3. [2787627] Feature added. Remember when is the last view page.
+
+4. [2801063] Feature added. Cash Flow Management.
+
+5. [2797839] Feature added. note field.
+
+6. [2787627] Feature added. Remember when is the last view page.
+
+7. Feature added. Able to perform batch sell transaction.
+
+8. [2800598] Bug fixed. buyportfolio.xml file not updated with code symbol
+
+9. [2790218] Bug fixed. User unable to add new buy transaction in Spain.
+
+10. Bug fixed. Previously, when CIMB server failed, there are no chance for 
+   us to fall into Yahoo server.
+
+==============
+version 1.0.4c
+==============
+1. [2604585] Feature added. If you are a daily trader, we understand that 
+   your need in monitoring stock price movement in seconds precision. Hence, 
+   JStock is providing intraday stock price snapshot. The stock price will be
+   captured in every 10 seconds in daily basics, lasted for 2 hours.
+
+==============
+version 1.0.4b
+==============
+1. [2686577] Feature added. Proxy Auth Support. Contributed by gransi.
+
+2. [2722273] Feature added. Read/ Write on Excel/ CSV File Format.
+
+3. [2725384] Remember The Width of Table Column. Contributed by gransi.
+
+4. [2687975] Bug fixed. Wrong Information Displayed For Korea Market.
+
+5. [2767249] Bug fixed. Current price Is 0 when there is no transaction on 
+   that day.
+
+6. [2737316] Bug fixed. NPE in ArithmeticOperator.division. Contributed by 
+   wolfc.
+
+==============
+version 1.0.4a
+==============
+1. Added 11 new countires. We have now total 23 countries stock market.
+   - Australia
+   - Austria
+   - Belgium
+   - Canada
+   - HongKong
+   - Indonesia
+   - Korea
+   - Netherlands
+   - Portugal
+   - Switzerland
+   - Taiwan
+
+=============
+version 1.0.4
+=============
+1. [2567297] Feature added. Having seconds/ minutes/ hour selection for 
+   scanning speed.
+
+2. [2567292] Feature added. India Stock Market Support.
+
+3. [2580597] Testing to be done on Ubuntu Linux.
+
+4. [2503260] Bug fixed. Get all stocks from a country is slow and buggy. 
+   Denmark, France, Germany, Italy, Norway, Spain, Sweden, UnitedKingdom and 
+   UnitedState stock market information are now accurate. All their database 
+   are most update to date by using Yahoo search engine.
+
+5. [2617125] Bug fixed. Market Index Display Wrong.
+
+6. Feature added. Case insensitive auto drop down combo box.
+
+7. Bug fixed on Stock Database Dialog. The displayed stock and symbol is now 
+   associated with the same stock.
+   
+8. Bug fixed on Malaysia stock market. 5148.KL is being included into 
+   database.
+
+
+=============
+version 1.0.3
+=============
+1. [2567295] "Rise Above" and "Fall Below" table column
+
+2. Bug fixed on Market Chit Chat. Smile symbol will be case insensitive. :p 
+   same as :P
+
+3. [2548085] Real-Time Info can remember Column Position.
+
+===========================================
+version 1.0.2 (nightly build number 030209)
+===========================================
+1. Bug fixed on Market Chit Chat. Smile symbol will be case insensitive. 
+   :p same as :P
+
+2. [2548085] Real-Time Info can remember Column Position.
+
+=============
+version 1.0.2
+=============
+1. [2391797] Bug fixed. We provide a much more user friendly mechanism, in 
+   database download process during indicator scanning. The entire indicator 
+   scanning process had been speed up by :-
+   (a) Several threads performing history download simultaneously.
+   (b) Real time stock scanning and history download run simultaneously.
+
+2. [2417893] Feature added. Market Chit Chat feature being added.
+   
+3. User is able to choose the duration of history information.
+
+=============
+version 1.0.1
+=============
+1. Bug fixed. We support maximum 9 boards (due to large boards in Germany 
+   market) in all select stocks dialog boxes.
+
+2. A more robust Malaysia stock server from Yahoo! is being introduced. User 
+   shall not experience stock server down problem as in previous version.
+
+3. New Singapore stock market is being introduced.
+
+4. JStock is now having its own logo and icon. Special thanks to Iconblock, a 
+   small company that specializes in providing professional and personalized 
+   design services.
+
+5. Bug fixed in using HttpClient. Every method will has its own HttpClient. 
+   This may avoid problem from multiple connections at the same time. 
+
+=============
+version 1.0.0
+=============
+1. [1956185] Feature added. 10 countries stock market is being supported.
+
+2. [2211339] Bug fixed. Type safe symbol and code.
+
+3. [2235506] Feature added. Refactor config files directories structure 
+   according to selected country.
+
+4. [2213089] Feature added. Load stock database from pre-save file. User no 
+   longer need to wait for database to download over the network.
+   
+5. [2219098] Feature added. Dynamic WizardSelectStockJPanel. All GUIs will be
+   generated according to selected country.
+
+6. [2219038] Feature added. Dynamic Market Information Header. All GUIs will 
+   be generated according to selected country.
+   
+=============
+version 0.9.9
+=============
+1. [1955258] Bug fixed. Vista compataible, by revising user data storing 
+   directory location. 
+
+2. Bug fixed from avoiding getting "yesterday" history information.
+
+3. Bug fixed during removing transaction.
+
+4. Fully support sell transaction, including sell advisor feature.
+
+=============
+version 0.9.8
+=============
+1. Bug fixed when having non-terminating division result : 1/3
+
+2. Enable user to edit a transaction.
+
+3. Bug fixed when having manual broker fee/ stamp duty/ clearing fee 
+   calculation.
+
+4. Bug fixed. Have a workaround, to enable pie-chart able to display loss 
+   (-ve) value.
+
+=============
+version 0.9.7
+=============
+1. Support auto broker fee, stamp duty, clearing fee calculation.
+
+=============
+version 0.9.6
+=============
+1. Bug fixed on getStockBySymbol(String symbol). We forget to break after 
+   successl. This cause Indicator Editor Panel takes a long time to retrieve 
+   a real time sample data.
+
+2. Bug fixed on IndicatorPanel. Avoid from calling stop when state change. 
+   This is to avoid GUI from being freezed.
+
+3. Apply soft start/ soft stop in MainFrame, to avoid GUI from being freezed.
+
+4. Bug fixed. Forget to update GUI state.
+
+5. Porfolio feature by using tree table from SwingLabs.
+
+=============
+version 0.9.5
+=============
+1. Bug fixed on stock scanning speed.
+
+2. [1851625] Bug fixed on indicator scanning. We will only download history 
+   only when there is a need.
+
+=============
+version 0.9.4
+=============
+1. Added Market Capital and Shares Issued, in Indicator Scanner.
+
+2. Bug fixed. Click on empty area, should clear indicator table selection.
+
+=============
+version 0.9.3
+=============
+1. [ 1830911 ] Bug fixed : Uninstall doesn't remove shortcut.
+
+2. Support color customization.
+
+3. Bug fixed on second sell quantity.
+
+4. Option object as static.
+
+=============
+version 0.9.2
+=============
+1.  Fix email feature, which is caused by changes in GMAIL SMTP service.
+
+2.  [ 1776936 ] Load all the entire market stocks into the Real-Time Monitor.
+
+=============
+version 0.9.1
+=============
+1.  Initial release to the public.
+
+=====
+v0-02
+=====
+1.  Improve speed of indicators constructing by
+
+    * Avoid saving history to disk, by directly stream the history output to 
+    indicator constructing.
+
+    * Only use a single CIMB history server, to avoid extensive server 
+    pooling if the history data cannot be found. However, we will be facing 
+    inaccurate data risk.
+
+2.  User may choose to display a single stock although there is multiple 
+    indicators being triggered.
+    
+=====
+v0-01
+=====
+1.  Initial creation.

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module codename="org.aiotrade.platform.modules.dataserver.ib">
+    <module_version install_time="1163675149920" last="true" origin="installer" specification_version="1.0">
+        <file crc="1819626141" name="config/Modules/org-aiotrade-platform-modules-dataserver-ib.xml"/>
+        <file crc="3076601274" name="modules/org-aiotrade-platform-modules-dataserver-ib.jar"/>
+    </module_version>
+</module>

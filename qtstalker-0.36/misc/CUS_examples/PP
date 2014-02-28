@@ -1,0 +1,7 @@
+enable=1
+plugin=CUS
+tabRow=1
+dateFlag=1
+Name=PP
+script=bars := BARS(Bar) // price bars|fr := PP(FR) // first resistance level|sr := PP(SR) // second resistance level|tr := PP(TR) // third resistance level|fs := PP(FS) // first support level|ss := PP(SS) // second suport level|ts := PP(TS) // third support level|plot (bars,#ff0000,Bars,Bar)|plot (fs,#b2ffc0,PP FS,Horizontal)|plot (ss,#b2ffc0,PP SS,Horizontal)|plot (ts,#b2ffc0,PP TS,Horizontal)|plot (fr,#ffa06d,PP FR,Horizontal)|plot (sr,#ffa06d,PP SR,Horizontal)|plot (tr,#ffa06d,PP TR,Horizontal)
+logScale=0

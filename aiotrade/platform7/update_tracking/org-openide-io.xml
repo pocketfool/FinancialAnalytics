@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module codename="org.openide.io">
+    <module_version install_time="1161619741625" last="true" origin="installer" specification_version="1.11">
+        <file crc="2630363491" name="config/Modules/org-openide-io.xml"/>
+        <file crc="1126889702" name="modules/org-openide-io.jar"/>
+    </module_version>
+</module>

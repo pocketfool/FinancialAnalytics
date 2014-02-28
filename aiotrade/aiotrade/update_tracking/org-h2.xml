@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module codename="org.h2">
+    <module_version install_time="1163675095161" last="true" origin="installer" specification_version="1.0">
+        <file crc="2139216724" name="config/Modules/org-h2.xml"/>
+        <file crc="3308642527" name="modules/ext/h2.jar"/>
+        <file crc="3374076015" name="modules/org-h2.jar"/>
+    </module_version>
+</module>

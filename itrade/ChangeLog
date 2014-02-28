@@ -1,0 +1,1297 @@
+/iTrade/ChangeLog
+===============================================================================
+
+===============================================================================
+
+        OFFICIAL release v0.4.6
+                SVN tag : ITRADE_0_4_6_NAUSICAA2_TAG
+                SVN branch : ITRADE_0_4_6_NAUSICAA2_BRANCH
+
+===============================================================================
+
+2008-01-03  Gilles Dumortier <dgil at ieee dot org>
+	* View Quote : Graph : Refresh Broken (SF bug 1665668) : Fix a lot of
+	  issues on the refresh mechanism when launching the window, changing
+	  the page or changing the quote.
+
+2007-01-02  Michel Legrand <m_leg at users dot sourceforge dot net>
+	* Trading calendar updated for MILAN EXCHANGE (data/closed.txt)
+
+2008-01-02  Gilles Dumortier <dgil at ieee dot org>
+	* Graph View : objects are correctly drawn first time then after
+	* Graph View : Unit Price line (SF bug 1647463)
+	* Properties view - Reinit / Valid buttons on connectors have effect
+	  but item in combo is not correctly selected (SF bug 1724346)
+	* Indicator : display the indice market and clock (previous was the
+	  portfolio default market and the connector latest clock)
+	* Convert from connector timezone (for example, finance.yahoo.com is
+	  EST) to quote place timezone (for example, GTO is CET)
+
+2008-01-01  Gilles Dumortier <dgil at ieee dot org>
+	* filter the proxy server and auth (SF bug 1861624)
+	* connection Timeout is configurable (SF bug 1861328)
+
+2007-12-31  Gilles Dumortier <dgil at ieee dot org>
+	* New tarball (r825) (0.4.6 Release Candidat)
+	* List of quotes view : display the number of quotes filtered in list
+
+2007-12-30  Gilles Dumortier <dgil at ieee dot org>
+	* Trading calendar updated for main markets (euronext, nyse, ...)
+
+2007-12-30  Michel Legrand <m_leg at users dot sourceforge dot net>
+	* Patch and new module (itrade_quotes_xetra.py) for FRANKFURT EXCHANGE
+	* Fix PT / ES in symbols files (like indices.txt)
+
+2007-12-29  Gilles Dumortier <dgil at ieee dot org>
+	* update ./INSTALL file with some forum feedbacks on Linux & OSX
+	* wrong selection after choosing a new sorting column (SF bug 1827058)
+
+2007-12-28  Gilles Dumortier <dgil at ieee dot org>
+	* Less digit for PRU except in the indicators pane
+	* Operation Editor : display portfolio currency symbol (SF bug 1651954)
+	* Crash clicking an indice (SF bug 1859459)
+	* do not convert money from N/A ! (SF bug 1859824)
+	* Irish stock exchange - list of quotes (SF bug 1859781)
+	* Euronext Plugins : do not use idInstrument anymore (SF bug 1859791)
+	* Massive update the copyright date
+	* r783 new problems with indices (%, hour) (SF bug 1778487)
+	* merge Patch from Michel for IRISH et MADRID EXCHANGE
+
+2007-12-27  Gilles Dumortier <dgil at ieee dot org>
+	* Small,normal and big text don't work correctly (SF bug 1765421)
+	* Restore color management on indice display
+	* (Forum) Column UPP in main matrix (SF bug 1795386)
+	* error with last version Matplotlib matplotlib-0.91.1 (SF bug 1847410)
+	* Yahoo / Recent values : no historical prices (SF bug 1842520)
+	* EURONEXT list of quotes not working anymore (SF bug 1829243)
+	* Import error with LSE SETS , LSE SETSmm (SF bug 1847378)
+	* NYSE list of quotes not working anymore (SF bug 1851229)
+
+2007-12-18  Michel Legrand <m_leg at users dot sourceforge dot net>
+	* Patch for IRISH et MADRID EXCHANGE (not included)
+	* last IPOs december 2007
+	* fix an issue for volume==0 in yahoo import connector
+
+2007-11-03  Michel Legrand <m_leg at users dot sourceforge dot net>
+	* More logo
+
+2007-10-01  Michel Legrand <m_leg at users dot sourceforge dot net>
+	* update manually Milan Stock Exchange
+	  (http://www.borsaitaliana.it/bitApp/quotes.bit?target=SearchQuotes&grp=iniziale&param=A)
+
+2007-09-30  Jean-Marie Pacquet <jmpacquet at users dot sourceforge dot net>
+	* Patch for changed StaticText into TextCtrl to allow background color
+	  update (SF bug 1804076)
+
+2007-09-24  Jean-Marie Pacquet <jmpacquet at users dot sourceforge dot net>
+	* Patch for Market indicator missing (SF Bug 1795105)
+
+2007-09-21  Jean-Marie Pacquet <jmpacquet at users dot sourceforge dot net>
+	* ./INSTALL : add installation from sources on linux-slackware
+
+2007-09-14  Gilles Dumortier <dgil at ieee dot org>
+	* new tarball
+	* Commit many Linux patches from Jean-Marie Pacquet :
+	- fix "TypeError: category LC_ALL is not supported" (SF bug 1759799)
+	- fix "File/New does not work" (SF bug 1793957)
+	- fix "Small display bugs" (SF bug 1793964)
+
+2007-08-25  Michel Legrand <m_leg at users dot sourceforge dot net>
+	* More logo
+	* More Portuguese translations
+
+2007-08-20  Gilles Dumortier <dgil at ieee dot org>
+	* [Fedora] Can't add new quote in matrix (SF bug 1774326)
+
+2007-07-25  Gilles Dumortier <dgil at ieee dot org>
+	* Add some help about changing a connector for a quote
+
+2007-07-24  Gilles Dumortier <dgil at ieee dot org>
+	* new tarball
+	* List of Quotes : display live/import columns + add a way to edit
+	  properties of a quote (manage the properties.txt global file)
+          (SF bug 1724531)
+	* LSE update list : Python error :crash software : fixed by installing
+	  the latest version of XLRD (v0.6.1 final) (SF bug 1722504)
+	* LSE quote list : handle new file format correctly
+	* Fix strange properties.txt file content: badly overloading indices to
+	  ABCBourse deprecated connector :-( ... explain why CAC 40 percent was
+  	  not displaying (SF bug 1722499)
+	* Add trace at startup to inspect connector overloading for a quote
+
+2007-07-22  Gilles Dumortier <dgil at ieee dot org>
+	* Switch to GPL version 3
+	* fix a lookupKey() issue + add confirmation to remove a quote
+	* Main view reduced - freeze when close with mouse (SF bug 1746651)
+	* fix "itrade." prefix for svn
+	* fix a missing refresh() method in the graph panel
+	* yahoo url issue
+	* Merge fix for ASX market : skip header lines (PeterMills> 2007-06-22)
+	* Euronext import : new format for volume separator ('\xA0' vs ',')
+
+2007-05-31  Gilles Dumortier <dgil at ieee dot org>
+	* EBP format for manual importation (file ./PLUGINS)
+
+2007-05-28  Gilles Dumortier <dgil at ieee dot org>
+	* Fix a KeyError in itrade_wxquote.py, line 1083
+
+2007-05-20  Gilles Dumortier <dgil at ieee dot org>
+	* modify barchart plugin to import TORONTO markets
+	* change "TSX" and "TSE" to "TORONTO EXCHANGE" and "TORONTO VENTURE"
+	* Order by %-Autorefresh on: view unstable (SF bug 1722052)
+	* News : UnicodeDecodeError when click on boursorama (SF bug 1651029)
+	* News : Freshness of information (SF 1649267)
+	* Portfolio : Main Market and Currency can't be edited
+	* Indices from US market should not have local market yahoo suffix !
+	* Quote view : display Yahoo intraday graph for LSE markets
+	* Be sure LSE ticker is valid (remove '.' at the end) (SF bug 1719653)
+	* Quotes View - changing quote keep the current page (SF bug 1632171)
+	* Be sure a connector is only once in the property list of connectors
+	* Fix an issue with % on live for some connectors
+	* Connectors should be global properties of the quote (SF bug 1642791)
+
+2007-05-19  Gilles Dumortier <dgil at ieee dot org>
+	* Fix a refresh problem when changing the quote in the quote view
+	* Fix an issue with market not loaded (SF bug 1721820)
+	* column sorting persistence (SF bug 1481717) incl. dynamic sorting
+	* able to sort on any column of the matrix
+
+2007-05-18  Gilles Dumortier <dgil at ieee dot org>
+	* Fill Grid pane with quote historical data
+	* get currencies from the network : can't when "-d" option is used !
+	* bad display of erase cache dialog box (SF bug 1701785) - implement
+	  iTradeDialog() which use sized_controls package
+	* Some information on wxaddons missing on some Linux distro
+
+2007-05-17  Gilles Dumortier <dgil at ieee dot org>
+	* some code to test column sorting
+
+2007-05-15  Gilles Dumortier <dgil at ieee dot org>
+	* r721 : list of portfolio not sorted (SF bug 1718941)
+	* GBX and GBP currencies (SF bug 1712966)
+	* LSE market : List of Quotes (SETS, SETSmm and SEAQ) (SF bug 1719078)
+	* LSE market : manage Suffix Yahoo ".L" (SF bug 1716177)
+	* yahoo import connector : fix a crash when socket 'reset by peer'
+
+2007-05-14  Gilles Dumortier <dgil at ieee dot org>
+	* -x : experimental code to reduce the refresh time (SF bug 1611122)
+	* Symbol List : Huge Database : Load market on Demand (SF bug 1662171)
+	* Indices not displayed without Isin code (SF bug 1703434)
+
+2007-04-21 Sébastien Renard <Sebastien dot Renard at digitalfox dot org>
+	* Fix bug on proxy authentication and connexion retrying
+
+2007-04-18 Sébastien Renard <Sebastien dot Renard at digitalfox dot org>
+	* Handle HTTP connexion timeout correctly and better error logging
+
+2007-04-16 Sébastien Renard <Sebastien dot Renard at digitalfox dot org>
+	* Better error handling for ITradeConnection (SF bug 1701097)
+
+2007-04-15  Gilles Dumortier <dgil at ieee dot org>
+	* New tarball
+	* Graph View : no access with Swiss and Milan Exchange (SF bug 1701074)
+	* menu->options->login only if there at least one login plugin loaded
+	* UI module to enter proxy and proxy auth parameters (SF bug 1604305)
+
+2007-04-15 Sébastien Renard <Sebastien dot Renard at digitalfox dot org>
+	* New module dedicated to http connection with proxy, proxy
+	  authentication and keepalive support (SF bug 1604305)
+
+2007-04-14  Gilles Dumortier <dgil at ieee dot org>
+	* Indice Display : no currency / no trading (SF bug 1700652)
+	* List of quotes : Plugin : Swiss Market (SF bug 1700345)
+
+2007-04-14  Michel Legrand <m_leg at users dot sourceforge dot net>
+	* Italian market : list of quotes (quotes.MILAN EXCHANGE.txt file)
+	* Typo in registering live services !
+
+2007-04-13  Gilles Dumortier <dgil at ieee dot org>
+	* New tarball
+	* Indice Display : Issue with Yahoo (SF bug 1700243) - escape ^ code
+	* split list storage in sub-list per market (part of SF bug 1662171)
+	* Update the short term roadmap for v0.4.6
+	* Add/Modify a symbol in the symbol list : manage correctly the place
+	* Value Error : Invalid literal... when change view (SF bug 1689687)
+	* Main Market :: Indicator (SF bug 1473385)
+	* Euronext live connector : handle indices correctly
+	* Yahoo live connector : time refresh correctly
+	* Add Italian market (yahoo connector)
+
+2007-04-11  Sébastien Renard <Sebastien dot Renard at digitalfox dot org>
+	* Performance patch for quote list sorting
+
+2007-04-10  Gilles Dumortier <dgil at ieee dot org>
+	* Euronext live connector broken for all markets other than PARIS (SF
+          bug 1695109) - datacenter URL has moved
+	* Apply Patch from Sébastien Renard (Slackware linux 11)
+	* Images : have a specific package (SF bug 1695259)
+
+2007-04-06  Gilles Dumortier <dgil at ieee dot org>
+	* Update some information on /images package
+	* Start looking into TA-LIB integration
+
+2007-04-05  Gilles Dumortier <dgil at ieee dot org>
+	* Script for : Images : have a specific package (SF bug 1695259)
+	* Add Currencies : Canadian Dollar and Switzerland Francs
+	* Add Toronto and Switzerland exchanges (TSE, TSX, SWISS EXCHANGE)
+
+2007-02-23  Michel Legrand <m_leg at users dot sourceforge dot net>
+	* More logo for EURONEXT PARIS quotes - COOL !
+
+2007-02-2x  Gilles Dumortier <dgil at ieee dot org>
+	* Fix a regression introduced by "Dirty flag : suppress it (SF bug
+	  1665541)" -> main window size/position was not saved correcly at
+	  closing time
+
+2007-02-21  Gilles Dumortier <dgil at ieee dot org>
+	* Dirty flag : suppress it (SF bug 1665541)
+	* Stops view : Add a quote in other main market (SF bug 1664690)
+	* Sell/Buy from the matrix screen (SF bug 1454553)
+	* Start working on brokers / fees back-end
+	* remove itrade_wxmatrix module (replaced by wxpanes/wxbook)
+	* Quote View : Icon placement + Info auto-placement (SF bug 1616047)
+	* Live View : Decision Information (SF bug 1625267)
+
+2007-02-20  Gilles Dumortier <dgil at ieee dot org>
+	* Start implement Live View : Decision Information (SF bug 1625267)
+	* Matrix View : display a mark for traded quotes (SF bug 1660985)
+	* Term period and Risk level per line : properties of the portfolio
+	* View Stops : do not display portfolio information for a quote not in
+	  the portfolio !
+	* View Stops : be able to add a quote not in the matrix
+	* Barchart plugin : a request per letter - otherwise, some symbols are
+	  missing (like CSCO)
+	* Check software release for upgrading (SF bug 1647466)
+	* Euronext plugin : URL to import historical data was changed
+	* Euronext plugin : URL to get IdInstrument was changed
+	* Move symbols lists to specific /symbols folder (on going work to have
+	  symbols lists storage per market)
+	* Euronext plugin : update the URL to download symbols lists
+	  Also, modify internal code of the plugin to be more dynamic in front
+          of the format for the returned data
+
+2007-02-18  Gilles Dumortier <dgil at ieee dot org>
+	* New tarball
+	* Quotes selection : sort by name (SF bug 1562293)
+	* Portfolios selection : sort by name (SF bug 1562293)
+	* Operation Edit: sort operation type + better display
+	* Operation View: filter by year not displayed (SF bug 1626233)
+	* Portfolio : edit the default VAT (SF bug 1474568)
+
+2007-02-17  Gilles Dumortier <dgil at ieee dot org>
+	* Empty id/passwd : do not try to log to service
+	* Switch to Notebook Experimental Feature (SF bug 1651970)
+	* r571(-x): Change Portfolio : don't stay on last view (SF bug 1657836)
+	* r560(-x): Change language : update twice (SF bug 1653525)
+	* Operation View: Order by date and not by day (SF bug 1611501)
+	* Rewrote itrade_wxoperations forms using iTradeSizedDialog
+	* Rewrote itrade_wxportfolio forms using iTradeSizedDialog
+	* Switch to wxPython 2.8.x - (2.6.x is not supported anymore because of
+	  specific new features we will use - like SizedControls)
+
+2007-02-12  Gilles Dumortier <dgil at ieee dot org>
+	* Fortuneo plugin : handle redirection (302) - but connector still not
+          working because of new scheme under investigation
+
+2007-02-11  Gilles Dumortier <dgil at ieee dot org>
+	* Switch to matplotlib 0.90.x
+
+2007-02-10  Gilles Dumortier <dgil at ieee dot org>
+	* Split forum : French vs English
+
+2007-02-09  Gilles Dumortier <dgil at ieee dot org>
+	* Stops View : some words are not translated (SF bug 1653527)
+	* r560 (-x) : Caching menu :Can't erase History... (SF bug 1656130)
+	* Popup Matrix-Portfolio view : Inversion operations (SF bug 1655908)
+
+2007-02-06  Michel Legrand <m_leg at users dot sourceforge dot net>
+	* More Portuguese translations
+
+2007-02-04  Gilles Dumortier <dgil at ieee dot org>
+	* new tarball
+	* r556 (-x) Money management-Attribute Error (SF bug 1651923)
+	* Finish add/remove/edit stops (SF bug 1302894)
+	* Operations screen : use the NumCtrl object
+	* UnicodeDecodeError when click on News (SF bug 1651029)
+
+2007-02-03  Gilles Dumortier <dgil at ieee dot org>
+	* Working on add/remove/edit stops (SF bug 1302894)
+
+2007-02-01  Gilles Dumortier <dgil at ieee dot org>
+	* New tarball
+
+2007-01-31  Gilles Dumortier <dgil at ieee dot org>
+	* convert from iso-8859-1 to unicode *.messages.txt during reading
+	* Lang was not correctly set for the Tabs (-x mode)
+	* Open new file : live connector not correct (SF bug 1644602)
+	* MessageBox use user local, not itrade current locale (SF bug 1646074)
+	* Finish MessageDialog conversion to HTMLDialog
+
+2007-01-30  Gilles Dumortier <dgil at ieee dot org>
+	* Add functions to encapsulate Information, Error and YesNo Boxes
+
+2007-01-29  Gilles Dumortier <dgil at ieee dot org>
+	* Link to the forum (SF bug 1647465)
+	* Toolbar not updated after language change (SF bug 1645596)
+	* r509: can't see another graph when first view opened (SF bug 1646846)
+	* more on preview and printing information
+	* r509 (-x) : Performance View : Scrollbar inactive (SF bug 1644135)
+	* Better About Box (SF bug 1612813)
+
+2007-01-28  Gilles Dumortier <dgil at ieee dot org>
+	* Graph View : add a print command (SF bug 1645949)
+	* more code to preview and print something
+
+2007-01-27  Gilles Dumortier <dgil at ieee dot org>
+	* new module for printing panels (itrade_wxprint.py)
+
+2007-01-24  Gilles Dumortier <dgil at ieee dot org>
+	* new tarball
+	* r504 (-x) : Change Tabs order (Quotes first, then Portfolio)
+	* r504 (-x) : new index are always in french (SF bug 1643662)
+	* r504 (-x) : Old portfolio's name in main view (SF bug 1643660)
+	* r504 (-x) : can't add a quote in different currency (SF bug 1643654)
+	* Start working on Quote View : Manage Raw Data (SF bug 1643577)
+
+2007-01-23  Gilles Dumortier <dgil at ieee dot org>
+	* Start working on Indicators Back-End (SF bug 1608292). Add new module
+	  itrade_indicators.py to define generic behaviour
+	* Use wxNotebook for Matrix (SF bug 1290903)
+
+2007-01-22  Gilles Dumortier <dgil at ieee dot org>
+	* Some typo on some information files
+	* new tarball
+	* Finish : Live connection : Switch from/to Differed (SF bug 1607288)
+	* Verbose mode (SF bug 1641482)
+
+2007-01-21  Gilles Dumortier <dgil at ieee dot org>
+	* Live connection : Switch from/to Differed (SF bug 1607288)
+	* new tarball
+	* Be sure iTrade still working correctly with wxPython 2.6 - unicode
+	* Attempt to fix "Error while opening Suivi/Opérations" under linux
+          (SF bug 1595171)
+	* Extensions Infrastructure (SF bug 1631835)
+
+2007-01-14  Elmo Mäntynen <elmo13 at jippii dot fi>
+	* Handling of unicode objects in CSV.write()
+
+2007-01-07  Gilles Dumortier <dgil at ieee dot org>
+	* Fix a crash with FCP FR0010086520 (note: only abcbourse is able to
+	  import historic data and live data for this quote)
+	* v0.4.6 Nausicaa2 vs v0.4.8 Nausicaa2 (need one more 0.4.x release)
+	* Alternext Amsterdam Market no present (SF bug 1629435)
+	* add -nopsyco command line option
+	* use psyco library if installed
+
+2007-01-05  Gilles Dumortier <dgil at ieee dot org>
+	* better project information (HACKING, RELEASE, ...)
+	* Fix KeyError during importing (SF bug 1628463)
+	* Fix NamedError when using --quote or --ticker option
+
+2007-01-04  Peter Mills <peter_m_mills at bigpond dot com>
+	* Add module for ASX - Australian Stock Exchange
+
+2007-01-02  Gilles Dumortier <dgil at ieee dot org>
+	* login just after userinfo has been changed (avoid software restart)
+
+2007-01-01  Gilles Dumortier <dgil at ieee dot org>
+	* Add value in differed mode and change live connector (SF bug 1613230)
+	* automatically log to live broker services (if required)
+	* all versions : crash starting during importation (SF bug 1625731)
+	* Delete a portfolio (first file of the list) (SF bug 1612175)
+	* Backport from v0.4.5 : remove deprecated warning from wxPython
+
+2006-12-31  Gilles Dumortier <dgil at ieee dot org>
+	* Add itrade_wxlogin.py to enter username/password for brokers login
+	* Change (c) to 2004-2007 on every file
+	* Add itrade_login.py and itrade_login_fortuneo.py modules to log to a
+	  broker service. missing UI to enter username/password
+	* Update data/closed.txt and data/srd.txt (SF bug 1622981)
+
+2006-12-31  Elmo Mäntynen <elmo13 at jippii dot fi>
+	* The selected version of wx is the lowest accepted version
+
+2006-12-16  Michel Legrand <m_leg at users dot sourceforge dot net>
+	* Cac40 icons with border
+
+2006-12-14  Michel Legrand <m_leg at users dot sourceforge dot net>
+	* Cac40 matrix
+	* Cac40 icons
+
+2006-12-14  Gilles Dumortier <dgil at ieee dot org>
+	* Quote View : Icon reference <ticker>-<market>.<ext> (SF bug 1616019)
+	* Quote view : icon should also support .PNG (SF bug 1615945)
+
+2006-12-13  Gilles Dumortier <dgil at ieee dot org>
+	* Display 'Manual Refresh' when Auto Refresh is Off
+	* Prepare website to switch to 0.4.5 official release
+	* Be sure to select the latest wxPython release
+
+2006-12-12  Gilles Dumortier <dgil at ieee dot org>
+	* Disable menu for "not implemented" features (SF bug 1613536)
+	* wxPython 2.8 : non-regression testing (SF bug 1614304)
+	* Money Management : HTML generated page use iso-8859-1 charset
+	* News : Boursorama News provider was buggy (SF bug 1612349)
+	* News : saving the cache with non ASCII char (SF bug 1613121) / UTF8
+	* Fix list of portfolio files when using a specific usrdata/ folder
+
+===============================================================================
+
+2006-12-09  Gilles Dumortier <dgil at ieee dot org>
+	* Prepare 0.4.5 official release
+		SVN tag : ITRADE_0_4_5_NAUSICAA_TAG
+		SVN branch : ITRADE_0_4_5_NAUSICAA_BRANCH
+
+2006-12-08  Gilles Dumortier <dgil at ieee dot org>
+	* As requested by Sourceforge, migrate website to the new subversion :
+		https://itrade.svn.sourceforge.net/svnroot/itrade
+	  old URL access still working (think to "relocate" your source to the
+	  new URL above).
+
+2006-12-07  Gilles Dumortier <dgil at ieee dot org>
+	* No previous historic but volume : IndexError (SF bug 1609473)
+	* Crash starting with empty /usrdata folder (SF bug 1609893)
+	* --user (or -u) command line to select specific usrdata folder
+		i.e.: python itrade.py --user usrdata.dev
+	* usrdata/ and usrdata.dev/ cleanup
+	* New module itrade_vat.py for VAT back-end management
+
+2006-12-04  Gilles Dumortier <dgil at ieee dot org>
+	* Graph view : draw horizontal/vertical lines (SF bug 1393834)
+	* Prepare 0.4.5 official release
+
+2006-12-03  Gilles Dumortier <dgil at ieee dot org>
+	* Stochastic Indicator (formula still bogus)
+	* RSI Indicator (SF bug 1361988)
+	* EURONEXT Connector : start of day (SF bug 1604308)
+	* Be able again to change the live connector for a quote (regression)
+	* rename usrdata/quotes.txt to usrdata/usrquotes.txt
+	* Graph view : bad cursor management (SF bug 1607568)
+
+2006-12-02  Gilles Dumortier <dgil at ieee dot org>
+	* Indices "PAR": Historic problems with 3 quotes (SF bug 1604005)
+	* Graph View : CAC40 Indice : Crash (SF bug 1604310)
+	* Graph view : line before first quote date (SF bug 1601162)
+	* Be sure usrdata/live.txt can have multiple lines - only the first one
+	  is used to read the security cookie
+	* Default configuration is to force usage of Differed Time connectors
+	* Live connection : switch mechanism from/to differed (SF bug 1607288)
+	* Commit a cookie for the Live Connector
+
+2006-11-26  Gilles Dumortier <dgil at ieee dot org>
+	* Euronext Connector : InstrumentID should be cached (SF bug 1599154)
+	* Indices "PAR" :KeyError "CSA_VOL_JOUR" (SF bug 1602220)
+	* Add Portuguese and Deutch support in the software (deutch translation
+	not yet available).
+
+2006-11-26  Michel Legrand <m_leg at users dot sourceforge dot net>
+	* Indices "US" : false tickers in indices.txt (SF bug 1602719)
+	* Some updates in places.txt (better Fortuneo plugin live support)
+
+2006-11-24  Michel Legrand <m_leg at users dot sourceforge dot net>
+	* Translation to portuguese !
+	Collaboration of Catherine Pedrosa and Guilherme (guigui for friends)
+	which has translated “iTrade” into Portuguese Version. Some words will
+	be surely to check during the use.
+
+2006-11-23  Gilles Dumortier <dgil at ieee dot org>
+	* Option to remove cache file (SF bug 1386537)
+	* suppress some useless traces in the console
+	* us.messages.txt : fix some text (SF bug 1601477)
+
+2006-11-21  Gilles Dumortier <dgil at ieee dot org>
+	Generate a tarball for michel - check Download section in SourceForge
+	* Python error in view graph when no historic data (SF bug 1599651)
+	* Trades : better calculation when no quote
+	* Yahoo connector : be sure volume > 0 (SF bug 1600016)
+
+2006-11-19  Gilles Dumortier <dgil at ieee dot org>
+	* Yahoo connector was buggy (missing some data from one full year)
+	* Package : SVN revision number (SF bug 1599315)
+	* switch to yahoo connector to import euronext historic data
+	* data/yahoo_tickers.txt to map some symbols between euronext and yahoo
+
+2006-11-18  Gilles Dumortier <dgil at ieee dot org>
+	* add an experimental commande line --unicode to start with unicode
+	  version of wxPython
+	* Graph View : minor issues on display
+	* Graph view : date display is garbage (SF bug 1598697)
+
+2006-11-17  Gilles Dumortier <dgil at ieee dot org>
+	* Partially implement Graph : longer periods (SF bug 1598302)
+	* Graph view implementation is better and more stable - we have a
+	  better back-end to continue developments on the graphic toolbox !
+	* Switch to numpy.array representation (SF bug 1597190)
+
+2006-11-15  Gilles Dumortier <dgil at ieee dot org>
+	* Missing some Over picture text (SF bug 1595163)
+	* Euronext Brussels Market : value error (SF bug 1596477)
+
+2006-11-12  Gilles Dumortier <dgil at ieee dot org>
+	* Add a value: can't select it by isin and ticker (SF bug 1591336) in
+	  lowercase
+	* Add new menu in toolbar --> Options (SF bug 1594194)
+
+2006-11-11  Gilles Dumortier <dgil at ieee dot org>
+	* Portfolio management : not all trades values (SF bug 1594183)
+	* Nyse Market : error with special tickers (SF bug 1593243)
+	* Amex/Nyse Markets : Invalid literal for float():N/A (SF bug 1594249)
+
+2006-11-09  Gilles Dumortier <dgil at ieee dot org>
+	* Nyse Market : error with special tickers (SF bug 1593243)
+
+2006-11-08  Gilles Dumortier <dgil at ieee dot org>
+	* Start working on the Graphic Tools ...
+	* valueError Brussels Libre Market (SF bug 1592266)
+	* Select/List Quote : invalid icon (SF bug 1592758)
+	* wxPython 2.7 : icons look bad in the toolbars (SF bug 1586180)
+	* Add a value: no possible when sorted (SF bug 1591293)
+	* Value error: invalid literal for long() (SF bug 1592003)
+
+2006-11-05  Gilles Dumortier <dgil at ieee dot org>
+	* Quotes.txt - missing Indices & Trackers for Euronext (SF bug 1590916)
+	* Select Quote : bad select item (SF bug  1590074)
+	* Euronext quotes - display only Euronext Paris !? (SF bug 1589626)
+		key : <ISINorTICKER>.<EXCHANGE>.<PLACE>
+	* Marche Libre - ValueError (SF bug 1590367)
+
+2006-11-03  Gilles Dumortier <dgil at ieee dot org>
+	* "official" tarball for testing
+	* Backend WXAgg -> WX (better perf + remove unicode dependancy)
+	* Specific connector for deffered prices (SF bug 1589922)
+	* Download EURONEXT list of quotes : use the MEP (SF bug 1589626)
+
+2006-11-02  Gilles Dumortier <dgil at ieee dot org>
+	* Experimental Binary Package : 8 to 9 M bytes (SF bug 1477443)
+	* Property View : should be independent (SF bug 1589102)
+	* Fix a bug when a quote has more than 1 property to save
+
+Merge back branch ITRADE_0_4_5_new_quote_reference :
+	2006-11-02:
+	* Quote View:Properties Panel:List of live plugins (SF bug 1560067)
+	* Quote View:Properties Panel:List of import plugins (SF bug 1560066)
+	* Euronext livedata (differed 15 min) plugin (SF bug 1497570)
+	* Euronext requires an IdInstrument (isin not enough). Special Hack !
+	  NB: also, found a way to differenciate place. For example L'OREAL
+	  (OR) have two IdInstrument for the same isin : one for PARis and
+	  one for AMSterdam. Use the place information to discriminate.
+	2006-11-01:
+	* Euronext historic data import plugin (SF bug 1497570)
+	* Rewrite part of the connectors management
+	2006-10-31:
+	* Euronext importing list : some quote are bogus (SF bug 1588092)
+	* Manage User / System list of quotes
+	* Add a quote in a user quotes.txt (SF bug 1410683)
+	* Clear list(s) of quotes (SF bug 1587735)
+	2006-10-30:
+	* ISIN or TICKER ? (SF bug 1587117)
+	* import OTCBB & LSE historic data + live (SF bug 1587345)
+	* List of Quotes : no refresh after Importation (SF bug 1563518)
+	* Can't select a quote without ISIN (SF bug 1585677)
+	* Bad state for a US quote (SF bug 1585657)
+	2006-10-29:
+	* assertionError (SF bug 1579983)
+	* Marché Libre : Bruxelles / Paris (SF bug 1586749)
+	* Alternext : not access view graph (SF bug 1586254)
+	* Matrix view : can't delete quote (SF bug 1586260)
+	2006-10-28:
+	* Fix to better handle old matrix format !
+	2006-10-27:
+	* Try to resolve : Key ambiguity (still) (SF bug 1585649)
+	* Operations and Stops Views seems to work properly with new reference
+	  mechanism
+	2006-10-26:
+	* Data Importation, Data Refresh and Matrix View seems to work properly
+	  with the new reference mechanism
+	* List of quotes from barchart (AMEX,OTC,OTCBB,NASDAQ) (SF bug 1504294)
+	* new file : PLUGINS (SF bug 1584735)
+
+2006-11-01  Gilles Dumortier <dgil at ieee dot org>
+	* Quote View : Properties Panel : Implement Import (SF bug 1392037)
+	* Quote View : Properties Panel : Implement Export (SF bug 1392036)
+
+2006-10-31  Gilles Dumortier <dgil at ieee dot org>
+        * some merge on quote properties (country,place and currency display)
+
+2006-10-30  Gilles Dumortier <dgil at ieee dot org>
+	* Matrix view : "Points Pivots" information (SF bug 1448784)
+
+2006-10-29  Gilles Dumortier <dgil at ieee dot org>
+	* assertionError (SF bug 1579983)
+	* Alternext : not access view graph (SF bug 1586254)
+
+2006-10-28  Gilles Dumortier <dgil at ieee dot org>
+	* Can't remove a file (SF bug 1586418)
+
+2006-10-26  Gilles Dumortier <dgil at ieee dot org>
+	* Graph : display in-use period (SF bug 1339926)
+	* view live : not access with RINV (SF bug 1567054)
+
+2006-10-24  Gilles Dumortier <dgil at ieee dot org>
+	* quotes.txt : error in a NYSE quote (SF bug 1561805) : filter name by
+	  removing any ';' character
+
+2006-10-21  Gilles Dumortier <dgil at ieee dot org>
+	* Memory problem loading many portolios (SF bug 1565374)
+
+2006-10-20  Gilles Dumortier <dgil at ieee dot org>
+	* Convert to using the wx namespace (SF bug 1500964)
+	* migrate to wxPython 2.7.x (SF bug 1581494) - not working yet
+
+2006-09-22  Gilles Dumortier <dgil at ieee dot org>
+	* Another fix on SF bug 1557368 (another KeyError)
+	* Live : remove traces in CONSOLE (better perf)
+
+2006-09-20  Gilles Dumortier <dgil at ieee dot org>
+	* create a specific branch to follow development on new quote
+	  referencing mechanism (see SF bug 1525716)
+	  branch name : ITRADE_0_4_5_new_quote_reference
+
+2006-09-13  Gilles Dumortier <dgil at ieee dot org>
+	* Live : invalid clock display (SF bug 1557680)
+	* Live : bad indication "Disconnected" (SF bug 1549599)
+	* Live : live -2 or 0 instead of ATP / MX  (SF bug 1557631)
+	* Live : Live: CMP can be empty !  (SF bug 1557629)
+
+2006-09-13  Michel Legrand <m_leg at users dot sourceforge dot net>
+	* Live: Updated data/places.txt file
+
+2006-09-12  Gilles Dumortier <dgil at ieee dot org>
+	* Live : FMP Buy/Sell is inversed  (SF bug 1557356)
+	* Live : exception because Notebook can be limited (SF bug 1557368)
+	* Live : freeze before Euronext opening (SF bug 1552404 Patch1)
+
+2006-09-0x  Michel Legrand <m_leg at users dot sourceforge dot net>
+	* check every quote (euronext,alternext) with the new live connector !
+
+2006-08-3x  Gilles Dumortier <dgil at ieee dot org>
+	* Many fixes around the new Euronext live connector
+
+2006-08-20  Gilles Dumortier <dgil at ieee dot org>
+	* Live connector for Euronext market is working again !
+
+2006-07-17  Gilles Dumortier <dgil at ieee dot org>
+	* switch from numarray to numpy (0.9.8)
+
+2006-06-12  Gilles Dumortier <dgil at ieee dot org>
+	* Filter the NYSE symbol list (CUSIP better management)
+	* List of quotes : add filter by market (SF bug 1504296)
+	* List of quotes : MMI to update the list (SF bug 1504485)
+	* Import list plugin : NYSE (part of SF bug 1504294)
+
+2006-06-11  Gilles Dumortier <dgil at ieee dot org>
+	* Import list plugin : Euronext (SF bug 1485056)
+
+2006-06-04  Gilles Dumortier <dgil at ieee dot org>
+	* AbcBourse plugin : display correct time of trades (SF bug 1498701)
+	* Yahoo plugin : display correct time of trades (SF bug 1498701)
+
+2006-06-04  Gilles Dumortier <dgil at ieee dot org>
+	* Yahoo plugin : ask and bid (SF bug 1497343). Activate live for yahoo
+	* News : scan / clear button definitions (SF bug 1480417)
+	* main currency in portfolio editing : use a combobox also
+	* NYSE and LSE + filter market name using combobox (SF bug 1473358)
+	* itrade_import.py was not working anymore ?! typo ?!
+
+2006-06-03  Gilles Dumortier <dgil at ieee dot org>
+	* Context Help in wxDialog (SF bug 1410679)
+
+2006-06-01  Gilles Dumortier <dgil at ieee dot org>
+	* currency front-end (SF bug 1470719)
+	* currency back-end (SF bug 1470718)
+	* number of shares display : use also separator (i.e. SF bug 1497092)
+
+2006-05-29  Gilles Dumortier <dgil at ieee dot org>
+	* Volume display : use separator (SF bug 1497092)
+	* move list stuff from itrade_wxquote.py to itrade_wxlistquote.py
+
+2006-05-28  Gilles Dumortier <dgil at ieee dot org>
+	* Portfolio : remove a value : some issues on matrix (SF bug 1458054)
+	* Quote view : bad display (time/hours) (SF bug 1424415)
+	* Remove CVS $id$ in source file (SF bug 1496343)
+	* Import plugin : number of years (SF bug 1485060)
+	* continue to work on v0.4.5 release :-)
+
+===============================================================================
+2006-05-28  Gilles Dumortier <dgil at ieee dot org>
+
+	OFFICIAL release v0.4.2
+                SVN tag : ITRADE_0_4_2_COCA2_TAG
+		SVN branch : ITRADE_0_4_2_COCA2_BRANCH
+
+	* live connector is deprecated because link has been securized :-(
+
+2006-05-11  Gilles Dumortier <dgil at ieee dot org>
+	* Portfolio evaluation : Divide by Zero (SF bug 1486241)
+	* Add public registration for a quote (SF bug 1486243) (privately then
+	  publicly listed on the market or exchange shares from private to
+	  public company). Tax side will be implemented at later time ...
+
+2006-05-08  Gilles Dumortier <dgil at ieee dot org>
+	* Add a way to configure live website ... edit usrdata/live.txt file
+
+2006-05-04  Gilles Dumortier <dgil at ieee dot org>
+	* 23:19 -> Test Update / Commit / Export  <-
+	* 22:50 -> Migrate from CVS to Subversion <-
+
+	* New snapshot ! Matrix & Operations could have some regression
+	  introduced by new mechanisms (order by, live backup, scalable fonts)
+
+	* Fix a strange bug with colorTrend() when prevtrade does not exist
+	* Live backup using direct IP
+	* Operation View : add a Toolbar (SF bug 1477442)
+	* Operation view : scalable Fonts (SF bug 1481623)
+	* Operation View : Order by clicking the column title (SF bug 1481379)
+	* Quote View : market open, no trade : no time display (SF bug 1481645)
+	* Operation View : window default size was too small (SF bug 1481448)
+
+2006-05-03  Gilles Dumortier <dgil at ieee dot org>
+	* Matrix View : Order By by clicking the column title (SF bug 1481113)
+	* Matrix View : Fonts (SF bug 1462241) : use adhoc mechanism
+
+2006-05-02  Gilles Dumortier <dgil at ieee dot org>
+	* snapshot
+	* Google RSS News in French (SF bug 1291758) : the module is working !
+	* Matrix view : add 'Property' popup (SF bug 1441531)
+	* Matrix view : add 'Live' popup (SF bug 1480201)
+	* Fix a regression (introduced by SF bug 1471641) : matrix was not auto
+	  refreshing !
+
+2006-05-01  Gilles Dumortier <dgil at ieee dot org>
+	* Matrix:Portfolio: split quote line between SRD/DIR (SF bug 1452219)
+
+2006-04-22  Gilles Dumortier <dgil at ieee dot org>
+	* New snapshot to test Currencies specific screen / refresh
+
+2006-04-2x  Gilles Dumortier <dgil at ieee dot org>
+	* Back-end : VAT information (SF bug 1467552)
+	* Main Window : Add Popup also in main menu (SF bug 1448292)
+	* UK Yahoo URL for currencies is not reliable ; switch to US one !
+	* Quote View : default window size too small (SF bug 1462925)
+	* Revert back partially on Detect live update is dead (SF bug 1395602)
+	* new website content : Installation procedure / User Guide
+
+2006-04-21  Gilles Dumortier <dgil at ieee dot org>
+	* some code for the Currency front-end, incl. live update
+	* start working on Main market / Main Indicators concept
+
+2006-04-1x  Gilles Dumortier <dgil at ieee dot org>
+	* fix a regression from SF bug 1471832 correction (previous trade) !
+	* currency fetcher test inuse indicator to refresh currencies
+	* display currency in quote view
+	* Detect live update is dead (erroneous timing) (SF bug 1395602)
+	* Market partially closed : some quotes bad managed (SF bug 1471832)
+	* Matrix View : color of value line (Euronext closed) (SF bug 1458827)
+	* Live update : bad behaviour when switching view (SF bug 1471641)
+	* Currency back-end (itrade_currency.py new module) (SF bug 1470718)
+
+2006-04-0x  Gilles Dumortier <dgil at ieee dot org>
+	* Select a quote : bad behaviour with selection (SF bug 1462256)
+	* Quote without ticker ref : do not import (SF bug 1462629)
+	* Money Management : Division by Zero (SF bug 1462561)
+	* Finalise transfert of shares from Credit to Cash (SRD liquidation)
+	* Transaction editing : use DatePickerCtrl (SF bug 1462563)
+	* migrate to wxPython 2.6.3.0
+	* thin line separator in the matrix view (SF bug 1462239)
+
+2006-03-2x  Gilles Dumortier <dgil at ieee dot org>
+	* Migrate to feedparser.py version 4.1
+
+2006-03-1x  Gilles Dumortier <dgil at ieee dot org>
+	* Add 'SRD delivery' transaction
+	* Operation screen : no automatic refresh when modifying an existing
+	  operation. Others use cases (delete,add) are working (SF bug 1451577)
+	* Matrix View : Portfolio : insert blank line (SF bug 1452186)
+	* Operation screen : sell more shares (SF bug 1451574)
+	* Start to work on Money Management : Performance : SRD information
+	* Matrix view: Live refresh broken when switching view (SF bug 1451066)
+	* force no connection (-d parameter) : UNKNOWN state ! (SF bug 1451322)
+	* Matrix view : Portfolio View : add day% column (SF bug 1448288)
+	* Money Management : Performance : Bogus % (SF bug 1449391)
+
+2006-03-11  Gilles Dumortier <dgil at ieee dot org>
+	* start working on v0.4.5 release :-)
+
+===============================================================================
+
+	OFFICIAL release v0.4
+		CVS tag : ITRADE_0_4_COCA
+		CVS branch : ITRADE_0_4_COCA_BRANCH
+
+2006-03-11  Gilles Dumortier <dgil at ieee dot org>
+	* Publish Release Candidate 4 on the website
+	* many bugs on Portfolio value calculation (SF bug 1447799)
+	* better wording : operation value includes the taxes amount
+	* Liquidation : number of shares is invalid (SF bug 1447792)
+	* iTrade bad state after usage (SF bug 1447310) : bad values in usrdata
+
+2006-02-26  Gilles Dumortier <dgil at ieee dot org>
+	* Publish Release Candidate 3 on the website
+
+2006-02-25  Gilles Dumortier <dgil at ieee dot org>
+	* more fixes on Matrix list : add and remove quotes (SF bug 1320115)
+	* more fixes on market closed
+
+2006-02-21  Gilles Dumortier <dgil at ieee dot org>
+	* start fixing the 'new quote / no data' issues (SF bug 1435685)
+
+2006-02-20  Gilles Dumortier <dgil at ieee dot org>
+	* News : after cache deletion, scan error (SF bug 1435414)
+	* Money Management : Performance : need localisation (SF bug 1435375)
+	* Add itrade_market.py module with market and currencies management
+	* Publish Release Candidate 2 on the website
+	* detachment should readjust unitary price per share (SF bug 1435356)
+	* Changing quote in the view, live is not working (SF bug 1435284)
+	* fortuneo plugin : 'S' status means SUSPEND (SF bug 1435046)
+	* Quote panel : bad display when no trade (SF bug 1435041)
+
+2006-02-19  Gilles Dumortier <dgil at ieee dot org>
+	* Add currency to portfolio (SF bug 1434444)
+
+2006-02-18  Gilles Dumortier <dgil at ieee dot org>
+	* handle correctly operation filters in operation view. Also, add an
+	  SRD filter (SF bug 1434099)
+	* handle correctly negative Taxable Amounts (SF bug 1434057)
+	* Special dividend : shares attribution (SF bug 1434061)
+
+2006-02-18 Start Fixing 0.4 Release Candidat
+
+2006-02-12  Gilles Dumortier <dgil at ieee dot org>
+	* implement minimalistic back-end for alerting ; validate this b-e with
+	  SRD alerts + preview of alerts display screen
+	* Perf % should display in matrix even market closed (SF bug 1430010)
+
+2006-02-10  Gilles Dumortier <dgil at ieee dot org>
+	* recently, boursorama news failed to work ... move to httplib
+	* Thanks to D. Evan Kiefer (dekiefer) : PyAssertionError running iTrade
+	  on Running X-11, python 2.4, wxPython 2.6.1, MacOS X (SF bug 1428158)
+
+2006-01-28  Gilles Dumortier <dgil at ieee dot org>
+	* Startup : need a splash screen (SF bug 1303057)
+	* Get clock from abcbourse connector
+	* wxLive: french localisation (SF bug 1416791)
+	* Get real clock from yahoo connector (SF bug 1416708)
+	* better clock display (background) in the live screen
+	* nv_percent() bad calculation (SF bug 1416695)
+	* currentNotebook() not found with specific connector (SF bug 1416693)
+	* Yahoo connector : needs to use adjusted quotes (SF bug 1386544)
+	* (c) twice in indicator view (SF bug 1415613)
+
+2006-01-2x  Gilles Dumortier <dgil at ieee dot org>
+	* add market/connector indicator in the matrix (SF bug )
+	* cache management for the list of news (SF bug 1404086)
+	* Add a live notebook/trades panel to the Quote View (SF bug 1404081)
+	* Threaded live update for the matrix (SF bug 1415268)
+	* itrade_wxlive.py new module to display live notebook/trades on quote
+	* Update quotes.txt with more quotes (SF bug 1404083)
+	* Fix some bugs for Portfolio management (SF bug 1367442)
+	* Bad Exception if default portfolio does not exist (SF bug 1411032)
+	* push 2006 roadmap in ./TODO file and website
+
+2006-01-1x  Gilles Dumortier <dgil at ieee dot org>
+	* update copyright year + version
+	* add portfolio Process&UI create/props/delete/rename (SF bug 1367442)
+	* split wxportolio module : wxportfolio + wxoperations
+	* principal market for a portfolio
+	* fix nv_preclose() (SF bug 1406719)
+	* implement a cache for quote's news with scan/clear (SF bug 1404086)
+
+2006-01-0x  Gilles Dumortier <dgil at ieee dot org>
+	* fix a bug on operation::name() during modification of the operation
+	* add '-d' command line option to use the software disconnected from
+	  the network
+	* live connector : implements notebook, status, clock, ...
+	* more SRD goodies (+liquidation, + many bugs, +portfolio calculation)
+	* Portfolio display : add a 'last 90 days' filter period
+	* fiscal years (SF bug 1394441)
+	* more on wxVersion to select ANSI version of wxPython (SF bug 1394992)
+	* live connector : be sure market is open + detect serveur down
+	* Yahoo live update was bugged on datation (SF bug 1396261)
+	* Use wxVersion to select ANSI version of wxPython (SF bug 1394992)
+	  (Thanks to oliver2983 for helping me found the solution on linux
+	   GTK2 environment)
+
+2005-12-31  Gilles Dumortier <dgil at ieee dot org>
+	* special 'reveillon' tarball. Enjoy :-)
+	* some connectors can return data even when market is closed
+	  (SF bug 1394408)
+
+2005-12-29  Gilles Dumortier <dgil at ieee dot org>
+	* Few hours later : ***real-time connector*** is working !
+	  NOTA: untested when market is closed - will certainly failed
+	* start looking at a streaming protocol ... (see ethereal/*)
+
+2005-12-28  Gilles Dumortier <dgil at ieee dot org>
+	* load/save properties on a quote (name,ticker,period,risk,market,...)
+	* put a registry for live/import plugins
+	* property panel in quote view : display some info + reload data
+	* Stop win/loss not displaying (SF bug 1391787)
+
+2005-12-27  Gilles Dumortier <dgil at ieee dot org>
+	* Switch from locale to market detection (SF bug 1387453)
+	* Save/Restore window position (SF bug 1387566)
+	* better link management (prepare code to save/restore window position)
+	* use specific directory from config (images, snapshots). Create the
+	  directory if it does not exists at startup
+	* Use ISIN in <portfolio>.operations.txt (SF bug 1391127)
+
+2005-12-26  Gilles Dumortier <dgil at ieee dot org>
+	* website updated : tarball available !
+	* data/closed.txt : the market will be closed for business in 2006
+	* data/srd.txt : Deferred settlement order : last negociation day
+
+2005-12-2x  Gilles Dumortier <dgil at ieee dot org>
+	* Use ISIN in <portfolio>.operations.txt (SF bug 1391127)
+	* Graph View : better filter the mouse movment
+	* Quote view : cleanup the display
+	* Quote view : add a toolbar with manual/on-demand refresh action
+
+2005-12-1x  Gilles Dumortier <dgil at ieee dot org>
+	* setLocale() handle a bug in strptime when switching lang
+	* re-arch/re-implement part of news -> news aggregator object
+
+2005-12-0x  Gilles Dumortier <dgil at ieee dot org>
+	* autorefresh quotes configuration
+	* re-arch/re-implement part of operation management / Introduce SRD
+	* basic fees calculation rules (load/save/apply on portfolio)
+	* locale problem (SF bug 1371244)
+
+2005-11-28  Gilles Dumortier <dgil at ieee dot org>
+	* Add configuration for NL quotes (like AXALTO)
+	* Performance : display portfolio name and account (SF bug 1367691)
+	* do_release.sh : specific script to speed up the release process
+
+2005-11-27  Gilles Dumortier <dgil at ieee dot org>
+	* Too much computation (SF bug 1367606)
+	* sorting column on quote selector : bitmap use transparency
+	* start coding the Portfolio management ...
+	* Website use better advertising and donation information : collecting
+	  fund is critical for the long term vision of iTrade
+	* start working on v0.4 release :-)
+
+===============================================================================
+
+2005-11-27  Gilles Dumortier <dgil at ieee dot org>
+	* update website with version 0.3 information
+
+	OFFICIAL release v0.3
+		CVS tag : ITRADE_0_3_POPOTKA
+
+2005-11-2x  Gilles Dumortier <dgil at ieee dot org>
+	* Closing the window by system menu or icon : manage the dirty save !
+	* Toolbar : Save, Refresh, ..., Exit (SF bug 1294388)
+	* Better separator for the Toolbars
+	* Volume bar color should be based on previous closes not on
+	  opens/closes(SF bug 1366981)
+	* OVB should be long integer (SF bug 1366931)
+	* again, fix a bug in matplotlib on volume_overlay. See volume_overlay2
+	* Bug entering taxes for an operation (SF bug 1317455)
+	* update to matplotlib 0.85
+
+2005-11-1x  Gilles Dumortier <dgil at ieee dot org>
+	* Porfolio evaluation screen : missing calculation (SF bug 1361173)
+	* volume display format should handle negative value (OVB)
+	* money management specific panel to display kind of textual portfolio
+	  evaluation information
+	* expenses and cashables computation are year based
+	* fix a computation bug on cash % and quote % of portfolio
+	* news and alerts screen skeleton
+	* money management screen skeleton
+
+2005-11-06  Gilles Dumortier <dgil at ieee dot org>
+	* better icons for zoom in/out
+	* Performance computation (SF bug 1320091)
+	* Display Balance in portfolio view (SF bug 1287520)
+
+2005-11-05  Gilles Dumortier <dgil at ieee dot org>
+	* Too much save() during importation (SF bug 1327835)
+	* polish quote's logo display (SF bug 1294391)
+	* OVB yticks should be labeled from pos 0
+
+2005-11-01  Gilles Dumortier <dgil at ieee dot org>
+	* Display logo of the quote (only if the file exists in images/ folder
+	  and format is compatible - tested only with .gif) (SF bug 1294391)
+	* locale date (portfolio, transaction editing, view quote, ...)
+	* XPopup : date format to polish (SF bug 1339709)
+	* plot_day_summary2() :
+		vertical line width was too large
+		colorup and colordown were inversed
+	  matplotlib SF bug 1337704 updated (no answer yet)
+	* Chart : OHLC Bars or Lines or Candlestick
+	* Quote view : add quote selector (SF bug 1344878)
+	* Transaction : last month filter (SF bug 1344874)
+	* Select Quote : filter list (SF bug 1344872)
+	* finish localisation (fr/us) (SF bug 1329580)
+	* Select Quote : default focus (SF bug 1344871)
+	* Polish the main view menu
+
+2005-10-31  Gilles Dumortier <dgil at ieee dot org>
+	* add some options on the chart
+	* add Bollinger bands
+	* add Volume indicators (VMA15 and OVB)
+
+2005-10-30  Gilles Dumortier <dgil at ieee dot org>
+	* Quote view : remove ticker window (more space for charting)
+	* Cursor badly handled (SF bug 1342847)
+	* Graph Volume must be overlayed (SF bug 1342838)
+	* Ticker must be UPPERCASE (SF bug 1342828)
+	* Add linecolor to XYPopup (SF bug 1339705)
+	* Fix bug with quantities ! (SF bug 1339948)
+
+2005-10-27  Gilles Dumortier <dgil at ieee dot org>
+	* Pan and zoom - sync the subplots (SF bug 1338217) through a new
+	  dedicated toolbar
+	* Polish the graph cursor
+
+2005-10-26  Gilles Dumortier <dgil at ieee dot org>
+	* new module itrade_wxlabel.py
+	* Remove full path in info() and debug() information (SF bug 1334791)
+	* Finish preliminary works around wxFrame mixin (SF bug 1329581)
+	* Use new NavigationToolbar2 and be sure to manage correctly
+	  interaction with the cursor behaviour (SF bug 1338136)
+
+2005-10-25  Gilles Dumortier <dgil at ieee dot org>
+	* myfinance.py is directly unherited from matplotlib.finance.py but :
+		volume_overlay() is working properly
+		better display for candlestick2() including right colors !
+	  send these fixes to matplotlib authors - done: SF bug 1337704
+	* chart display volume and pricing, including mm20, mm50 and mm100
+
+2005-10-24  Gilles Dumortier <dgil at ieee dot org>
+	* add obvious hack to display news from boursorama ; hack will be
+	  removed after RSS Google News working for French :-(
+
+2005-10-22  Gilles Dumortier <dgil at ieee dot org>
+	* partial localisation (FRench/US) (SF bug 1329580) - more to polish
+	* add Fee and Interest transactions on portfolio management
+	* Typo on mixin preventing stuff working on 2.4 python :-(
+
+2005-10-18  Gilles Dumortier <dgil at ieee dot org>
+	* more documentation on version 0.3 content and release notes
+	* add --lang command line option (part of SF bug 1329580)
+	* add wxFrame mixin to provide common code to all iTrade's wxFrame
+	* then iTradeMainWindow use this new wxFrame mixin (SF bug 1329581)
+
+2005-10-17  Gilles Dumortier <dgil at ieee dot org>
+	* Yahoo connector for live and importation (SF bug 1306490)
+	* Progress bar during refresh only if matrix has focus (SF bug 1328755)
+	* better refresh view - ongoing work ... (SF bug 1306493)
+	* kind of Toolbar - ongoing work ... (SF bug 1294388)
+
+2005-10-16  Gilles Dumortier <dgil at ieee dot org>
+	* Missing a quote in matrix (NTS) (SF bug 1323604)
+	* Can't delete nor modify without item in list (SF bug 1320111)
+
+2005-10-15  Gilles Dumortier <dgil at ieee dot org>
+	* Progress bar during importation / refresh (SF bug 1310702)
+	* prepare setup.py file for py2exe (SF bug 1327372)
+
+2005-10-13  Gilles Dumortier <dgil at ieee dot org>
+	* Operation screen must not be reentrant (SF bug 1320096)
+	* Operation screen : icon was missing (SF bug 1324632)
+
+2005-10-10  Gilles Dumortier <dgil at ieee dot org>
+	* Remove useless column in operation screen (SF bug 1323245)
+	* better font to display list (SF bug 1312607)
+
+2005-10-09  Gilles Dumortier <dgil at ieee dot org>
+	* split cache/ (for quotes) and data/ (for system informations)
+	* start itrade_local.py module for message localisation
+	* add disclaimer section in both LICENSE and website
+	* fix SF bug 1302900 : No user data files at startup
+
+2005-10-02  Gilles Dumortier <dgil at ieee dot org>
+	* migrate to Python 2.4, wxPython 2.6, NumArray 1.3.3, Matplotlib 0.84
+	* start working on v0.3 release :-)
+
+===============================================================================
+
+2005-10-02  Gilles Dumortier <dgil at ieee dot org>
+	* modifying date of operation : -1 shift in month ! (SF bug 1310537)
+	* fix the bad sorting in operation screen (SF bug 1286780)
+	* save operations.txt was buggy (SF bug 1310534)
+	* save operations in file after modification(s)
+
+	OFFICIAL release v0.2
+		CVS tag : ITRADE_0_2_ANTIPLONA
+
+2005-10-01  Gilles Dumortier <dgil at ieee dot org>
+	* Prefix user data files with the portfolio name. v0.2 will still be
+	  mono-portfolio but we want to be sure to migration to multi-portfolio
+	  will be easy
+
+2005-09-24  Gilles Dumortier <dgil at ieee dot org>
+	* use matplotlib.candlestick to display real graph data !
+	* stop view : right color and some icons (to be changed)
+	* save option with dialogbox at exit if something need to be saved
+	* implement add/remove quote to/from the matrix
+	* popup menu correctly implemented on matrix (SF bug 1298502)
+
+2005-09-18  Gilles Dumortier <dgil at ieee dot org>
+	* display intraday chart for US market values
+	* do not refresh on timer the matrix when market is closed
+	* Indicators view no more empty when market is closed (SF bug 1294392)
+	* fix mm20/mm50/m100 calculation formula (validated using extern soft)
+	* Support menu links to Support website (SF bug 1294395)
+
+2005-09-17  Gilles Dumortier <dgil at ieee dot org>
+	* website launched !
+
+2005-09-1x  Gilles Dumortier <dgil at ieee dot org>
+	* mm20/mm50/mm100 indicators in the matrix
+	* patch for abcbourse.com quotes file :-( (SF bug 1291713)
+	* Too much refresh/save of quotes (specific condition) (SF bug 1288365)
+	* news / intraday display in quote view (preview of)
+	* install universal feed parser to read RSS google news
+	* Quote view : display HTML page inside a Notebook (test code)
+	* better opening display in the matrix (SF bug 1289438)
+
+2005-09-10  Gilles Dumortier <dgil at ieee dot org>
+	* market closed use market name
+	* 'code complete' feature add/del/edit an operation - need to debug ...
+	* fix the default date in the date picker
+	* add an icon (should not be the definitive one)
+	* better display / refresh process in the matrix
+	* quotes data are correctly saved after a partial live importation
+
+2005-09-0x  Gilles Dumortier <dgil at ieee dot org>
+	* loss/win stops display in matrix
+
+2005-08-2x  Gilles Dumortier <dgil at ieee dot org>
+	* screen selection of quote - minor enhancements to support entering
+	  isin, ticker or name in the Text Control.
+	* wxDatation module with a datePicker object
+	* screen to edit/add/delete operation
+	* finish display options on itrade_wxportfolio.py
+
+2005-08-19  Gilles Dumortier <dgil at ieee dot org>
+	* itrade_wxportfolio.py is able to display list of all the operations
+	  on a portfolio. more works to be done to add, suppress and modify
+	  the operations themselves.
+	* Many additions on the Operation() object to display information like
+	  type, description, sign, ...
+
+2005-08-18  Gilles Dumortier <dgil at ieee dot org>
+	* add performance calcultation on quotes
+
+2005-08-17  Gilles Dumortier <dgil at ieee dot org>
+	* Add indexation system (trade can be referenced by index or by date)
+
+2005-08-16  Gilles Dumortier <dgil at ieee dot org>
+	* start working on v0.2 release :-)
+
+===============================================================================
+
+2005-08-16  Gilles Dumortier <dgil at ieee dot org>
+	* preliminary management of expenses on operations
+	* more display of portfolio information in the main window
+
+	OFFICIAL release v0.1
+		CVS tag : ITRADE_0_1_PANDORA
+
+2005-08-15  Gilles Dumortier <dgil at ieee dot org>
+	* better investment calculation : -e option in the command line thought
+	* fix an issue with liveupdate not really working !
+	* add basic taxes calculation
+
+2005-07-30  Gilles Dumortier <dgil at ieee dot org>
+	* add detachment of coupon management in the portfolio object
+	* speed-up start time by loading trades only when necessary
+	* add dirty flag to save trades only when necessary
+	* speed-up update from internet avoiding importing on closed date
+	* very very preliminary code for basic candle management
+
+2005-04-23  Gilles Dumortier <dgil at ieee dot org>
+	* add check mark management in menu items (Quote,Portfolio)
+
+2005-04-17  Gilles Dumortier <dgil at ieee dot org>
+	* itrade_wxportfolio new module - nothing usefull at this time :-(
+	* calculate kind of investment value
+
+2005-04-16  Gilles Dumortier <dgil at ieee dot org>
+	* matrix and quote live information look good ! display also correctly
+	  when information is not available
+	* fix a bug on Trade dictionnary access by date (NB: the dictionnary
+	  structure used to store trade data is very temporary - a better
+	  design is under development)
+	* fix numerous minor bugs in specfic network conditions
+
+2005-04-15  Gilles Dumortier <dgil at ieee dot org>
+	* More live information in quote window / screen looking better :-)
+	* better code to handle live information in a quote (numerical vs
+	  string value)
+	* working on auto importation / update of the displayed quote(s)
+
+2005-04-09  Gilles Dumortier <dgil at ieee dot org>
+	* implement iTradeQuoteWindow using layout management
+	* display basic information on the quote (open and close values)
+
+2005-04-03  Gilles Dumortier <dgil at ieee dot org>
+	* select_iTradeQuote() open a dialog box to select a quote from the
+	  known quotes. Columns can be sort on isin, ticker or name
+
+2005-04-02  Gilles Dumortier <dgil at ieee dot org>
+	* About box - a way to test embedding of some HTML content in a view
+	  (will be used to display information of a quote)
+
+2005-03-28  Gilles Dumortier <dgil at ieee dot org>
+	* use a data cache on liveupdate_abcbourse
+	  NB: abcbourse live update is very slow and not very accurare (long
+	  delay between the data and the realtime data - more than 20 minuts !,
+ 	  missing quotes, ...)
+	  We have to found a better solution (... extracting data from HTML
+	  web site should give us better data - around 15 minuts delay only)
+
+2005-03-27  Gilles Dumortier <dgil at ieee dot org>
+	* main window display a preliminary view of the trading matrix, both
+	  portfolio and quotes view
+	* basic manual and auto refresh of view content
+	* menu to toggle between portfolio and quotes kind of view
+	* double-clicking a value open a preliminary view of the selected quote
+
+2005-03-25  Gilles Dumortier <dgil at ieee dot org>
+	* more information in the TODO file / should be our roadmap in coming
+	  months ... so use more formalism to list the tasks to be done
+	* liveupdate the matrix - demo code in itrade_matrix.py is working !
+	* importation from file is working
+	* importation from internet (abcbourse.com) is working
+	* evaluation of portfolio with live update of quotes is working
+	* install and test matplotlib
+
+2005-03-23  Gilles Dumortier <dgil at ieee dot org>
+	* use the monitored / traded concept to provide a trade matrix object
+	  (portfolio + any quote the user want to monitor)
+	* import porfolio or matrix using abcbourse importation module
+	* link above feature with the commande line (-i option)
+
+2005-03-22  Gilles Dumortier <dgil at ieee dot org>
+	* wxPython main window (only about and exit menu entries :-) )
+
+2005-03-20  Gilles Dumortier <dgil at ieee dot org>
+	* more generic version of the abcbourse importation module
+	* add the concept of monitored / traded for each quote
+
+2005-03-17  Gilles Dumortier <dgil at ieee dot org>
+	* itrade main module
+	  for now, only sample command line management
+	* new itrade_import_abcbourse module
+	  for now, only sample code - working! - to get some quotes data
+
+2005-02-22  Gilles Dumortier <dgil at ieee dot org>
+	* complete list of quotes (isin;name;sicovam;ticker)
+	* be sure not to save empty quote files
+	* introduce 'ticker' concept
+
+2005-02-20  Gilles Dumortier <dgil at ieee dot org>
+	* add Portfolio and Operation objects
+
+2005-01-14  Gilles Dumortier <dgil at ieee dot org>
+	* add Calendar and Datation objects
+	* use Datation object for Trading
+
+2005-01-08  Gilles Dumortier <dgil at ieee dot org>
+	* start a TODO file
+	* Initiate the project from scratch
+	* first look at Trades and Quotes
+	* first look at persistent data, including importation/exportation
+

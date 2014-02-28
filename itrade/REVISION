@@ -1,0 +1,2779 @@
+------------------------------------------------------------------------
+r836 | dgil | 2008-01-03 09:53:45 +0100 (Thu, 03 Jan 2008) | 1 line
+
+Ready to release an official source pack.
+------------------------------------------------------------------------
+r835 | dgil | 2008-01-03 09:08:27 +0100 (Thu, 03 Jan 2008) | 1 line
+
+Release Candidat Nausicaa2 0.4.6
+------------------------------------------------------------------------
+r834 | dgil | 2008-01-03 08:32:13 +0100 (Thu, 03 Jan 2008) | 2 lines
+
+View Quote : Graph : Refresh Broken (SF bug 1665668) : Fix a lot of issues on the refresh mechanism when launching the window, changing the page or changing the quote.
+
+------------------------------------------------------------------------
+r833 | dgil | 2008-01-02 21:47:33 +0100 (Wed, 02 Jan 2008) | 1 line
+
+Graph View : Unit Price line (SF bug 1647463) + all objects are correctly drawn first time then after
+------------------------------------------------------------------------
+r832 | m_leg | 2008-01-02 15:26:49 +0100 (Wed, 02 Jan 2008) | 1 line
+
+trading calendar for MILAN EXCHANGE
+------------------------------------------------------------------------
+r831 | dgil | 2008-01-02 13:53:27 +0100 (Wed, 02 Jan 2008) | 1 line
+
+Properties view - Reinit / Valid buttons on connectors have effect but item in combo is not correctly selected (SF bug 1724346)
+------------------------------------------------------------------------
+r830 | dgil | 2008-01-02 13:18:07 +0100 (Wed, 02 Jan 2008) | 3 lines
+
+Indicator : display the indice market and clock (previous was the portfolio default market and the connector latest clock)
+
+
+------------------------------------------------------------------------
+r829 | dgil | 2008-01-02 13:17:40 +0100 (Wed, 02 Jan 2008) | 2 lines
+
+Convert from connector timezone (for example, finance.yahoo.com is EST) to quote place timezone (for example, GTO is CET)
+
+------------------------------------------------------------------------
+r828 | dgil | 2008-01-01 23:40:23 +0100 (Tue, 01 Jan 2008) | 2 lines
+
+Filter the proxy server and auth (SF bug 1861624), connection Timeout is configurable (SF bug 1861328)
+
+------------------------------------------------------------------------
+r827 | dgil | 2007-12-31 12:34:27 +0100 (Mon, 31 Dec 2007) | 1 line
+
+New tarball (r825) (0.4.6 Release Candidat)
+------------------------------------------------------------------------
+r826 | dgil | 2007-12-31 12:28:41 +0100 (Mon, 31 Dec 2007) | 1 line
+
+Cleanup a message
+------------------------------------------------------------------------
+r825 | dgil | 2007-12-31 12:16:34 +0100 (Mon, 31 Dec 2007) | 4 lines
+
+(michel) Patch and new module (itrade_quotes_xetra.py) for FRANKFURT EXCHANGE
+(michel) Fix PT / ES in symbols files (like indices.txt)
+(dgil) List of quotes view : display the number of quotes filtered in list
+
+------------------------------------------------------------------------
+r824 | dgil | 2007-12-31 11:21:31 +0100 (Mon, 31 Dec 2007) | 1 line
+
+Typo
+------------------------------------------------------------------------
+r823 | dgil | 2007-12-31 11:20:57 +0100 (Mon, 31 Dec 2007) | 1 line
+
+closed.txt updated for main markets (euronext, nyse, ...)
+------------------------------------------------------------------------
+r822 | m_leg | 2007-12-29 22:27:20 +0100 (Sat, 29 Dec 2007) | 1 line
+
+Replace Iso code ES by PT and SP by ES
+------------------------------------------------------------------------
+r821 | dgil | 2007-12-29 10:21:03 +0100 (Sat, 29 Dec 2007) | 1 line
+
+update ./INSTALL file with some forum feedbacks on Linux & OSX
+------------------------------------------------------------------------
+r820 | dgil | 2007-12-29 00:55:16 +0100 (Sat, 29 Dec 2007) | 1 line
+
+wrong selection after choosing a new sorting column (SF bug 1827058)
+------------------------------------------------------------------------
+r819 | dgil | 2007-12-28 20:28:33 +0100 (Fri, 28 Dec 2007) | 1 line
+
+Less digit for PRU except in the indicators pane
+------------------------------------------------------------------------
+r818 | dgil | 2007-12-28 20:07:43 +0100 (Fri, 28 Dec 2007) | 1 line
+
+Operation Editor : display portfolio currency symbol (SF bug 1651954)
+------------------------------------------------------------------------
+r817 | dgil | 2007-12-28 19:53:36 +0100 (Fri, 28 Dec 2007) | 1 line
+
+Crash clicking an indice (SF bug 1859459)
+------------------------------------------------------------------------
+r816 | dgil | 2007-12-28 19:36:16 +0100 (Fri, 28 Dec 2007) | 1 line
+
+do not convert money from N/A ! (SF bug 1859824)
+------------------------------------------------------------------------
+r815 | dgil | 2007-12-28 19:15:39 +0100 (Fri, 28 Dec 2007) | 1 line
+
+ping notification
+------------------------------------------------------------------------
+r814 | dgil | 2007-12-28 18:53:46 +0100 (Fri, 28 Dec 2007) | 1 line
+
+Irish stock exchange - list of quotes (SF bug 1859781)
+------------------------------------------------------------------------
+r813 | dgil | 2007-12-28 18:07:48 +0100 (Fri, 28 Dec 2007) | 1 line
+
+Euronext Plugins : do not use idInstrument anymore (SF bug 1859791)
+------------------------------------------------------------------------
+r812 | dgil | 2007-12-28 09:35:21 +0100 (Fri, 28 Dec 2007) | 1 line
+
+Update roadmap.
+------------------------------------------------------------------------
+r811 | dgil | 2007-12-28 09:30:54 +0100 (Fri, 28 Dec 2007) | 1 line
+
+Massive copyright update
+------------------------------------------------------------------------
+r810 | dgil | 2007-12-28 08:45:17 +0100 (Fri, 28 Dec 2007) | 1 line
+
+r783 new problems with indices (%, hour) (SF bug 1778487)
+------------------------------------------------------------------------
+r809 | dgil | 2007-12-28 08:44:34 +0100 (Fri, 28 Dec 2007) | 1 line
+
+r783 new problems with indices (%, hour) (SF bug 1778487)
+------------------------------------------------------------------------
+r808 | dgil | 2007-12-28 01:05:33 +0100 (Fri, 28 Dec 2007) | 1 line
+
+merge Patch from Michel for IRISH et MADRID EXCHANGE
+------------------------------------------------------------------------
+r807 | dgil | 2007-12-28 00:44:09 +0100 (Fri, 28 Dec 2007) | 1 line
+
+Small,normal and big text don't work correctly (SF bug 1765421)
+------------------------------------------------------------------------
+r806 | dgil | 2007-12-28 00:35:04 +0100 (Fri, 28 Dec 2007) | 1 line
+
+Restore color management on indice display
+------------------------------------------------------------------------
+r805 | dgil | 2007-12-28 00:21:44 +0100 (Fri, 28 Dec 2007) | 1 line
+
+(Forum) Column UPP in main matrix (SF bug 1795386)
+------------------------------------------------------------------------
+r804 | dgil | 2007-12-27 23:39:27 +0100 (Thu, 27 Dec 2007) | 1 line
+
+Just to be sure.
+------------------------------------------------------------------------
+r803 | dgil | 2007-12-27 23:13:07 +0100 (Thu, 27 Dec 2007) | 1 line
+
+error with last version Matplotlib matplotlib-0.91.1 (SF bug 1847410)
+------------------------------------------------------------------------
+r802 | dgil | 2007-12-27 20:16:39 +0100 (Thu, 27 Dec 2007) | 1 line
+
+Yahoo / Recent values : no historical prices (SF bug 1842520)
+------------------------------------------------------------------------
+r801 | dgil | 2007-12-27 20:10:39 +0100 (Thu, 27 Dec 2007) | 1 line
+
+EURONEXT list of quotes not working anymore (SF bug 1829243)
+------------------------------------------------------------------------
+r800 | dgil | 2007-12-27 19:43:40 +0100 (Thu, 27 Dec 2007) | 1 line
+
+Import error with LSE SETS , LSE SETSmm (SF bug 1847378)
+------------------------------------------------------------------------
+r799 | dgil | 2007-12-27 19:31:14 +0100 (Thu, 27 Dec 2007) | 1 line
+
+NYSE list of quotes not working anymore (SF bug 1851229)
+------------------------------------------------------------------------
+r798 | dgil | 2007-12-27 13:36:48 +0100 (Thu, 27 Dec 2007) | 1 line
+
+fix an issue for volume==0 in yahoo import connector
+------------------------------------------------------------------------
+r797 | dgil | 2007-12-27 13:33:24 +0100 (Thu, 27 Dec 2007) | 1 line
+
+Typo
+------------------------------------------------------------------------
+r796 | m_leg | 2007-12-18 16:24:13 +0100 (Tue, 18 Dec 2007) | 1 line
+
+last IPOs december 2007
+------------------------------------------------------------------------
+r795 | dgil | 2007-12-07 08:03:26 +0100 (Fri, 07 Dec 2007) | 1 line
+
+Missing log
+------------------------------------------------------------------------
+r794 | m_leg | 2007-11-03 21:25:10 +0100 (Sat, 03 Nov 2007) | 1 line
+
+last IPOs
+------------------------------------------------------------------------
+r793 | m_leg | 2007-10-01 16:41:53 +0200 (Mon, 01 Oct 2007) | 1 line
+
+update manually Milan Stock Exchange (http://www.borsaitaliana.it/bitApp/quotes.bit?target=SearchQuotes&grp=iniziale&param=A)
+------------------------------------------------------------------------
+r792 | jmpacquet | 2007-09-30 15:27:57 +0200 (Sun, 30 Sep 2007) | 1 line
+
+Patch for bug#1804076: changed StaticText into TextCtrl to allow background color update
+------------------------------------------------------------------------
+r791 | dgil | 2007-09-29 10:48:22 +0200 (Sat, 29 Sep 2007) | 1 line
+
+Info+Typo
+------------------------------------------------------------------------
+r790 | jmpacquet | 2007-09-28 11:06:19 +0200 (Fri, 28 Sep 2007) | 1 line
+
+Patch for bug#1795105
+------------------------------------------------------------------------
+r789 | jmpacquet | 2007-09-21 23:00:45 +0200 (Fri, 21 Sep 2007) | 1 line
+
+Add installation from sources on linux-slackware
+------------------------------------------------------------------------
+r788 | dgil | 2007-09-14 11:07:09 +0200 (Fri, 14 Sep 2007) | 1 line
+
+Remove also bmp images from source
+------------------------------------------------------------------------
+r787 | dgil | 2007-09-14 10:52:58 +0200 (Fri, 14 Sep 2007) | 1 line
+
+Missing log
+------------------------------------------------------------------------
+r786 | dgil | 2007-09-14 10:48:48 +0200 (Fri, 14 Sep 2007) | 5 lines
+
+Commit many Linux patches from Jean-Marie Pacquet :
+ - fix "TypeError: category LC_ALL is not supported" (SF bug 1759799)
+ - fix "File/New does not work" (SF bug 1793957)
+ - fix "Small display bugs" (SF bug 1793964)
+
+------------------------------------------------------------------------
+r785 | m_leg | 2007-08-30 20:54:40 +0200 (Thu, 30 Aug 2007) | 1 line
+
+somme new logos 2007-08-30
+------------------------------------------------------------------------
+r784 | m_leg | 2007-08-25 18:47:37 +0200 (Sat, 25 Aug 2007) | 1 line
+
+
+------------------------------------------------------------------------
+r783 | dgil | 2007-08-20 22:58:36 +0200 (Mon, 20 Aug 2007) | 1 line
+
+[Fedora] Can't add new quote in matrix (SF bug 1774326)
+------------------------------------------------------------------------
+r782 | dgil | 2007-07-25 20:25:04 +0200 (Wed, 25 Jul 2007) | 1 line
+
+Add some help about changing a connector for a quote
+------------------------------------------------------------------------
+r781 | dgil | 2007-07-24 20:28:08 +0200 (Tue, 24 Jul 2007) | 1 line
+
+Little notice about XLRD crash for older release.
+------------------------------------------------------------------------
+r780 | dgil | 2007-07-24 19:02:09 +0200 (Tue, 24 Jul 2007) | 1 line
+
+new tarball
+------------------------------------------------------------------------
+r779 | dgil | 2007-07-24 18:43:38 +0200 (Tue, 24 Jul 2007) | 2 lines
+
+List of Quotes : display live/import columns + add a way to edit properties of a quote (manage the properties.txt global file) (SF bug 1724531)
+
+------------------------------------------------------------------------
+r778 | dgil | 2007-07-24 17:57:12 +0200 (Tue, 24 Jul 2007) | 1 line
+
+Add live and import columns in the List Of Quotes screen (partial coding of SF bug 1724531)
+------------------------------------------------------------------------
+r777 | dgil | 2007-07-24 17:41:33 +0200 (Tue, 24 Jul 2007) | 2 lines
+
+LSE update list : Python error :crash software : fixed by installing the latest version of XLRD (v0.6.1 final) (SF bug 1722504)
+
+------------------------------------------------------------------------
+r776 | dgil | 2007-07-24 17:37:29 +0200 (Tue, 24 Jul 2007) | 1 line
+
+LSE quote list : handle new file format correctly
+------------------------------------------------------------------------
+r775 | dgil | 2007-07-24 17:12:00 +0200 (Tue, 24 Jul 2007) | 1 line
+
+LSE quote list : handle new file format correctly
+------------------------------------------------------------------------
+r774 | dgil | 2007-07-24 16:53:58 +0200 (Tue, 24 Jul 2007) | 3 lines
+
+- Fix strange properties.txt file content: badly overloading indices to ABCBourse deprecated connector :-( ... explain why CAC 40 percent was not displaying (SF bug 1722499)
+- Add trace at startup to inspect connector overloading for a quote
+
+------------------------------------------------------------------------
+r773 | dgil | 2007-07-23 14:39:04 +0200 (Mon, 23 Jul 2007) | 1 line
+
+Typo
+------------------------------------------------------------------------
+r772 | dgil | 2007-07-22 18:56:11 +0200 (Sun, 22 Jul 2007) | 1 line
+
+Switch to GPL version 3
+------------------------------------------------------------------------
+r771 | dgil | 2007-07-22 18:53:55 +0200 (Sun, 22 Jul 2007) | 1 line
+
+Switch to GPL version 3
+------------------------------------------------------------------------
+r770 | dgil | 2007-07-22 13:23:23 +0200 (Sun, 22 Jul 2007) | 1 line
+
+fix a lookupKey() issue + add confirmation to remove a quote
+------------------------------------------------------------------------
+r769 | dgil | 2007-07-22 12:43:44 +0200 (Sun, 22 Jul 2007) | 1 line
+
+Main view reduced - freeze when close with mouse (SF bug 1746651)
+------------------------------------------------------------------------
+r768 | dgil | 2007-07-22 11:58:18 +0200 (Sun, 22 Jul 2007) | 1 line
+
+fix "itrade." prefix for svn
+------------------------------------------------------------------------
+r767 | dgil | 2007-07-22 11:46:59 +0200 (Sun, 22 Jul 2007) | 1 line
+
+fix a missing refresh() method in the graph panel
+------------------------------------------------------------------------
+r766 | dgil | 2007-07-22 11:41:35 +0200 (Sun, 22 Jul 2007) | 1 line
+
+yahoo url issue
+------------------------------------------------------------------------
+r765 | dgil | 2007-07-22 11:03:40 +0200 (Sun, 22 Jul 2007) | 1 line
+
+Euronext import : new format for volume separator ('\xA0' vs ',')
+------------------------------------------------------------------------
+r764 | dgil | 2007-07-22 11:02:44 +0200 (Sun, 22 Jul 2007) | 1 line
+
+Merge fix for ASX market : skip header lines (PeterMills> 2007-06-22)
+------------------------------------------------------------------------
+r763 | m_leg | 2007-07-19 16:58:12 +0200 (Thu, 19 Jul 2007) | 1 line
+
+new logos 19/07/2007
+------------------------------------------------------------------------
+r762 | m_leg | 2007-06-24 19:57:14 +0200 (Sun, 24 Jun 2007) | 1 line
+
+Recent LOGOS EURONEXT IPOs 20/06/2007
+------------------------------------------------------------------------
+r761 | dgil | 2007-05-28 16:56:43 +0200 (Mon, 28 May 2007) | 1 line
+
+Fix a KeyError in itrade_wxquote.py, line 1083
+------------------------------------------------------------------------
+r760 | dgil | 2007-05-20 19:54:59 +0200 (Sun, 20 May 2007) | 1 line
+
+Some Info
+------------------------------------------------------------------------
+r759 | dgil | 2007-05-20 19:51:50 +0200 (Sun, 20 May 2007) | 3 lines
+
+- modify barchart plugin to import TORONTO markets
+- change "TSX" and "TSE" to "TORONTO EXCHANGE" and "TORONTO VENTURE"
+
+------------------------------------------------------------------------
+r758 | dgil | 2007-05-20 18:50:36 +0200 (Sun, 20 May 2007) | 1 line
+
+suppress some traces.
+------------------------------------------------------------------------
+r757 | dgil | 2007-05-20 18:44:15 +0200 (Sun, 20 May 2007) | 1 line
+
+Order by %-Autorefresh on: view unstable (SF bug 1722052)
+------------------------------------------------------------------------
+r756 | dgil | 2007-05-20 16:31:01 +0200 (Sun, 20 May 2007) | 1 line
+
+News : UnicodeDecodeError when click on boursorama (SF bug 1651029)
+------------------------------------------------------------------------
+r755 | dgil | 2007-05-20 15:28:15 +0200 (Sun, 20 May 2007) | 1 line
+
+News : Freshness of information (SF 1649267)
+------------------------------------------------------------------------
+r754 | dgil | 2007-05-20 12:32:17 +0200 (Sun, 20 May 2007) | 1 line
+
+Portfolio : Main Market and Currency can't be edited
+------------------------------------------------------------------------
+r753 | dgil | 2007-05-20 12:16:34 +0200 (Sun, 20 May 2007) | 1 line
+
+Indices from US market should not have local market yahoo suffix !
+------------------------------------------------------------------------
+r752 | dgil | 2007-05-20 12:06:22 +0200 (Sun, 20 May 2007) | 2 lines
+
+- Be sure LSE ticker is valid (remove '.' at the end) (SF bug 1719653)
+- Quote view : display Yahoo intraday graph for LSE markets
+------------------------------------------------------------------------
+r751 | dgil | 2007-05-20 11:39:51 +0200 (Sun, 20 May 2007) | 1 line
+
+Some Info
+------------------------------------------------------------------------
+r750 | dgil | 2007-05-20 11:11:42 +0200 (Sun, 20 May 2007) | 1 line
+
+Quotes View - changing quote keep the current page (SF bug 1632171)
+------------------------------------------------------------------------
+r749 | dgil | 2007-05-20 10:15:25 +0200 (Sun, 20 May 2007) | 1 line
+
+Be sure a connector is only once in the property list of connectors
+------------------------------------------------------------------------
+r748 | dgil | 2007-05-20 10:13:20 +0200 (Sun, 20 May 2007) | 1 line
+
+Fix an issue with % on live for some connectors
+------------------------------------------------------------------------
+r747 | dgil | 2007-05-20 09:47:58 +0200 (Sun, 20 May 2007) | 1 line
+
+Connectors should be global properties of the quote (SF bug 1642791)
+------------------------------------------------------------------------
+r746 | dgil | 2007-05-19 23:16:53 +0200 (Sat, 19 May 2007) | 1 line
+
+Fix a refresh problem when changing the quote in the quote view
+------------------------------------------------------------------------
+r745 | dgil | 2007-05-19 23:09:15 +0200 (Sat, 19 May 2007) | 1 line
+
+Fix size of the font for iTradeDialog().
+------------------------------------------------------------------------
+r744 | dgil | 2007-05-19 23:02:36 +0200 (Sat, 19 May 2007) | 1 line
+
+dynamic sorting when required.
+------------------------------------------------------------------------
+r743 | dgil | 2007-05-19 22:41:52 +0200 (Sat, 19 May 2007) | 1 line
+
+Fix an issue with market not loaded (SF bug 1721820)
+------------------------------------------------------------------------
+r742 | dgil | 2007-05-19 20:58:29 +0200 (Sat, 19 May 2007) | 1 line
+
+Indicators view : not access after restart (SF bug 1721766)
+------------------------------------------------------------------------
+r741 | dgil | 2007-05-19 10:21:41 +0200 (Sat, 19 May 2007) | 2 lines
+
+column sorting persistence (SF bug 1481717) - still a problem with static sorting on dynamic column (like volume or percent)
+
+------------------------------------------------------------------------
+r740 | dgil | 2007-05-19 09:55:37 +0200 (Sat, 19 May 2007) | 1 line
+
+able to sort on any column of the matrix
+------------------------------------------------------------------------
+r739 | dgil | 2007-05-19 09:12:15 +0200 (Sat, 19 May 2007) | 1 line
+
+some code to test column sorting
+------------------------------------------------------------------------
+r738 | dgil | 2007-05-18 19:16:08 +0200 (Fri, 18 May 2007) | 1 line
+
+Some code to print a panel - not working yet :-(
+------------------------------------------------------------------------
+r737 | dgil | 2007-05-18 18:47:01 +0200 (Fri, 18 May 2007) | 1 line
+
+Fill Grid pane with quote historical data
+------------------------------------------------------------------------
+r736 | dgil | 2007-05-18 18:32:21 +0200 (Fri, 18 May 2007) | 1 line
+
+get currencies from the network : can't when "-d" option is used !
+------------------------------------------------------------------------
+r735 | dgil | 2007-05-18 18:01:44 +0200 (Fri, 18 May 2007) | 1 line
+
+bad display of erase cache dialog box (SF bug 1701785) - implement iTradeDialog() which use sized_controls package
+------------------------------------------------------------------------
+r734 | dgil | 2007-05-18 09:54:11 +0200 (Fri, 18 May 2007) | 1 line
+
+Some information on wxaddons missing on some Linux distro
+------------------------------------------------------------------------
+r733 | m_leg | 2007-05-16 14:01:14 +0200 (Wed, 16 May 2007) | 1 line
+
+New Alternext logos
+------------------------------------------------------------------------
+r732 | m_leg | 2007-05-16 09:46:14 +0200 (Wed, 16 May 2007) | 1 line
+
+delete LSE tickers with "." at the end of ticker
+------------------------------------------------------------------------
+r731 | m_leg | 2007-05-16 00:18:19 +0200 (Wed, 16 May 2007) | 1 line
+
+Add some tickers LSE market
+------------------------------------------------------------------------
+r730 | dgil | 2007-05-15 22:37:09 +0200 (Tue, 15 May 2007) | 1 line
+
+r721 : list of portfolio not sorted (SF bug 1718941)
+------------------------------------------------------------------------
+r729 | dgil | 2007-05-15 22:32:39 +0200 (Tue, 15 May 2007) | 1 line
+
+GBX and GBP currencies (SF bug 1712966)
+------------------------------------------------------------------------
+r728 | dgil | 2007-05-15 16:30:28 +0200 (Tue, 15 May 2007) | 1 line
+
+LSE market
+------------------------------------------------------------------------
+r727 | dgil | 2007-05-15 12:22:00 +0200 (Tue, 15 May 2007) | 1 line
+
+Be sure the market list is sorted
+------------------------------------------------------------------------
+r726 | dgil | 2007-05-15 12:21:38 +0200 (Tue, 15 May 2007) | 1 line
+
+Use latest revision
+------------------------------------------------------------------------
+r725 | dgil | 2007-05-15 08:29:39 +0200 (Tue, 15 May 2007) | 1 line
+
+more code to support LSE markets : SETS, SETSmm and SEAQ
+------------------------------------------------------------------------
+r724 | dgil | 2007-05-14 23:11:44 +0200 (Mon, 14 May 2007) | 1 line
+
+Use bogus ISIN for index without ISIN :-(
+------------------------------------------------------------------------
+r723 | dgil | 2007-05-14 23:04:38 +0200 (Mon, 14 May 2007) | 1 line
+
+Symbol List : Huge Database : Load market on Demand (SF bug 1662171)
+------------------------------------------------------------------------
+r722 | dgil | 2007-05-14 22:51:25 +0200 (Mon, 14 May 2007) | 1 line
+
+
+------------------------------------------------------------------------
+r721 | dgil | 2007-05-14 20:53:14 +0200 (Mon, 14 May 2007) | 1 line
+
+-x : experimental code to reduce the refresh time (SF bug 1611122)
+------------------------------------------------------------------------
+r720 | dgil | 2007-05-14 17:55:45 +0200 (Mon, 14 May 2007) | 1 line
+
+Symbol List : Huge Database : Load market on Demand (SF bug 1662171)
+------------------------------------------------------------------------
+r719 | dgil | 2007-05-14 13:11:58 +0200 (Mon, 14 May 2007) | 1 line
+
+Indices not displayed without Isin code (SF bug 1703434)
+------------------------------------------------------------------------
+r718 | m_leg | 2007-05-11 22:35:28 +0200 (Fri, 11 May 2007) | 1 line
+
+LSE tickers -> YAHOO tickers
+------------------------------------------------------------------------
+r717 | srenard | 2007-05-07 17:49:27 +0200 (Mon, 07 May 2007) | 1 line
+
+Make boursorama authentication works by manually giving cookies set by javascript
+------------------------------------------------------------------------
+r716 | srenard | 2007-05-06 16:42:39 +0200 (Sun, 06 May 2007) | 3 lines
+
+- Fix cookie handling (but still not working with boursorama...)
+- Fix http POST headers and encoding
+- Fix http redirect
+------------------------------------------------------------------------
+r715 | m_leg | 2007-04-28 18:40:14 +0200 (Sat, 28 Apr 2007) | 1 line
+
+Alternext logos
+------------------------------------------------------------------------
+r714 | m_leg | 2007-04-28 18:31:29 +0200 (Sat, 28 Apr 2007) | 1 line
+
+some logos added
+------------------------------------------------------------------------
+r713 | m_leg | 2007-04-28 17:01:46 +0200 (Sat, 28 Apr 2007) | 1 line
+
+better size 
+------------------------------------------------------------------------
+r712 | m_leg | 2007-04-25 23:00:31 +0200 (Wed, 25 Apr 2007) | 1 line
+
+Amex market ticker;Yahoo ticker
+------------------------------------------------------------------------
+r711 | m_leg | 2007-04-24 18:56:11 +0200 (Tue, 24 Apr 2007) | 1 line
+
+TSX market ticker;Yahoo ticker
+------------------------------------------------------------------------
+r710 | m_leg | 2007-04-24 18:19:15 +0200 (Tue, 24 Apr 2007) | 1 line
+
+market TSE ticker;Yahoo ticker
+------------------------------------------------------------------------
+r709 | srenard | 2007-04-21 16:58:36 +0200 (Sat, 21 Apr 2007) | 1 line
+
+add a setProxy method to allow proxy switching without creating new object connexion (= restart iTrade)
+------------------------------------------------------------------------
+r708 | srenard | 2007-04-21 15:04:28 +0200 (Sat, 21 Apr 2007) | 1 line
+
+Fix bug on proxy authentication and connexion retrying
+------------------------------------------------------------------------
+r707 | m_leg | 2007-04-20 18:33:12 +0200 (Fri, 20 Apr 2007) | 1 line
+
+Toronto Stock Exchange - TSE market
+------------------------------------------------------------------------
+r706 | m_leg | 2007-04-19 16:18:46 +0200 (Thu, 19 Apr 2007) | 1 line
+
+Toronto Stock Exchange - TSX Venture Exchange
+------------------------------------------------------------------------
+r705 | srenard | 2007-04-18 12:11:36 +0200 (Wed, 18 Apr 2007) | 1 line
+
+Handle HTTP connexion timeout correctly and better error logging
+------------------------------------------------------------------------
+r704 | m_leg | 2007-04-17 23:30:07 +0200 (Tue, 17 Apr 2007) | 1 line
+
+some translations
+------------------------------------------------------------------------
+r703 | srenard | 2007-04-16 23:50:27 +0200 (Mon, 16 Apr 2007) | 1 line
+
+Try to reconnect to handle http keepalive timeout (usefull for long peristant connexion like the one to euronext)
+------------------------------------------------------------------------
+r702 | srenard | 2007-04-16 09:38:56 +0200 (Mon, 16 Apr 2007) | 1 line
+
+Better error handling for ItradeConnection (should fix SF bug 1701097)
+------------------------------------------------------------------------
+r701 | srenard | 2007-04-16 09:35:23 +0200 (Mon, 16 Apr 2007) | 1 line
+
+Better error handling for ItradeConnection (should fix SF bug 1701097)
+------------------------------------------------------------------------
+r700 | dgil | 2007-04-15 23:14:48 +0200 (Sun, 15 Apr 2007) | 1 line
+
+
+------------------------------------------------------------------------
+r699 | dgil | 2007-04-15 23:12:51 +0200 (Sun, 15 Apr 2007) | 1 line
+
+New tarball
+------------------------------------------------------------------------
+r698 | dgil | 2007-04-15 23:03:23 +0200 (Sun, 15 Apr 2007) | 1 line
+
+Typo
+------------------------------------------------------------------------
+r697 | dgil | 2007-04-15 22:07:42 +0200 (Sun, 15 Apr 2007) | 1 line
+
+Graph View : no access with Swiss and Milan Exchange (SF bug 1701074)
+------------------------------------------------------------------------
+r696 | dgil | 2007-04-15 21:52:28 +0200 (Sun, 15 Apr 2007) | 1 line
+
+menu->options->login only if there at least one login plugin loaded
+------------------------------------------------------------------------
+r695 | dgil | 2007-04-15 20:30:36 +0200 (Sun, 15 Apr 2007) | 1 line
+
+UI module to enter proxy and proxy auth parameters (SF bug 1604305)
+------------------------------------------------------------------------
+r694 | dgil | 2007-04-15 19:31:04 +0200 (Sun, 15 Apr 2007) | 1 line
+
+Typo
+------------------------------------------------------------------------
+r693 | srenard | 2007-04-15 17:21:52 +0200 (Sun, 15 Apr 2007) | 1 line
+
+fix a thread safe potential bug in itrade_connexion and simplify itrade_connexion API
+------------------------------------------------------------------------
+r692 | srenard | 2007-04-15 15:45:17 +0200 (Sun, 15 Apr 2007) | 1 line
+
+
+------------------------------------------------------------------------
+r691 | srenard | 2007-04-15 15:37:58 +0200 (Sun, 15 Apr 2007) | 1 line
+
+Switch from urllib to itrade_connection
+------------------------------------------------------------------------
+r690 | srenard | 2007-04-15 15:36:23 +0200 (Sun, 15 Apr 2007) | 1 line
+
+new module dedicated to http connection with proxy, proxy authentication and keepalive support
+------------------------------------------------------------------------
+r689 | dgil | 2007-04-14 23:24:23 +0200 (Sat, 14 Apr 2007) | 1 line
+
+Indice Display : no currency / no trading (SF bug 1700652)
+------------------------------------------------------------------------
+r688 | dgil | 2007-04-14 23:09:26 +0200 (Sat, 14 Apr 2007) | 1 line
+
+Indice Display : no currency (SF bug 1700652)
+------------------------------------------------------------------------
+r687 | dgil | 2007-04-14 22:58:55 +0200 (Sat, 14 Apr 2007) | 1 line
+
+List of quotes : Plugin : Swiss Market (SF bug 1700345)
+------------------------------------------------------------------------
+r686 | dgil | 2007-04-14 22:57:08 +0200 (Sat, 14 Apr 2007) | 1 line
+
+List of quotes : Plugin : Swiss Market (SF bug 1700345)
+------------------------------------------------------------------------
+r685 | dgil | 2007-04-14 18:55:12 +0200 (Sat, 14 Apr 2007) | 1 line
+
+Italian market : list of quotes (quotes.MILAN EXCHANGE.txt file) (from michel legrand)
+------------------------------------------------------------------------
+r684 | dgil | 2007-04-14 15:12:01 +0200 (Sat, 14 Apr 2007) | 1 line
+
+Typo in registering live services ! (michel legrand)
+------------------------------------------------------------------------
+r683 | dgil | 2007-04-13 23:26:58 +0200 (Fri, 13 Apr 2007) | 1 line
+
+Better indicator display
+------------------------------------------------------------------------
+r682 | dgil | 2007-04-13 22:43:58 +0200 (Fri, 13 Apr 2007) | 1 line
+
+Update the short term roadmap for v0.4.6
+------------------------------------------------------------------------
+r681 | dgil | 2007-04-13 22:42:43 +0200 (Fri, 13 Apr 2007) | 1 line
+
+New tarball
+------------------------------------------------------------------------
+r680 | dgil | 2007-04-13 22:40:41 +0200 (Fri, 13 Apr 2007) | 1 line
+
+Indice Display : Issue with Yahoo (SF bug 1700243) - escape ^ code
+------------------------------------------------------------------------
+r679 | dgil | 2007-04-13 20:04:47 +0200 (Fri, 13 Apr 2007) | 1 line
+
+split list storage in sub-list per market (part of SF bug 1662171)
+------------------------------------------------------------------------
+r678 | dgil | 2007-04-13 19:50:10 +0200 (Fri, 13 Apr 2007) | 1 line
+
+XSWX, XVTX places for SWISS market
+------------------------------------------------------------------------
+r677 | dgil | 2007-04-13 19:36:58 +0200 (Fri, 13 Apr 2007) | 1 line
+
+Update the short term roadmap for v0.4.6
+------------------------------------------------------------------------
+r676 | dgil | 2007-04-13 19:23:19 +0200 (Fri, 13 Apr 2007) | 1 line
+
+Add/Modify a symbol in the symbol list : manage correctly the place
+------------------------------------------------------------------------
+r675 | dgil | 2007-04-13 19:07:44 +0200 (Fri, 13 Apr 2007) | 1 line
+
+EBS, VTX places for SWISS market
+------------------------------------------------------------------------
+r674 | dgil | 2007-04-13 18:52:19 +0200 (Fri, 13 Apr 2007) | 1 line
+
+Value Error : Invalid literal... when change view (SF bug 1689687)
+------------------------------------------------------------------------
+r673 | dgil | 2007-04-13 15:24:01 +0200 (Fri, 13 Apr 2007) | 1 line
+
+Main Market :: Indicator (SF bug 1473385)
+------------------------------------------------------------------------
+r672 | dgil | 2007-04-13 13:57:45 +0200 (Fri, 13 Apr 2007) | 2 lines
+
+- Move some symbols to new itrade_defs.py module
+- Euronext live connector : handle indices correctly
+------------------------------------------------------------------------
+r671 | dgil | 2007-04-13 11:19:40 +0200 (Fri, 13 Apr 2007) | 1 line
+
+Missing registering for Italian, Toronto and Swiss markets
+------------------------------------------------------------------------
+r670 | dgil | 2007-04-13 10:25:09 +0200 (Fri, 13 Apr 2007) | 1 line
+
+Yahoo connector : time refresh correctly
+------------------------------------------------------------------------
+r669 | dgil | 2007-04-13 10:23:08 +0200 (Fri, 13 Apr 2007) | 1 line
+
+Typo
+------------------------------------------------------------------------
+r668 | dgil | 2007-04-13 09:31:55 +0200 (Fri, 13 Apr 2007) | 1 line
+
+Add Italian market (yahoo connector) - missing list of quotes :-(
+------------------------------------------------------------------------
+r667 | dgil | 2007-04-13 09:30:09 +0200 (Fri, 13 Apr 2007) | 1 line
+
+Add Italian market (yahoo connector) - missing list of quotes :-(
+------------------------------------------------------------------------
+r666 | dgil | 2007-04-11 08:16:10 +0200 (Wed, 11 Apr 2007) | 1 line
+
+From S?\195?\169bastien Renard.
+------------------------------------------------------------------------
+r665 | dgil | 2007-04-11 08:11:35 +0200 (Wed, 11 Apr 2007) | 1 line
+
+Performance patch for quote list sorting (S?\195?\169bastien Renard)
+------------------------------------------------------------------------
+r660 | dgil | 2007-04-10 15:26:41 +0200 (Tue, 10 Apr 2007) | 1 line
+
+More info
+------------------------------------------------------------------------
+r659 | dgil | 2007-04-10 15:20:04 +0200 (Tue, 10 Apr 2007) | 1 line
+
+Testing
+------------------------------------------------------------------------
+r658 | dgil | 2007-04-10 15:18:10 +0200 (Tue, 10 Apr 2007) | 2 lines
+
+ Euronext live connector broken for all markets other than PARIS (SF bug 1695109) - datacenter URL has moved
+
+------------------------------------------------------------------------
+r657 | dgil | 2007-04-10 11:21:08 +0200 (Tue, 10 Apr 2007) | 1 line
+
+Temporary deactivate Fortuneo/Bourso
+------------------------------------------------------------------------
+r656 | dgil | 2007-04-10 11:20:44 +0200 (Tue, 10 Apr 2007) | 1 line
+
+More info
+------------------------------------------------------------------------
+r655 | dgil | 2007-04-10 11:16:28 +0200 (Tue, 10 Apr 2007) | 1 line
+
+Apply Patch from S?\195?\169bastien Renard (Slackware linux 11)
+------------------------------------------------------------------------
+r654 | dgil | 2007-04-10 10:06:41 +0200 (Tue, 10 Apr 2007) | 1 line
+
+Images : have a specific package (SF bug 1695259)
+------------------------------------------------------------------------
+r653 | m_leg | 2007-04-07 00:52:46 +0200 (Sat, 07 Apr 2007) | 1 line
+
+some logos Euronext ABC market
+------------------------------------------------------------------------
+r652 | m_leg | 2007-04-07 00:41:39 +0200 (Sat, 07 Apr 2007) | 1 line
+
+logos Euronext Paris marche libre
+------------------------------------------------------------------------
+r651 | m_leg | 2007-04-07 00:35:36 +0200 (Sat, 07 Apr 2007) | 1 line
+
+logos Euronext Lisbonne
+------------------------------------------------------------------------
+r650 | m_leg | 2007-04-07 00:25:41 +0200 (Sat, 07 Apr 2007) | 1 line
+
+logos Euronext Amsterdam
+------------------------------------------------------------------------
+r649 | m_leg | 2007-04-07 00:20:19 +0200 (Sat, 07 Apr 2007) | 1 line
+
+logos bruxelles marche libre
+------------------------------------------------------------------------
+r648 | m_leg | 2007-04-07 00:06:19 +0200 (Sat, 07 Apr 2007) | 1 line
+
+logos euronext brussels market
+------------------------------------------------------------------------
+r647 | dgil | 2007-04-06 09:27:15 +0200 (Fri, 06 Apr 2007) | 3 lines
+
+- Update some information on /images package
+- Start looking into TA-LIB integration
+
+------------------------------------------------------------------------
+r646 | dgil | 2007-04-06 09:22:39 +0200 (Fri, 06 Apr 2007) | 1 line
+
+More information
+------------------------------------------------------------------------
+r645 | dgil | 2007-04-05 23:24:01 +0200 (Thu, 05 Apr 2007) | 1 line
+
+Script for : Images : have a specific package (SF bug 1695259)
+------------------------------------------------------------------------
+r644 | dgil | 2007-04-05 23:23:23 +0200 (Thu, 05 Apr 2007) | 1 line
+
+Script for : Images : have a specific package (SF bug 1695259)
+------------------------------------------------------------------------
+r643 | dgil | 2007-04-05 22:56:07 +0200 (Thu, 05 Apr 2007) | 1 line
+
+Typo
+------------------------------------------------------------------------
+r642 | dgil | 2007-04-05 22:41:51 +0200 (Thu, 05 Apr 2007) | 1 line
+
+Michel Legrand : More logo for EURONEXT PARIS quotes
+------------------------------------------------------------------------
+r641 | dgil | 2007-04-05 18:35:57 +0200 (Thu, 05 Apr 2007) | 3 lines
+
+- Add Currencies : Canadian Dollar and Switzerland Francs
+- Add Toronto and Switzerland exchanges (TSE, TSX, SWISS EXCHANGE)
+
+------------------------------------------------------------------------
+r640 | m_leg | 2007-02-27 18:53:38 +0100 (Tue, 27 Feb 2007) | 1 line
+
+more SDR logos
+------------------------------------------------------------------------
+r639 | m_leg | 2007-02-27 18:49:20 +0100 (Tue, 27 Feb 2007) | 1 line
+
+logos SDR
+------------------------------------------------------------------------
+r638 | dgil | 2007-02-27 08:34:11 +0100 (Tue, 27 Feb 2007) | 1 line
+
+
+------------------------------------------------------------------------
+r637 | dgil | 2007-02-27 08:33:58 +0100 (Tue, 27 Feb 2007) | 2 lines
+
+Fix a regression introduced by "Dirty flag : suppress it (SF bug 1665541)" -> main window size/position was not saved correctly at closing time
+
+------------------------------------------------------------------------
+r636 | dgil | 2007-02-23 15:51:15 +0100 (Fri, 23 Feb 2007) | 2 lines
+
+- Fix a regression introduced by "Dirty flag : suppress it (SF bug 1665541)" -> main window size/position was not saved correcly at closing time
+
+------------------------------------------------------------------------
+r635 | m_leg | 2007-02-22 00:20:14 +0100 (Thu, 22 Feb 2007) | 1 line
+
+some SDR (6) and Alternext (2) raw logos
+------------------------------------------------------------------------
+r634 | dgil | 2007-02-21 23:52:45 +0100 (Wed, 21 Feb 2007) | 2 lines
+
+- Dirty flag : suppress it (SF bug 1665541)
+- Fit Quote View only when necessary !? but still an issue ...
+------------------------------------------------------------------------
+r633 | dgil | 2007-02-21 23:22:56 +0100 (Wed, 21 Feb 2007) | 1 line
+
+Stops view : Add a quote in other main market (SF bug 1664690)
+------------------------------------------------------------------------
+r632 | dgil | 2007-02-21 20:18:11 +0100 (Wed, 21 Feb 2007) | 1 line
+
+Sell/Buy from the matrix screen (SF bug 1454553)
+------------------------------------------------------------------------
+r631 | dgil | 2007-02-21 20:16:25 +0100 (Wed, 21 Feb 2007) | 1 line
+
+Sell/Buy from the matrix screen (SF bug 1454553)
+------------------------------------------------------------------------
+r630 | dgil | 2007-02-21 19:14:04 +0100 (Wed, 21 Feb 2007) | 1 line
+
+Part of Sell/Buy from the matrix screen (SF bug 1454553)
+------------------------------------------------------------------------
+r629 | dgil | 2007-02-21 13:16:52 +0100 (Wed, 21 Feb 2007) | 3 lines
+
+Start working on brokers / fees back-end : create itrade_brokers.py new module, move fees data to specific brokers/ folder
+
+
+------------------------------------------------------------------------
+r628 | dgil | 2007-02-21 13:15:30 +0100 (Wed, 21 Feb 2007) | 1 line
+
+Start working on brokers / fees back-end : create itrade_brokers.py new module, move fees data to specific brokers/ folder
+------------------------------------------------------------------------
+r627 | dgil | 2007-02-21 12:53:01 +0100 (Wed, 21 Feb 2007) | 1 line
+
+remove itrade_wxmatrix module (replaced by wxpanes/wxbook)
+------------------------------------------------------------------------
+r626 | dgil | 2007-02-21 12:49:39 +0100 (Wed, 21 Feb 2007) | 1 line
+
+Quote View : Icon placement + Info auto-placement (SF bug 1616047)
+------------------------------------------------------------------------
+r625 | dgil | 2007-02-21 11:50:02 +0100 (Wed, 21 Feb 2007) | 1 line
+
+Better wording.
+------------------------------------------------------------------------
+r624 | dgil | 2007-02-21 11:46:25 +0100 (Wed, 21 Feb 2007) | 1 line
+
+Some info.
+------------------------------------------------------------------------
+r623 | dgil | 2007-02-21 11:01:00 +0100 (Wed, 21 Feb 2007) | 1 line
+
+Live View : Decision Information (SF bug 1625267)
+------------------------------------------------------------------------
+r622 | dgil | 2007-02-20 23:28:01 +0100 (Tue, 20 Feb 2007) | 1 line
+
+Start implement Live View : Decision Information (SF bug 1625267)
+------------------------------------------------------------------------
+r621 | dgil | 2007-02-20 22:41:51 +0100 (Tue, 20 Feb 2007) | 1 line
+
+Restore unitary testing
+------------------------------------------------------------------------
+r620 | dgil | 2007-02-20 20:53:13 +0100 (Tue, 20 Feb 2007) | 1 line
+
+Matrix View : display a mark for traded quotes (SF bug 1660985)
+------------------------------------------------------------------------
+r619 | dgil | 2007-02-20 20:13:04 +0100 (Tue, 20 Feb 2007) | 1 line
+
+Term period and Risk level per line : properties of the portfolio
+------------------------------------------------------------------------
+r618 | dgil | 2007-02-20 19:08:26 +0100 (Tue, 20 Feb 2007) | 1 line
+
+View Stops : do not display portfolio information for a quote not in the portfolio !
+------------------------------------------------------------------------
+r617 | dgil | 2007-02-20 18:56:05 +0100 (Tue, 20 Feb 2007) | 1 line
+
+Better code
+------------------------------------------------------------------------
+r616 | dgil | 2007-02-20 18:53:07 +0100 (Tue, 20 Feb 2007) | 1 line
+
+View Stops : be able to add a quote not in the matrix
+------------------------------------------------------------------------
+r614 | dgil | 2007-02-20 18:28:58 +0100 (Tue, 20 Feb 2007) | 1 line
+
+Barchart plugin : a request per letter - otherwise, some symbols are missing (like CSCO)
+------------------------------------------------------------------------
+r613 | dgil | 2007-02-20 18:25:16 +0100 (Tue, 20 Feb 2007) | 1 line
+
+Barchart plugin : a request per letter - otherwise, some symbols are missing (like CSCO)
+------------------------------------------------------------------------
+r612 | dgil | 2007-02-20 18:12:01 +0100 (Tue, 20 Feb 2007) | 1 line
+
+Barchart plugin : a request per letter - otherwise, some symbols are missing (like CSCO)
+------------------------------------------------------------------------
+r611 | dgil | 2007-02-20 17:26:02 +0100 (Tue, 20 Feb 2007) | 1 line
+
+Check software release for upgrading (SF bug 1647466)
+------------------------------------------------------------------------
+r610 | dgil | 2007-02-20 17:21:19 +0100 (Tue, 20 Feb 2007) | 1 line
+
+Typo
+------------------------------------------------------------------------
+r609 | dgil | 2007-02-20 17:20:24 +0100 (Tue, 20 Feb 2007) | 1 line
+
+Check software release for upgrading (SF bug 1647466)
+------------------------------------------------------------------------
+r608 | dgil | 2007-02-20 17:11:01 +0100 (Tue, 20 Feb 2007) | 1 line
+
+Check software release for upgrading (SF bug 1647466)
+------------------------------------------------------------------------
+r607 | dgil | 2007-02-20 17:09:21 +0100 (Tue, 20 Feb 2007) | 1 line
+
+Check software release for upgrading (SF bug 1647466)
+------------------------------------------------------------------------
+r605 | dgil | 2007-02-20 13:32:51 +0100 (Tue, 20 Feb 2007) | 1 line
+
+Check software release for upgrading (SF bug 1647466)
+------------------------------------------------------------------------
+r604 | dgil | 2007-02-20 13:31:17 +0100 (Tue, 20 Feb 2007) | 1 line
+
+Check software release for upgrading (SF bug 1647466)
+------------------------------------------------------------------------
+r603 | dgil | 2007-02-20 13:01:39 +0100 (Tue, 20 Feb 2007) | 1 line
+
+Latest known official release
+------------------------------------------------------------------------
+r601 | dgil | 2007-02-20 11:46:40 +0100 (Tue, 20 Feb 2007) | 1 line
+
+Euronext plugin : URL to import historical data was changed
+------------------------------------------------------------------------
+r599 | dgil | 2007-02-20 11:34:18 +0100 (Tue, 20 Feb 2007) | 1 line
+
+Euronext plugin : URL to get IdInstrument was changed
+------------------------------------------------------------------------
+r597 | dgil | 2007-02-20 11:06:29 +0100 (Tue, 20 Feb 2007) | 3 lines
+
+- Euronext plugin : update the URL to download symbols lists. Also, modify internal code of the plugin to be more dynamic in front of the format for the returned data
+- Move symbols lists to specific folder (on going work to have symbols lists storage per market)
+
+------------------------------------------------------------------------
+r596 | dgil | 2007-02-20 10:50:19 +0100 (Tue, 20 Feb 2007) | 3 lines
+
+- Euronext plugin : update the URL to download symbols lists. Also, modify internal code of the plugin to be more dynamic in front of the format for the returned data
+- Move symbols lists to specific folder (on going work to have symbols lists storage per market)
+
+------------------------------------------------------------------------
+r595 | dgil | 2007-02-20 09:57:16 +0100 (Tue, 20 Feb 2007) | 1 line
+
+So little things ...
+------------------------------------------------------------------------
+r594 | dgil | 2007-02-18 11:34:25 +0100 (Sun, 18 Feb 2007) | 1 line
+
+More info.
+------------------------------------------------------------------------
+r593 | dgil | 2007-02-18 01:10:35 +0100 (Sun, 18 Feb 2007) | 1 line
+
+Quotes selection : sort by name (SF bug 1562293)
+------------------------------------------------------------------------
+r592 | dgil | 2007-02-18 01:04:41 +0100 (Sun, 18 Feb 2007) | 1 line
+
+view portfolio selection : sort by name (SF bug 1562293)
+------------------------------------------------------------------------
+r591 | dgil | 2007-02-18 00:48:23 +0100 (Sun, 18 Feb 2007) | 1 line
+
+Operation Edit: sort operation type + better display
+------------------------------------------------------------------------
+r590 | dgil | 2007-02-18 00:21:23 +0100 (Sun, 18 Feb 2007) | 1 line
+
+Operation View: filter by year not displayed (SF bug 1626233)
+------------------------------------------------------------------------
+r589 | dgil | 2007-02-18 00:03:15 +0100 (Sun, 18 Feb 2007) | 1 line
+
+Portfolio : edit the default VAT (SF bug 1474568)
+------------------------------------------------------------------------
+r588 | dgil | 2007-02-17 23:47:15 +0100 (Sat, 17 Feb 2007) | 1 line
+
+Sizing the properties
+------------------------------------------------------------------------
+r587 | dgil | 2007-02-17 20:32:00 +0100 (Sat, 17 Feb 2007) | 1 line
+
+Empty id/passwd : do not try to log to service
+------------------------------------------------------------------------
+r586 | dgil | 2007-02-17 20:27:00 +0100 (Sat, 17 Feb 2007) | 1 line
+
+Update CGE -> ALUNV
+------------------------------------------------------------------------
+r585 | dgil | 2007-02-17 20:21:46 +0100 (Sat, 17 Feb 2007) | 1 line
+
+Switch to Notebook Experimental Feature (SF bug 1651970)
+------------------------------------------------------------------------
+r584 | dgil | 2007-02-17 20:11:59 +0100 (Sat, 17 Feb 2007) | 1 line
+
+More info.
+------------------------------------------------------------------------
+r583 | dgil | 2007-02-17 20:08:40 +0100 (Sat, 17 Feb 2007) | 1 line
+
+r571(-x): Change Portfolio : don't stay on last view (SF bug 1657836)
+------------------------------------------------------------------------
+r582 | dgil | 2007-02-17 19:49:43 +0100 (Sat, 17 Feb 2007) | 1 line
+
+r560 (-x) : Change language : update twice (SF bug 1653525)
+------------------------------------------------------------------------
+r581 | dgil | 2007-02-17 19:02:19 +0100 (Sat, 17 Feb 2007) | 1 line
+
+Operation View: Order by date and not by day (SF bug 1611501)
+------------------------------------------------------------------------
+r580 | dgil | 2007-02-17 18:57:04 +0100 (Sat, 17 Feb 2007) | 1 line
+
+Rewrote itrade_wxoperations forms using iTradeSizedDialog
+------------------------------------------------------------------------
+r579 | dgil | 2007-02-17 14:13:50 +0100 (Sat, 17 Feb 2007) | 2 lines
+
+- Rewrote itrade_wxportfolio forms using iTradeSizedDialog
+- Document iTradeSizedDialog's usage in HACKING
+------------------------------------------------------------------------
+r578 | dgil | 2007-02-17 10:43:39 +0100 (Sat, 17 Feb 2007) | 1 line
+
+Unit testing was broken on wxPortfolio
+------------------------------------------------------------------------
+r577 | dgil | 2007-02-17 10:38:26 +0100 (Sat, 17 Feb 2007) | 2 lines
+
+Switch to wxPython 2.8.x - (2.6.x is not supported anymore because of specific new features we will use - like SizedControls)
+
+------------------------------------------------------------------------
+r576 | dgil | 2007-02-14 23:54:48 +0100 (Wed, 14 Feb 2007) | 1 line
+
+Experimental ... not working yet
+------------------------------------------------------------------------
+r575 | dgil | 2007-02-14 00:34:01 +0100 (Wed, 14 Feb 2007) | 1 line
+
+Fortuneo login seems to work again - untested because back-end server is down (same issue using the regular portal)
+------------------------------------------------------------------------
+r574 | dgil | 2007-02-14 00:31:35 +0100 (Wed, 14 Feb 2007) | 1 line
+
+Fortuneo login seems to work again - untested because back-end server is down (same issue using the regular portal)
+------------------------------------------------------------------------
+r573 | dgil | 2007-02-14 00:08:16 +0100 (Wed, 14 Feb 2007) | 1 line
+
+Forum access should be localized
+------------------------------------------------------------------------
+r572 | dgil | 2007-02-14 00:06:55 +0100 (Wed, 14 Feb 2007) | 1 line
+
+Fortuneo plugin : handle redirection (302) - untested
+------------------------------------------------------------------------
+r571 | dgil | 2007-02-09 22:54:48 +0100 (Fri, 09 Feb 2007) | 1 line
+
+Update list of symbols.
+------------------------------------------------------------------------
+r570 | dgil | 2007-02-09 22:40:23 +0100 (Fri, 09 Feb 2007) | 1 line
+
+GTO correctly supported by Yahoo Connector
+------------------------------------------------------------------------
+r569 | dgil | 2007-02-09 21:02:15 +0100 (Fri, 09 Feb 2007) | 1 line
+
+Stops View : some words are not translated (SF bug 1653527)
+------------------------------------------------------------------------
+r568 | dgil | 2007-02-09 20:30:06 +0100 (Fri, 09 Feb 2007) | 1 line
+
+r560 (-x) : Caching menu :Can't erase History... (SF bug 1656130)
+------------------------------------------------------------------------
+r567 | dgil | 2007-02-09 20:26:29 +0100 (Fri, 09 Feb 2007) | 1 line
+
+Popup Matrix-Portfolio view : Inversion operations (SF bug 1655908)
+------------------------------------------------------------------------
+r564 | m_leg | 2007-02-06 19:28:24 +0100 (Tue, 06 Feb 2007) | 2 lines
+
+__x translation except for __xPlease point your browser at : %s
+
+------------------------------------------------------------------------
+r563 | dgil | 2007-02-04 22:40:41 +0100 (Sun, 04 Feb 2007) | 1 line
+
+Typo
+------------------------------------------------------------------------
+r562 | dgil | 2007-02-04 22:39:43 +0100 (Sun, 04 Feb 2007) | 1 line
+
+More info.
+------------------------------------------------------------------------
+r561 | dgil | 2007-02-04 22:36:14 +0100 (Sun, 04 Feb 2007) | 1 line
+
+New tarball
+------------------------------------------------------------------------
+r560 | dgil | 2007-02-04 22:25:56 +0100 (Sun, 04 Feb 2007) | 1 line
+
+r556 (-x) Money management-Attribute Error (SF bug 1651923)
+------------------------------------------------------------------------
+r559 | dgil | 2007-02-04 22:17:37 +0100 (Sun, 04 Feb 2007) | 1 line
+
+Better messaging for stops
+------------------------------------------------------------------------
+r558 | dgil | 2007-02-04 22:05:37 +0100 (Sun, 04 Feb 2007) | 1 line
+
+Finish add/remove/edit stops (SF bug 1302894)
+------------------------------------------------------------------------
+r557 | dgil | 2007-02-04 21:41:00 +0100 (Sun, 04 Feb 2007) | 1 line
+
+more on add/remove/edit stops (SF bug 1302894)
+------------------------------------------------------------------------
+r556 | dgil | 2007-02-04 20:08:14 +0100 (Sun, 04 Feb 2007) | 1 line
+
+UnicodeDecodeError when click on News (SF bug 1651029)
+------------------------------------------------------------------------
+r555 | dgil | 2007-02-04 19:47:24 +0100 (Sun, 04 Feb 2007) | 1 line
+
+UnicodeDecodeError when click on News (SF bug 1651029)
+------------------------------------------------------------------------
+r554 | dgil | 2007-02-04 12:08:31 +0100 (Sun, 04 Feb 2007) | 1 line
+
+more on add/remove/edit stops (SF bug 1302894)
+------------------------------------------------------------------------
+r553 | dgil | 2007-02-04 12:07:07 +0100 (Sun, 04 Feb 2007) | 1 line
+
+more on add/remove/edit stops (SF bug 1302894)
+------------------------------------------------------------------------
+r552 | dgil | 2007-02-04 10:40:45 +0100 (Sun, 04 Feb 2007) | 1 line
+
+more on add/remove/edit stops (SF bug 1302894)
+------------------------------------------------------------------------
+r551 | dgil | 2007-02-04 10:40:15 +0100 (Sun, 04 Feb 2007) | 1 line
+
+Unitary testing of iTrade_wxquote.py was broken
+------------------------------------------------------------------------
+r550 | dgil | 2007-02-03 19:51:00 +0100 (Sat, 03 Feb 2007) | 1 line
+
+more on add/remove/edit stops (SF bug 1302894)
+------------------------------------------------------------------------
+r549 | dgil | 2007-02-03 11:13:19 +0100 (Sat, 03 Feb 2007) | 1 line
+
+Some info
+------------------------------------------------------------------------
+r548 | dgil | 2007-02-03 11:12:47 +0100 (Sat, 03 Feb 2007) | 1 line
+
+Working on add/remove/edit stops (SF bug 1302894)
+------------------------------------------------------------------------
+r547 | dgil | 2007-02-02 20:42:28 +0100 (Fri, 02 Feb 2007) | 1 line
+
+Yet another Anonymous Donor
+------------------------------------------------------------------------
+r546 | dgil | 2007-02-02 20:41:09 +0100 (Fri, 02 Feb 2007) | 1 line
+
+Icon menu button : text or lines not displayed (SF bug 1641799)
+------------------------------------------------------------------------
+r545 | dgil | 2007-02-01 07:52:02 +0100 (Thu, 01 Feb 2007) | 1 line
+
+Typo
+------------------------------------------------------------------------
+r544 | dgil | 2007-01-31 23:52:23 +0100 (Wed, 31 Jan 2007) | 1 line
+
+cleanup unused code
+------------------------------------------------------------------------
+r543 | dgil | 2007-01-31 23:46:24 +0100 (Wed, 31 Jan 2007) | 4 lines
+
+- convert from iso-8859-1 to unicode *.messages.txt during reading
+- Lang was not correctly set for the Tabs (-x mode)
+- Open new file : live connector not correct (SF bug 1644602)
+
+------------------------------------------------------------------------
+r542 | dgil | 2007-01-31 22:53:24 +0100 (Wed, 31 Jan 2007) | 1 line
+
+Simple data
+------------------------------------------------------------------------
+r541 | dgil | 2007-01-31 22:51:06 +0100 (Wed, 31 Jan 2007) | 1 line
+
+Simple data
+------------------------------------------------------------------------
+r540 | dgil | 2007-01-31 22:49:48 +0100 (Wed, 31 Jan 2007) | 1 line
+
+Typo
+------------------------------------------------------------------------
+r539 | dgil | 2007-01-31 22:03:56 +0100 (Wed, 31 Jan 2007) | 1 line
+
+Finish MessageDialog conversion to HTMLDialog
+------------------------------------------------------------------------
+r538 | dgil | 2007-01-31 21:17:50 +0100 (Wed, 31 Jan 2007) | 1 line
+
+For boxing
+------------------------------------------------------------------------
+r537 | dgil | 2007-01-31 13:29:08 +0100 (Wed, 31 Jan 2007) | 1 line
+
+Typo
+------------------------------------------------------------------------
+r536 | dgil | 2007-01-31 13:28:53 +0100 (Wed, 31 Jan 2007) | 1 line
+
+New module for indicator back-end
+------------------------------------------------------------------------
+r535 | dgil | 2007-01-31 13:28:28 +0100 (Wed, 31 Jan 2007) | 1 line
+
+Finish MessageDialog conversion to HTMLDialog
+------------------------------------------------------------------------
+r534 | dgil | 2007-01-30 08:48:41 +0100 (Tue, 30 Jan 2007) | 1 line
+
+Add functions to encapsulate Information, Error and YesNo Boxes
+------------------------------------------------------------------------
+r533 | dgil | 2007-01-30 08:27:30 +0100 (Tue, 30 Jan 2007) | 1 line
+
+Remove useless file
+------------------------------------------------------------------------
+r532 | dgil | 2007-01-30 08:26:49 +0100 (Tue, 30 Jan 2007) | 1 line
+
+Remove useless file
+------------------------------------------------------------------------
+r531 | dgil | 2007-01-30 08:20:23 +0100 (Tue, 30 Jan 2007) | 1 line
+
+Typo
+------------------------------------------------------------------------
+r530 | dgil | 2007-01-30 08:18:56 +0100 (Tue, 30 Jan 2007) | 2 lines
+
+- r509 (-x) : Performance View : Scrollbar inactive (SF bug 1644135)
+- Better About Box (SF bug 1612813)
+------------------------------------------------------------------------
+r529 | dgil | 2007-01-29 23:44:53 +0100 (Mon, 29 Jan 2007) | 1 line
+
+Link to the forum (SF bug 1647465)
+------------------------------------------------------------------------
+r528 | dgil | 2007-01-29 23:19:39 +0100 (Mon, 29 Jan 2007) | 1 line
+
+Link to the forum (SF bug 1647465)
+------------------------------------------------------------------------
+r527 | dgil | 2007-01-29 22:56:21 +0100 (Mon, 29 Jan 2007) | 1 line
+
+Typo
+------------------------------------------------------------------------
+r526 | dgil | 2007-01-29 22:53:15 +0100 (Mon, 29 Jan 2007) | 1 line
+
+Toolbar not updated after language change (SF bug 1645596)
+------------------------------------------------------------------------
+r525 | dgil | 2007-01-29 22:43:42 +0100 (Mon, 29 Jan 2007) | 1 line
+
+r509: can't see another graph when first view opened (SF bug 1646846)
+------------------------------------------------------------------------
+r524 | dgil | 2007-01-29 21:20:04 +0100 (Mon, 29 Jan 2007) | 1 line
+
+More code for printing
+------------------------------------------------------------------------
+r523 | m_leg | 2007-01-28 18:27:17 +0100 (Sun, 28 Jan 2007) | 1 line
+
+translation of all __x
+------------------------------------------------------------------------
+r522 | dgil | 2007-01-28 13:08:03 +0100 (Sun, 28 Jan 2007) | 1 line
+
+Graph View : add a print command (SF bug 1645949)
+------------------------------------------------------------------------
+r521 | dgil | 2007-01-28 12:16:54 +0100 (Sun, 28 Jan 2007) | 1 line
+
+Try some code around printing
+------------------------------------------------------------------------
+r520 | dgil | 2007-01-28 11:02:14 +0100 (Sun, 28 Jan 2007) | 1 line
+
+Remove unnecessary import
+------------------------------------------------------------------------
+r519 | dgil | 2007-01-28 09:25:43 +0100 (Sun, 28 Jan 2007) | 1 line
+
+Try some code around printing
+------------------------------------------------------------------------
+r518 | dgil | 2007-01-28 08:56:04 +0100 (Sun, 28 Jan 2007) | 1 line
+
+Try some code around printing
+------------------------------------------------------------------------
+r517 | dgil | 2007-01-28 08:55:38 +0100 (Sun, 28 Jan 2007) | 1 line
+
+Remove unnecessary import
+------------------------------------------------------------------------
+r516 | dgil | 2007-01-27 15:55:35 +0100 (Sat, 27 Jan 2007) | 1 line
+
+Thanks!
+------------------------------------------------------------------------
+r515 | dgil | 2007-01-25 20:25:45 +0100 (Thu, 25 Jan 2007) | 1 line
+
+Remove unnecessary folder.
+------------------------------------------------------------------------
+r514 | m_leg | 2007-01-25 10:56:28 +0100 (Thu, 25 Jan 2007) | 2 lines
+
+Add new value in first line (FR0000062150;028;GAILLARD)
+
+------------------------------------------------------------------------
+r513 | m_leg | 2007-01-25 10:26:20 +0100 (Thu, 25 Jan 2007) | 1 line
+
+
+------------------------------------------------------------------------
+r511 | dgil | 2007-01-25 08:46:21 +0100 (Thu, 25 Jan 2007) | 1 line
+
+Start working on Quote View : Manage Raw Data (SF bug 1643577)
+------------------------------------------------------------------------
+r510 | dgil | 2007-01-24 23:23:35 +0100 (Wed, 24 Jan 2007) | 1 line
+
+New tarball
+------------------------------------------------------------------------
+r509 | dgil | 2007-01-24 22:55:59 +0100 (Wed, 24 Jan 2007) | 1 line
+
+r504 (-x) : Change Tabs order (Quotes first, then Portfolio)
+------------------------------------------------------------------------
+r508 | dgil | 2007-01-24 22:52:14 +0100 (Wed, 24 Jan 2007) | 1 line
+
+r504 (-x) : new index are always in french (SF bug 1643662)
+------------------------------------------------------------------------
+r507 | dgil | 2007-01-24 22:41:11 +0100 (Wed, 24 Jan 2007) | 1 line
+
+r504 (-x) : Old portfolio's name in main view (SF bug 1643660)
+------------------------------------------------------------------------
+r506 | dgil | 2007-01-24 22:35:40 +0100 (Wed, 24 Jan 2007) | 1 line
+
+r504 (-x) : can't add a quote in different currency (SF bug 1643654)
+------------------------------------------------------------------------
+r505 | dgil | 2007-01-23 23:54:20 +0100 (Tue, 23 Jan 2007) | 1 line
+
+Update short term roadmap information
+------------------------------------------------------------------------
+r504 | dgil | 2007-01-23 23:30:20 +0100 (Tue, 23 Jan 2007) | 1 line
+
+Polish: Use wxNotebook for Matrix (SF bug 1290903)
+------------------------------------------------------------------------
+r503 | dgil | 2007-01-23 23:26:07 +0100 (Tue, 23 Jan 2007) | 1 line
+
+Polish: Use wxNotebook for Matrix (SF bug 1290903)
+------------------------------------------------------------------------
+r502 | dgil | 2007-01-23 23:16:09 +0100 (Tue, 23 Jan 2007) | 1 line
+
+Polish: Use wxNotebook for Matrix (SF bug 1290903)
+------------------------------------------------------------------------
+r501 | dgil | 2007-01-23 23:09:30 +0100 (Tue, 23 Jan 2007) | 1 line
+
+Polish: Use wxNotebook for Matrix (SF bug 1290903)
+------------------------------------------------------------------------
+r500 | dgil | 2007-01-23 23:08:11 +0100 (Tue, 23 Jan 2007) | 1 line
+
+Polish: Use wxNotebook for Matrix (SF bug 1290903)
+------------------------------------------------------------------------
+r499 | dgil | 2007-01-23 22:37:03 +0100 (Tue, 23 Jan 2007) | 1 line
+
+Polish: Use wxNotebook for Matrix (SF bug 1290903)
+------------------------------------------------------------------------
+r498 | dgil | 2007-01-23 22:28:44 +0100 (Tue, 23 Jan 2007) | 1 line
+
+Polish: Use wxNotebook for Matrix (SF bug 1290903)
+------------------------------------------------------------------------
+r497 | dgil | 2007-01-23 20:59:16 +0100 (Tue, 23 Jan 2007) | 1 line
+
+Polish: Use wxNotebook for Matrix (SF bug 1290903)
+------------------------------------------------------------------------
+r496 | dgil | 2007-01-23 19:26:22 +0100 (Tue, 23 Jan 2007) | 1 line
+
+Working on Use wxNotebook for Matrix (SF bug 1290903) - prototype is available using the -x option in the command line.
+------------------------------------------------------------------------
+r495 | dgil | 2007-01-23 09:08:00 +0100 (Tue, 23 Jan 2007) | 1 line
+
+Start working on Indicators Back-End (SF bug 1608292)
+------------------------------------------------------------------------
+r494 | dgil | 2007-01-22 23:09:18 +0100 (Mon, 22 Jan 2007) | 1 line
+
+Typo
+------------------------------------------------------------------------
+r493 | dgil | 2007-01-22 23:05:15 +0100 (Mon, 22 Jan 2007) | 1 line
+
+Some typo on some information files
+------------------------------------------------------------------------
+r491 | dgil | 2007-01-22 22:29:29 +0100 (Mon, 22 Jan 2007) | 1 line
+
+Verbose mode (SF bug 1641482) : be sure for 'under development' release, verbose is forced to ON
+------------------------------------------------------------------------
+r490 | dgil | 2007-01-22 22:21:48 +0100 (Mon, 22 Jan 2007) | 1 line
+
+Remove useless file
+------------------------------------------------------------------------
+r489 | dgil | 2007-01-22 22:20:42 +0100 (Mon, 22 Jan 2007) | 1 line
+
+Verbose mode (SF bug 1641482)
+------------------------------------------------------------------------
+r488 | dgil | 2007-01-22 22:16:08 +0100 (Mon, 22 Jan 2007) | 1 line
+
+Finish : Live connection : Switch from/to Differed (SF bug 1607288)
+------------------------------------------------------------------------
+r487 | dgil | 2007-01-22 21:44:42 +0100 (Mon, 22 Jan 2007) | 1 line
+
+Verbose mode (SF bug 1641482)
+------------------------------------------------------------------------
+r486 | dgil | 2007-01-22 19:28:40 +0100 (Mon, 22 Jan 2007) | 1 line
+
+Verbose mode (SF bug 1641482)
+------------------------------------------------------------------------
+r485 | dgil | 2007-01-22 11:12:05 +0100 (Mon, 22 Jan 2007) | 1 line
+
+More info on extensions
+------------------------------------------------------------------------
+r484 | dgil | 2007-01-21 23:53:04 +0100 (Sun, 21 Jan 2007) | 1 line
+
+Live connection : Switch from/to Differed (SF bug 1607288)
+------------------------------------------------------------------------
+r483 | dgil | 2007-01-21 23:09:56 +0100 (Sun, 21 Jan 2007) | 1 line
+
+Boursorama login still experimental
+------------------------------------------------------------------------
+r482 | dgil | 2007-01-21 23:07:51 +0100 (Sun, 21 Jan 2007) | 1 line
+
+Login stuff moved to ./ext folder
+------------------------------------------------------------------------
+r481 | dgil | 2007-01-21 23:06:44 +0100 (Sun, 21 Jan 2007) | 1 line
+
+Move extension to specific folder
+------------------------------------------------------------------------
+r480 | dgil | 2007-01-21 23:06:19 +0100 (Sun, 21 Jan 2007) | 1 line
+
+Move extension to specific folder
+------------------------------------------------------------------------
+r479 | dgil | 2007-01-21 20:42:45 +0100 (Sun, 21 Jan 2007) | 1 line
+
+Typo
+------------------------------------------------------------------------
+r478 | dgil | 2007-01-21 20:37:53 +0100 (Sun, 21 Jan 2007) | 1 line
+
+Missing ID_EDIT under wxPython 2.6
+------------------------------------------------------------------------
+r477 | dgil | 2007-01-21 16:41:31 +0100 (Sun, 21 Jan 2007) | 2 lines
+
+Attempt to fix "Error while opening Suivi/Op?\195?\169rations" under linux (SF bug 1595171)
+
+------------------------------------------------------------------------
+r476 | dgil | 2007-01-21 15:59:43 +0100 (Sun, 21 Jan 2007) | 1 line
+
+Switch definitively to unicode version of wxPython
+------------------------------------------------------------------------
+r475 | dgil | 2007-01-21 15:12:49 +0100 (Sun, 21 Jan 2007) | 1 line
+
+Extensions Infrastructure (SF bug 1631835)
+------------------------------------------------------------------------
+r474 | dgil | 2007-01-21 15:08:10 +0100 (Sun, 21 Jan 2007) | 1 line
+
+Extensions Infrastructure (SF bug 1631835)
+------------------------------------------------------------------------
+r473 | dgil | 2007-01-21 15:03:38 +0100 (Sun, 21 Jan 2007) | 1 line
+
+Move extension to specific folder
+------------------------------------------------------------------------
+r472 | dgil | 2007-01-21 15:03:01 +0100 (Sun, 21 Jan 2007) | 1 line
+
+Move extension to specific folder
+------------------------------------------------------------------------
+r471 | dgil | 2007-01-21 15:02:19 +0100 (Sun, 21 Jan 2007) | 1 line
+
+Move extension to specific folder
+------------------------------------------------------------------------
+r470 | dgil | 2007-01-21 15:01:45 +0100 (Sun, 21 Jan 2007) | 1 line
+
+Move extension to specific folder
+------------------------------------------------------------------------
+r469 | dgil | 2007-01-21 15:01:10 +0100 (Sun, 21 Jan 2007) | 1 line
+
+Move extension to specific folder
+------------------------------------------------------------------------
+r468 | dgil | 2007-01-21 15:00:32 +0100 (Sun, 21 Jan 2007) | 1 line
+
+Move extension to specific folder
+------------------------------------------------------------------------
+r467 | dgil | 2007-01-21 15:00:00 +0100 (Sun, 21 Jan 2007) | 1 line
+
+Move extension to specific folder
+------------------------------------------------------------------------
+r466 | dgil | 2007-01-21 14:59:24 +0100 (Sun, 21 Jan 2007) | 1 line
+
+Move extension to specific folder
+------------------------------------------------------------------------
+r465 | dgil | 2007-01-21 14:58:21 +0100 (Sun, 21 Jan 2007) | 1 line
+
+New extension mechanism (SF bug 1631835)
+------------------------------------------------------------------------
+r464 | dgil | 2007-01-21 14:03:32 +0100 (Sun, 21 Jan 2007) | 1 line
+
+Start moving to the new extension mechanism
+------------------------------------------------------------------------
+r463 | dgil | 2007-01-21 14:02:37 +0100 (Sun, 21 Jan 2007) | 1 line
+
+Move extension to specific folder
+------------------------------------------------------------------------
+r462 | dgil | 2007-01-21 14:02:02 +0100 (Sun, 21 Jan 2007) | 1 line
+
+Move extension to specific folder
+------------------------------------------------------------------------
+r461 | dgil | 2007-01-21 14:01:04 +0100 (Sun, 21 Jan 2007) | 1 line
+
+Move extension to specific folder
+------------------------------------------------------------------------
+r460 | dgil | 2007-01-21 11:12:08 +0100 (Sun, 21 Jan 2007) | 1 line
+
+Start moving to the new extension mechanism
+------------------------------------------------------------------------
+r459 | dgil | 2007-01-21 11:03:12 +0100 (Sun, 21 Jan 2007) | 1 line
+
+Start moving to the new extension mechanism
+------------------------------------------------------------------------
+r458 | dgil | 2007-01-21 10:07:21 +0100 (Sun, 21 Jan 2007) | 1 line
+
+Information on Extensions and Plugins 
+------------------------------------------------------------------------
+r457 | dgil | 2007-01-21 09:37:15 +0100 (Sun, 21 Jan 2007) | 1 line
+
+More or less info
+------------------------------------------------------------------------
+r456 | dgil | 2007-01-21 09:35:30 +0100 (Sun, 21 Jan 2007) | 1 line
+
+Plugins and extensions will move in this folder
+------------------------------------------------------------------------
+r455 | DrayKO | 2007-01-14 23:37:39 +0100 (Sun, 14 Jan 2007) | 2 lines
+
+Handling of unicode objects in CSV.write()
+
+------------------------------------------------------------------------
+r453 | dgil | 2007-01-11 23:20:18 +0100 (Thu, 11 Jan 2007) | 1 line
+
+Typo
+------------------------------------------------------------------------
+r451 | dgil | 2007-01-11 22:28:38 +0100 (Thu, 11 Jan 2007) | 1 line
+
+Information on SVN repository access
+------------------------------------------------------------------------
+r450 | dgil | 2007-01-11 22:25:08 +0100 (Thu, 11 Jan 2007) | 1 line
+
+Information on SVN repository access
+------------------------------------------------------------------------
+r447 | dgil | 2007-01-07 15:19:13 +0100 (Sun, 07 Jan 2007) | 1 line
+
+
+------------------------------------------------------------------------
+r446 | dgil | 2007-01-07 15:17:56 +0100 (Sun, 07 Jan 2007) | 1 line
+
+
+------------------------------------------------------------------------
+r445 | dgil | 2007-01-07 01:07:07 +0100 (Sun, 07 Jan 2007) | 1 line
+
+v0.4.6 Nausicaa2 vs v0.4.8 Nausicaa2 (need one more 0.4.x release)
+------------------------------------------------------------------------
+r444 | dgil | 2007-01-07 01:05:12 +0100 (Sun, 07 Jan 2007) | 1 line
+
+Alternext Amsterdam Market no present (SF bug 1629435)
+------------------------------------------------------------------------
+r443 | dgil | 2007-01-07 00:57:44 +0100 (Sun, 07 Jan 2007) | 4 lines
+
+psyco support :
+ - use psyco library if installed
+ - add -nopsyco command line option
+
+------------------------------------------------------------------------
+r442 | dgil | 2007-01-05 19:41:00 +0100 (Fri, 05 Jan 2007) | 1 line
+
+
+------------------------------------------------------------------------
+r441 | dgil | 2007-01-05 19:40:17 +0100 (Fri, 05 Jan 2007) | 1 line
+
+
+------------------------------------------------------------------------
+r440 | dgil | 2007-01-05 14:36:06 +0100 (Fri, 05 Jan 2007) | 1 line
+
+Login to Boursorama - not working yet
+------------------------------------------------------------------------
+r439 | dgil | 2007-01-05 13:02:40 +0100 (Fri, 05 Jan 2007) | 1 line
+
+Introduce a v0.4.6 release
+------------------------------------------------------------------------
+r438 | dgil | 2007-01-05 12:18:30 +0100 (Fri, 05 Jan 2007) | 1 line
+
+More information on HACKING the project.
+------------------------------------------------------------------------
+r437 | dgil | 2007-01-05 11:46:59 +0100 (Fri, 05 Jan 2007) | 1 line
+
+Typo
+------------------------------------------------------------------------
+r436 | dgil | 2007-01-05 11:26:56 +0100 (Fri, 05 Jan 2007) | 1 line
+
+Better project information (HACKING, RELEASE, ...)
+------------------------------------------------------------------------
+r435 | dgil | 2007-01-05 10:26:46 +0100 (Fri, 05 Jan 2007) | 1 line
+
+Known Issues
+------------------------------------------------------------------------
+r434 | dgil | 2007-01-05 10:13:29 +0100 (Fri, 05 Jan 2007) | 3 lines
+
+- Fix KeyError during importing (SF bug 1628463)
+- Fix NamedError when using --quote or --ticker command line option
+
+------------------------------------------------------------------------
+r433 | dgil | 2007-01-05 10:12:35 +0100 (Fri, 05 Jan 2007) | 1 line
+
+Update AUTHORS
+------------------------------------------------------------------------
+r432 | dgil | 2007-01-04 22:43:26 +0100 (Thu, 04 Jan 2007) | 1 line
+
+Installer for Windows
+------------------------------------------------------------------------
+r431 | dgil | 2007-01-04 22:42:32 +0100 (Thu, 04 Jan 2007) | 1 line
+
+Add module for ASX - Australian Stock Exchange (from Peter Mills)
+------------------------------------------------------------------------
+r430 | dgil | 2007-01-04 22:18:38 +0100 (Thu, 04 Jan 2007) | 1 line
+
+Installer for Windows
+------------------------------------------------------------------------
+r425 | dgil | 2007-01-02 17:37:05 +0100 (Tue, 02 Jan 2007) | 1 line
+
+login just after userinfo has been changed (avoid software restart)
+------------------------------------------------------------------------
+r421 | dgil | 2007-01-01 20:11:33 +0100 (Mon, 01 Jan 2007) | 1 line
+
+Add value in differed mode and change live connector (SF bug 1613230)
+------------------------------------------------------------------------
+r420 | dgil | 2007-01-01 19:07:29 +0100 (Mon, 01 Jan 2007) | 1 line
+
+automatically log to live broker services (if required)
+------------------------------------------------------------------------
+r419 | dgil | 2007-01-01 18:57:30 +0100 (Mon, 01 Jan 2007) | 1 line
+
+automatically log to live broker services (if required)
+------------------------------------------------------------------------
+r414 | dgil | 2007-01-01 18:02:22 +0100 (Mon, 01 Jan 2007) | 1 line
+
+all versions : crash starting during importation (SF bug 1625731)
+------------------------------------------------------------------------
+r413 | dgil | 2007-01-01 18:01:59 +0100 (Mon, 01 Jan 2007) | 1 line
+
+
+------------------------------------------------------------------------
+r412 | dgil | 2007-01-01 11:15:39 +0100 (Mon, 01 Jan 2007) | 3 lines
+
+- Delete a portfolio (first file of the list) (SF bug 1612175)
+- Backport from v0.4.5 : remove deprecated warning from wxPython
+
+------------------------------------------------------------------------
+r411 | dgil | 2006-12-31 20:52:57 +0100 (Sun, 31 Dec 2006) | 1 line
+
+Add itrade_wxlogin.py to enter username/password for brokers login
+------------------------------------------------------------------------
+r410 | dgil | 2006-12-31 20:07:59 +0100 (Sun, 31 Dec 2006) | 1 line
+
+More on login mechanism ...
+------------------------------------------------------------------------
+r409 | dgil | 2006-12-31 20:02:46 +0100 (Sun, 31 Dec 2006) | 1 line
+
+More on login mechanism ...
+------------------------------------------------------------------------
+r408 | dgil | 2006-12-31 20:00:16 +0100 (Sun, 31 Dec 2006) | 2 lines
+
+Remove useless file
+
+------------------------------------------------------------------------
+r407 | dgil | 2006-12-31 19:24:18 +0100 (Sun, 31 Dec 2006) | 1 line
+
+Remove useless files
+------------------------------------------------------------------------
+r406 | dgil | 2006-12-31 19:22:23 +0100 (Sun, 31 Dec 2006) | 1 line
+
+Change (c) to 2004-2007 on every file
+------------------------------------------------------------------------
+r405 | dgil | 2006-12-31 19:06:19 +0100 (Sun, 31 Dec 2006) | 1 line
+
+It's working !
+------------------------------------------------------------------------
+r404 | dgil | 2006-12-31 18:10:35 +0100 (Sun, 31 Dec 2006) | 2 lines
+
+BV_SessionID and BV_EngineID could be extracted
+
+------------------------------------------------------------------------
+r403 | dgil | 2006-12-31 15:27:44 +0100 (Sun, 31 Dec 2006) | 1 line
+
+First step OK : able to log to service. Missing ID extraction then Cookie extraction ...
+------------------------------------------------------------------------
+r402 | dgil | 2006-12-31 12:34:27 +0100 (Sun, 31 Dec 2006) | 1 line
+
+Michel is donor ... again !
+------------------------------------------------------------------------
+r401 | dgil | 2006-12-31 12:33:59 +0100 (Sun, 31 Dec 2006) | 1 line
+
+Update data/closed.txt and data/srd.txt (SF bug 1622981)
+------------------------------------------------------------------------
+r398 | dgil | 2006-12-31 11:14:00 +0100 (Sun, 31 Dec 2006) | 1 line
+
+Cac40 icons with border (from michel)
+------------------------------------------------------------------------
+r397 | dgil | 2006-12-31 10:36:42 +0100 (Sun, 31 Dec 2006) | 1 line
+
+The selected version of wx is the lowest accepted version (patch from Elmo M?\195?\164ntynen)
+------------------------------------------------------------------------
+r393 | dgil | 2006-12-14 22:58:13 +0100 (Thu, 14 Dec 2006) | 1 line
+
+Few quotes for euronext
+------------------------------------------------------------------------
+r392 | dgil | 2006-12-14 22:49:58 +0100 (Thu, 14 Dec 2006) | 1 line
+
+Quote View : Icon reference <ticker>-<market>.<ext> (SF bug 1616019)
+------------------------------------------------------------------------
+r388 | dgil | 2006-12-14 22:23:16 +0100 (Thu, 14 Dec 2006) | 1 line
+
+Quote view : icon should also support .PNG (SF bug 1615945)
+------------------------------------------------------------------------
+r386 | dgil | 2006-12-13 13:58:09 +0100 (Wed, 13 Dec 2006) | 1 line
+
+Be sure to select the latest wxPython release
+------------------------------------------------------------------------
+r385 | dgil | 2006-12-13 13:57:48 +0100 (Wed, 13 Dec 2006) | 1 line
+
+Display 'Manual Refresh' when Auto Refresh is Off
+------------------------------------------------------------------------
+r382 | dgil | 2006-12-12 23:27:03 +0100 (Tue, 12 Dec 2006) | 1 line
+
+Do not forget data & usrdata files !
+------------------------------------------------------------------------
+r378 | dgil | 2006-12-12 23:12:46 +0100 (Tue, 12 Dec 2006) | 1 line
+
+wxPython 2.8 : non-regression testing (SF bug 1614304)
+------------------------------------------------------------------------
+r376 | dgil | 2006-12-11 14:48:12 +0100 (Mon, 11 Dec 2006) | 1 line
+
+Money Management : HTML generated page use iso-8859-1 charset
+------------------------------------------------------------------------
+r374 | dgil | 2006-12-11 14:36:39 +0100 (Mon, 11 Dec 2006) | 2 lines
+
+News : Boursorama News provider was buggy (SF bug 1612349)
+News : saving the cache with non ASCII char (SF bug 1613121) / UTF8
+------------------------------------------------------------------------
+r372 | dgil | 2006-12-11 14:11:23 +0100 (Mon, 11 Dec 2006) | 1 line
+
+'FR' quote default to Boursorama News provider
+------------------------------------------------------------------------
+r370 | dgil | 2006-12-11 14:10:17 +0100 (Mon, 11 Dec 2006) | 1 line
+
+News : saving the cache with non ASCII char (SF bug 1613121) / UTF8
+------------------------------------------------------------------------
+r369 | dgil | 2006-12-11 13:45:08 +0100 (Mon, 11 Dec 2006) | 1 line
+
+Fix list of portfolio files when using a specific usrdata/ folder
+------------------------------------------------------------------------
+r367 | dgil | 2006-12-11 07:24:30 +0100 (Mon, 11 Dec 2006) | 1 line
+
+Live
+------------------------------------------------------------------------
+r364 | dgil | 2006-12-09 11:58:05 +0100 (Sat, 09 Dec 2006) | 1 line
+
+Prepare 0.4.8 development
+------------------------------------------------------------------------
+r361 | dgil | 2006-12-09 11:47:44 +0100 (Sat, 09 Dec 2006) | 1 line
+
+Create specific Nausicaa production branch
+------------------------------------------------------------------------
+r359 | dgil | 2006-12-08 08:01:14 +0100 (Fri, 08 Dec 2006) | 5 lines
+
+As requested by Sourceforge, migrate website to the new subversion :
+		https://itrade.svn.sourceforge.net/svnroot/itrade
+	  
+old URL access still working (think to "relocate" your source to the new URL above).
+
+------------------------------------------------------------------------
+r358 | dgil | 2006-12-08 00:04:28 +0100 (Fri, 08 Dec 2006) | 1 line
+
+No previous historic but volume : IndexError (SF bug 1609473)
+------------------------------------------------------------------------
+r357 | dgil | 2006-12-07 23:48:34 +0100 (Thu, 07 Dec 2006) | 9 lines
+
+- Crash starting with empty /usrdata folder (SF bug 1609893)
+
+- --user (or -u) command line to select specific usrdata folder
+	i.e.: python itrade.py --user usrdata.dev
+
+- usrdata/ and usrdata.dev/ cleanup
+
+- New module itrade_vat.py for VAT back-end management
+
+------------------------------------------------------------------------
+r356 | dgil | 2006-12-07 23:35:01 +0100 (Thu, 07 Dec 2006) | 1 line
+
+VAT
+------------------------------------------------------------------------
+r355 | dgil | 2006-12-07 23:21:52 +0100 (Thu, 07 Dec 2006) | 1 line
+
+
+------------------------------------------------------------------------
+r354 | dgil | 2006-12-07 23:20:20 +0100 (Thu, 07 Dec 2006) | 2 lines
+
+usrdata.dev/ cleanup
+
+------------------------------------------------------------------------
+r353 | dgil | 2006-12-07 23:18:48 +0100 (Thu, 07 Dec 2006) | 1 line
+
+cleanup usrdata/ and usrdata.dev/
+------------------------------------------------------------------------
+r352 | dgil | 2006-12-07 23:08:52 +0100 (Thu, 07 Dec 2006) | 1 line
+
+More dev portfolio
+------------------------------------------------------------------------
+r351 | dgil | 2006-12-06 08:58:48 +0100 (Wed, 06 Dec 2006) | 1 line
+
+
+------------------------------------------------------------------------
+r350 | dgil | 2006-12-06 08:56:33 +0100 (Wed, 06 Dec 2006) | 4 lines
+
+usrdata/ -> usrdata.dev/
+- keep usrdata content for testing purpose in usrdata.dev/live.txt
+- create usrdata content for distribution only
+
+------------------------------------------------------------------------
+r349 | dgil | 2006-12-06 08:55:11 +0100 (Wed, 06 Dec 2006) | 4 lines
+
+usrdata/ -> usrdata.dev/
+- keep usrdata content for testing purpose in usrdata.dev/live.txt
+- create usrdata content for distribution only
+
+------------------------------------------------------------------------
+r348 | dgil | 2006-12-06 08:54:07 +0100 (Wed, 06 Dec 2006) | 4 lines
+
+usrdata/ -> usrdata.dev/
+- keep usrdata content for testing purpose in usrdata.dev/live.txt
+- create usrdata content for distribution only
+
+------------------------------------------------------------------------
+r347 | dgil | 2006-12-06 08:53:04 +0100 (Wed, 06 Dec 2006) | 4 lines
+
+usrdata/ -> usrdata.dev/
+- keep usrdata content for testing purpose in usrdata.dev/live.txt
+- create usrdata content for distribution only
+
+------------------------------------------------------------------------
+r346 | dgil | 2006-12-06 08:32:33 +0100 (Wed, 06 Dec 2006) | 4 lines
+
+usrdata/ -> usrdata2/
+- keep usrdata content for testing purpose in usrdata2/live.txt
+- create usrdata content for distribution only
+
+------------------------------------------------------------------------
+r345 | dgil | 2006-12-04 18:35:38 +0100 (Mon, 04 Dec 2006) | 1 line
+
+Graph view : draw horizontal/vertical lines (SF bug 1393834)
+------------------------------------------------------------------------
+r344 | dgil | 2006-12-04 11:21:21 +0100 (Mon, 04 Dec 2006) | 1 line
+
+Typo...
+------------------------------------------------------------------------
+r343 | dgil | 2006-12-04 11:18:29 +0100 (Mon, 04 Dec 2006) | 1 line
+
+Typo
+------------------------------------------------------------------------
+r342 | dgil | 2006-12-04 11:17:52 +0100 (Mon, 04 Dec 2006) | 1 line
+
+Typo
+------------------------------------------------------------------------
+r341 | dgil | 2006-12-04 10:05:48 +0100 (Mon, 04 Dec 2006) | 1 line
+
+Prepare 0.4.5 official release
+------------------------------------------------------------------------
+r340 | dgil | 2006-12-04 10:02:24 +0100 (Mon, 04 Dec 2006) | 1 line
+
+Prepare 0.4.5 official release
+------------------------------------------------------------------------
+r339 | dgil | 2006-12-04 09:39:21 +0100 (Mon, 04 Dec 2006) | 1 line
+
+Typo
+------------------------------------------------------------------------
+r338 | dgil | 2006-12-04 07:12:00 +0100 (Mon, 04 Dec 2006) | 1 line
+
+Sad
+------------------------------------------------------------------------
+r337 | dgil | 2006-12-04 07:01:30 +0100 (Mon, 04 Dec 2006) | 1 line
+
+Change the cookie
+------------------------------------------------------------------------
+r336 | dgil | 2006-12-03 23:38:27 +0100 (Sun, 03 Dec 2006) | 1 line
+
+Stochastic formula seems to be better. But, need to replace arithmetic average by exponential average ?
+------------------------------------------------------------------------
+r335 | dgil | 2006-12-03 22:55:30 +0100 (Sun, 03 Dec 2006) | 1 line
+
+Stoch info
+------------------------------------------------------------------------
+r334 | dgil | 2006-12-03 22:54:34 +0100 (Sun, 03 Dec 2006) | 1 line
+
+Stoch info
+------------------------------------------------------------------------
+r333 | dgil | 2006-12-03 22:25:35 +0100 (Sun, 03 Dec 2006) | 1 line
+
+Better resolution for RSI
+------------------------------------------------------------------------
+r332 | dgil | 2006-12-03 22:23:55 +0100 (Sun, 03 Dec 2006) | 1 line
+
+Typo
+------------------------------------------------------------------------
+r331 | dgil | 2006-12-03 22:23:20 +0100 (Sun, 03 Dec 2006) | 1 line
+
+Display 3 digits for some indicators.
+------------------------------------------------------------------------
+r330 | dgil | 2006-12-03 22:13:33 +0100 (Sun, 03 Dec 2006) | 1 line
+
+Typo
+------------------------------------------------------------------------
+r329 | dgil | 2006-12-03 22:11:53 +0100 (Sun, 03 Dec 2006) | 1 line
+
+RSI Indicator (SF bug 1361988) - right formula !
+------------------------------------------------------------------------
+r328 | dgil | 2006-12-03 21:12:07 +0100 (Sun, 03 Dec 2006) | 1 line
+
+RSI should use exponential average of high/low values
+------------------------------------------------------------------------
+r327 | dgil | 2006-12-03 19:22:28 +0100 (Sun, 03 Dec 2006) | 1 line
+
+Stochastic Indicator
+------------------------------------------------------------------------
+r326 | dgil | 2006-12-03 18:15:30 +0100 (Sun, 03 Dec 2006) | 1 line
+
+RSI Indicator (SF bug 1361988)
+------------------------------------------------------------------------
+r325 | dgil | 2006-12-03 16:09:04 +0100 (Sun, 03 Dec 2006) | 1 line
+
+EURONEXT Connector : start of day (SF bug 1604308)
+------------------------------------------------------------------------
+r324 | dgil | 2006-12-03 15:45:26 +0100 (Sun, 03 Dec 2006) | 1 line
+
+Be able again to change the live connector for a quote (regression)
+------------------------------------------------------------------------
+r323 | dgil | 2006-12-03 15:14:42 +0100 (Sun, 03 Dec 2006) | 1 line
+
+rename usrdata/quotes.txt to usrdata/usrquotes.txt
+------------------------------------------------------------------------
+r322 | dgil | 2006-12-03 15:14:14 +0100 (Sun, 03 Dec 2006) | 1 line
+
+rename usrdata/quotes.txt to usrdata/usrquotes.txt
+------------------------------------------------------------------------
+r321 | dgil | 2006-12-03 15:06:02 +0100 (Sun, 03 Dec 2006) | 1 line
+
+Graph view : bad cursor management (SF bug 1607568)
+------------------------------------------------------------------------
+r320 | dgil | 2006-12-03 09:30:51 +0100 (Sun, 03 Dec 2006) | 1 line
+
+Useless
+------------------------------------------------------------------------
+r319 | dgil | 2006-12-03 09:29:37 +0100 (Sun, 03 Dec 2006) | 1 line
+
+More info
+------------------------------------------------------------------------
+r318 | dgil | 2006-12-03 08:29:38 +0100 (Sun, 03 Dec 2006) | 1 line
+
+More info
+------------------------------------------------------------------------
+r317 | dgil | 2006-12-03 08:21:37 +0100 (Sun, 03 Dec 2006) | 1 line
+
+More info
+------------------------------------------------------------------------
+r316 | dgil | 2006-12-03 08:09:46 +0100 (Sun, 03 Dec 2006) | 1 line
+
+Again, new cookie. Central part could be something date based ...
+------------------------------------------------------------------------
+r315 | dgil | 2006-12-02 23:53:49 +0100 (Sat, 02 Dec 2006) | 1 line
+
+Typo
+------------------------------------------------------------------------
+r314 | dgil | 2006-12-02 23:39:20 +0100 (Sat, 02 Dec 2006) | 3 lines
+
+- Indices "PAR": Historic problems with 3 quotes (SF bug 1604005)
+- Graph View : CAC40 Indice : Crash (SF bug 1604310)
+
+------------------------------------------------------------------------
+r313 | dgil | 2006-12-02 22:53:39 +0100 (Sat, 02 Dec 2006) | 1 line
+
+More info on place codes
+------------------------------------------------------------------------
+r312 | dgil | 2006-12-02 22:52:11 +0100 (Sat, 02 Dec 2006) | 1 line
+
+Graph view : line before first quote date (SF bug 1601162)
+------------------------------------------------------------------------
+r311 | dgil | 2006-12-02 20:29:42 +0100 (Sat, 02 Dec 2006) | 1 line
+
+More info
+------------------------------------------------------------------------
+r310 | dgil | 2006-12-02 20:27:35 +0100 (Sat, 02 Dec 2006) | 1 line
+
+More info
+------------------------------------------------------------------------
+r309 | dgil | 2006-12-02 20:17:42 +0100 (Sat, 02 Dec 2006) | 1 line
+
+Start to analyse the cookie construction
+------------------------------------------------------------------------
+r308 | dgil | 2006-12-02 20:16:51 +0100 (Sat, 02 Dec 2006) | 1 line
+
+be sure usrdata/live.txt can have multiple lines / only the first one is read !
+------------------------------------------------------------------------
+r307 | dgil | 2006-12-02 09:23:31 +0100 (Sat, 02 Dec 2006) | 1 line
+
+Temporary code when you change the connector switch from/to option
+------------------------------------------------------------------------
+r306 | dgil | 2006-12-02 09:05:42 +0100 (Sat, 02 Dec 2006) | 3 lines
+
+Live connection : switch mechanism from/to differed (SF bug 1607288)
+
+Important : Default configuration is to force usage of Differed Time connectors
+------------------------------------------------------------------------
+r305 | dgil | 2006-12-02 06:10:59 +0100 (Sat, 02 Dec 2006) | 1 line
+
+Change the cookie
+------------------------------------------------------------------------
+r304 | dgil | 2006-11-26 19:52:09 +0100 (Sun, 26 Nov 2006) | 1 line
+
+Euronext Connector : InstrumentID should be cached (SF bug 1599154)
+------------------------------------------------------------------------
+r303 | dgil | 2006-11-26 18:37:52 +0100 (Sun, 26 Nov 2006) | 1 line
+
+Indices "US" : false tickers in indices.txt (SF bug 1602719)
+------------------------------------------------------------------------
+r302 | dgil | 2006-11-26 18:35:20 +0100 (Sun, 26 Nov 2006) | 1 line
+
+Indices "PAR" :KeyError "CSA_VOL_JOUR" (SF bug 1602220)
+------------------------------------------------------------------------
+r301 | dgil | 2006-11-26 18:31:35 +0100 (Sun, 26 Nov 2006) | 1 line
+
+Some updates in places.txt (better Fortuneo plugin live support)
+------------------------------------------------------------------------
+r300 | dgil | 2006-11-26 18:31:03 +0100 (Sun, 26 Nov 2006) | 1 line
+
+Remove useless files (rqt from michel)
+------------------------------------------------------------------------
+r299 | dgil | 2006-11-26 18:30:30 +0100 (Sun, 26 Nov 2006) | 1 line
+
+Some updates in places.txt (better Fortuneo plugin live support)
+------------------------------------------------------------------------
+r298 | dgil | 2006-11-26 18:24:58 +0100 (Sun, 26 Nov 2006) | 3 lines
+
+Add Portuguese ...
+Collaboration of Catherine Pedrosa and Guilherme (guigui for friends) which has translated ?\226?\128?\156iTrade?\226?\128?\157 into Portuguese Version. Some words will be surely to check during the use.
+
+------------------------------------------------------------------------
+r297 | dgil | 2006-11-23 23:17:54 +0100 (Thu, 23 Nov 2006) | 1 line
+
+Test
+------------------------------------------------------------------------
+r296 | dgil | 2006-11-23 16:30:03 +0100 (Thu, 23 Nov 2006) | 1 line
+
+Option to remove cache file (SF bug 1386537)
+------------------------------------------------------------------------
+r295 | dgil | 2006-11-23 12:55:23 +0100 (Thu, 23 Nov 2006) | 1 line
+
+suppress some useless traces in the console
+------------------------------------------------------------------------
+r294 | dgil | 2006-11-23 09:25:01 +0100 (Thu, 23 Nov 2006) | 1 line
+
+MMI part of : Option to remove cache file (SF bug 1386537)
+------------------------------------------------------------------------
+r293 | dgil | 2006-11-23 08:58:43 +0100 (Thu, 23 Nov 2006) | 1 line
+
+us.messages.txt : fix some text (SF bug 1601477)
+------------------------------------------------------------------------
+r292 | dgil | 2006-11-22 19:34:50 +0100 (Wed, 22 Nov 2006) | 1 line
+
+Trackers & Indices use Euronext import connector ; otherwise, use Yahoo import connector
+------------------------------------------------------------------------
+r291 | dgil | 2006-11-22 00:07:58 +0100 (Wed, 22 Nov 2006) | 1 line
+
+Python error in view graph when no historic data (SF bug 1599651)
+------------------------------------------------------------------------
+r290 | dgil | 2006-11-21 23:22:49 +0100 (Tue, 21 Nov 2006) | 1 line
+
+Yahoo connector : be sure volume > 0 (SF bug 1600016)
+------------------------------------------------------------------------
+r289 | dgil | 2006-11-21 23:21:19 +0100 (Tue, 21 Nov 2006) | 1 line
+
+Trades : better calculation when no quote
+------------------------------------------------------------------------
+r288 | dgil | 2006-11-19 23:00:40 +0100 (Sun, 19 Nov 2006) | 1 line
+
+Yahoo connector was buggy (missing some data from one full year)
+------------------------------------------------------------------------
+r287 | dgil | 2006-11-19 20:42:01 +0100 (Sun, 19 Nov 2006) | 1 line
+
+Package : SVN revision number (SF bug 1599315)
+------------------------------------------------------------------------
+r286 | dgil | 2006-11-19 20:36:42 +0100 (Sun, 19 Nov 2006) | 1 line
+
+Package : SVN revision number (SF bug 1599315)
+------------------------------------------------------------------------
+r285 | dgil | 2006-11-19 20:12:54 +0100 (Sun, 19 Nov 2006) | 2 lines
+
+- Switch to Yahoo connector for historic data
+- Special file (data/yahoo_tickers.txt) to map some tickers between euronext and yahoo lists
+------------------------------------------------------------------------
+r284 | dgil | 2006-11-19 20:00:23 +0100 (Sun, 19 Nov 2006) | 2 lines
+
+- Switch to Yahoo connector for historic data
+- Special file (data/yahoo_tickers.txt) to map some tickers between euronext and yahoo lists
+------------------------------------------------------------------------
+r283 | dgil | 2006-11-19 12:01:40 +0100 (Sun, 19 Nov 2006) | 1 line
+
+Update the TODO with the current situation.
+------------------------------------------------------------------------
+r282 | dgil | 2006-11-19 10:36:10 +0100 (Sun, 19 Nov 2006) | 1 line
+
+Update the TODO with the current situation.
+------------------------------------------------------------------------
+r281 | dgil | 2006-11-18 04:04:48 +0100 (Sat, 18 Nov 2006) | 1 line
+
+add an experimental commande line --unicode to start with unicode version of wxPython
+------------------------------------------------------------------------
+r280 | dgil | 2006-11-18 03:45:08 +0100 (Sat, 18 Nov 2006) | 2 lines
+
+- Graph View : minor issues on display
+- Graph view : date display is garbage (SF bug 1598697)
+------------------------------------------------------------------------
+r279 | dgil | 2006-11-18 02:44:53 +0100 (Sat, 18 Nov 2006) | 3 lines
+
+- Partially implement Graph : longer periods (SF bug 1598302)
+- Switch to numpy.array representation (SF bug 1597190) - stabilized
+- Graph view implementation is better and more stable : we have a better back-end to continue developments on the graphic toolbox !
+------------------------------------------------------------------------
+r278 | dgil | 2006-11-18 01:26:50 +0100 (Sat, 18 Nov 2006) | 1 line
+
+More dev on charting
+------------------------------------------------------------------------
+r277 | dgil | 2006-11-18 01:19:26 +0100 (Sat, 18 Nov 2006) | 1 line
+
+More dev on charting
+------------------------------------------------------------------------
+r276 | dgil | 2006-11-18 00:50:35 +0100 (Sat, 18 Nov 2006) | 1 line
+
+Typo
+------------------------------------------------------------------------
+r275 | dgil | 2006-11-18 00:44:06 +0100 (Sat, 18 Nov 2006) | 1 line
+
+WXAgg is x10 quicker than WX backend :-(
+------------------------------------------------------------------------
+r274 | dgil | 2006-11-17 18:24:17 +0100 (Fri, 17 Nov 2006) | 1 line
+
+Switch to numpy.array representation - VERY INSTABLE (SF bug 1597190)
+------------------------------------------------------------------------
+r273 | dgil | 2006-11-17 12:24:33 +0100 (Fri, 17 Nov 2006) | 1 line
+
+Switch to numpy.array representation - VERY INSTABLE (SF bug 1597190)
+------------------------------------------------------------------------
+r272 | dgil | 2006-11-17 12:03:08 +0100 (Fri, 17 Nov 2006) | 1 line
+
+Switch to numpy.array representation - VERY INSTABLE (SF bug 1597190)
+------------------------------------------------------------------------
+r271 | dgil | 2006-11-17 11:39:20 +0100 (Fri, 17 Nov 2006) | 1 line
+
+Switch to numpy.array representation - VERY INSTABLE (SF bug 1597190)
+------------------------------------------------------------------------
+r270 | dgil | 2006-11-17 11:38:52 +0100 (Fri, 17 Nov 2006) | 1 line
+
+Typo
+------------------------------------------------------------------------
+r269 | dgil | 2006-11-17 11:38:17 +0100 (Fri, 17 Nov 2006) | 1 line
+
+Typo
+------------------------------------------------------------------------
+r268 | dgil | 2006-11-17 11:35:57 +0100 (Fri, 17 Nov 2006) | 1 line
+
+Typo
+------------------------------------------------------------------------
+r267 | dgil | 2006-11-15 22:39:36 +0100 (Wed, 15 Nov 2006) | 1 line
+
+Some code to test locales
+------------------------------------------------------------------------
+r266 | dgil | 2006-11-15 22:19:16 +0100 (Wed, 15 Nov 2006) | 1 line
+
+Missing some Over picture text (SF bug 1595163)
+------------------------------------------------------------------------
+r265 | dgil | 2006-11-15 22:05:23 +0100 (Wed, 15 Nov 2006) | 1 line
+
+Missing some test files
+------------------------------------------------------------------------
+r264 | dgil | 2006-11-15 22:03:42 +0100 (Wed, 15 Nov 2006) | 1 line
+
+Euronext Brussels Market : value error (SF bug 1596477)
+------------------------------------------------------------------------
+r263 | dgil | 2006-11-12 10:37:49 +0100 (Sun, 12 Nov 2006) | 1 line
+
+Less traces
+------------------------------------------------------------------------
+r262 | dgil | 2006-11-12 10:23:08 +0100 (Sun, 12 Nov 2006) | 1 line
+
+Add a value: can't select it by isin and ticker (SF bug 1591336) in lowercase
+------------------------------------------------------------------------
+r261 | dgil | 2006-11-12 09:55:49 +0100 (Sun, 12 Nov 2006) | 1 line
+
+Add new menu in toolbar --> Options (SF bug 1594194)
+------------------------------------------------------------------------
+r260 | dgil | 2006-11-11 12:09:56 +0100 (Sat, 11 Nov 2006) | 1 line
+
+More dev
+------------------------------------------------------------------------
+r259 | dgil | 2006-11-11 12:08:54 +0100 (Sat, 11 Nov 2006) | 1 line
+
+Portfolio management : not all trades values (SF bug 1594183)
+------------------------------------------------------------------------
+r258 | dgil | 2006-11-11 11:45:10 +0100 (Sat, 11 Nov 2006) | 1 line
+
+Nyse Market : error with special tickers (SF bug 1593243)
+------------------------------------------------------------------------
+r257 | dgil | 2006-11-11 11:34:33 +0100 (Sat, 11 Nov 2006) | 1 line
+
+Amex/Nyse Markets : Invalid literal for float():N/A (SF bug 1594249)
+------------------------------------------------------------------------
+r256 | dgil | 2006-11-11 11:29:08 +0100 (Sat, 11 Nov 2006) | 1 line
+
+Amex/Nyse Markets : Invalid literal for float():N/A (SF bug 1594249)
+------------------------------------------------------------------------
+r255 | dgil | 2006-11-09 23:07:34 +0100 (Thu, 09 Nov 2006) | 1 line
+
+
+------------------------------------------------------------------------
+r254 | dgil | 2006-11-09 20:01:43 +0100 (Thu, 09 Nov 2006) | 1 line
+
+More dev on the Graphic Tools ...
+------------------------------------------------------------------------
+r253 | dgil | 2006-11-09 17:44:06 +0100 (Thu, 09 Nov 2006) | 1 line
+
+Nyse Market : error with special tickers (SF bug 1593243)
+------------------------------------------------------------------------
+r252 | dgil | 2006-11-08 21:33:55 +0100 (Wed, 08 Nov 2006) | 1 line
+
+
+------------------------------------------------------------------------
+r251 | dgil | 2006-11-08 20:02:06 +0100 (Wed, 08 Nov 2006) | 1 line
+
+Start working on the Graphic Tools ...
+------------------------------------------------------------------------
+r250 | dgil | 2006-11-08 19:32:25 +0100 (Wed, 08 Nov 2006) | 1 line
+
+Start working on the Graphic Tools ...
+------------------------------------------------------------------------
+r249 | dgil | 2006-11-08 18:43:21 +0100 (Wed, 08 Nov 2006) | 1 line
+
+valueError Brussels Libre Market (SF bug 1592266)
+------------------------------------------------------------------------
+r248 | dgil | 2006-11-08 18:05:06 +0100 (Wed, 08 Nov 2006) | 1 line
+
+Select/List Quote : invalid icon (SF bug 1592758)
+------------------------------------------------------------------------
+r247 | dgil | 2006-11-08 17:21:31 +0100 (Wed, 08 Nov 2006) | 1 line
+
+wxPython 2.7 : icons look bad in the toolbars (SF bug 1586180)
+------------------------------------------------------------------------
+r246 | dgil | 2006-11-08 15:12:52 +0100 (Wed, 08 Nov 2006) | 1 line
+
+Add a value: no possible when sorted (SF bug 1591293)
+------------------------------------------------------------------------
+r245 | dgil | 2006-11-08 14:40:18 +0100 (Wed, 08 Nov 2006) | 1 line
+
+Value error: invalid literal for long() (SF bug 1592003)
+------------------------------------------------------------------------
+r244 | dgil | 2006-11-06 09:32:49 +0100 (Mon, 06 Nov 2006) | 1 line
+
+ALTERNET symbols were missing (SF bug 1591067)
+------------------------------------------------------------------------
+r243 | dgil | 2006-11-05 23:11:14 +0100 (Sun, 05 Nov 2006) | 1 line
+
+Quotes.txt - missing Indices & Trackers for Euronext (SF bug 1590916)
+------------------------------------------------------------------------
+r242 | dgil | 2006-11-05 23:03:38 +0100 (Sun, 05 Nov 2006) | 1 line
+
+Quotes.txt - missing Indices & Trackers for Euronext (SF bug 1590916)
+------------------------------------------------------------------------
+r241 | dgil | 2006-11-05 22:30:52 +0100 (Sun, 05 Nov 2006) | 1 line
+
+Quotes.txt - missing Indices & Trackers for Euronext (SF bug 1590916)
+------------------------------------------------------------------------
+r240 | dgil | 2006-11-05 22:25:31 +0100 (Sun, 05 Nov 2006) | 1 line
+
+Quotes.txt - missing Indices & Trackers for Euronext (SF bug 1590916)
+------------------------------------------------------------------------
+r239 | dgil | 2006-11-05 19:03:31 +0100 (Sun, 05 Nov 2006) | 1 line
+
+Typo
+------------------------------------------------------------------------
+r238 | dgil | 2006-11-05 18:58:27 +0100 (Sun, 05 Nov 2006) | 1 line
+
+Typo
+------------------------------------------------------------------------
+r237 | dgil | 2006-11-05 16:53:35 +0100 (Sun, 05 Nov 2006) | 1 line
+
+Stop threads before loading a new portfolio (enhance the speed of the load)
+------------------------------------------------------------------------
+r236 | dgil | 2006-11-05 16:30:00 +0100 (Sun, 05 Nov 2006) | 1 line
+
+Select Quote : bad select item (SF bug  1590074)
+------------------------------------------------------------------------
+r235 | dgil | 2006-11-05 15:50:38 +0100 (Sun, 05 Nov 2006) | 1 line
+
+wxSelectQuote: better filter management !
+------------------------------------------------------------------------
+r234 | dgil | 2006-11-05 14:09:12 +0100 (Sun, 05 Nov 2006) | 3 lines
+
+- Euronext quotes - display only Euronext Paris !? (SF bug 1589626)
+key : <ISINorTICKER>.<EXCHANGE>.<PLACE>
+
+------------------------------------------------------------------------
+r233 | dgil | 2006-11-05 11:46:27 +0100 (Sun, 05 Nov 2006) | 1 line
+
+Marche Libre - ValueError (SF bug 1590367)
+------------------------------------------------------------------------
+r232 | dgil | 2006-11-03 20:22:34 +0100 (Fri, 03 Nov 2006) | 1 line
+
+new tarball
+------------------------------------------------------------------------
+r231 | dgil | 2006-11-03 20:13:30 +0100 (Fri, 03 Nov 2006) | 1 line
+
+Backend WXAgg -> WX (better perf + remove unicode dependancy)
+------------------------------------------------------------------------
+r230 | dgil | 2006-11-03 15:06:16 +0100 (Fri, 03 Nov 2006) | 2 lines
+
+Specific connector for deffered prices (SF bug 1589922)
+
+------------------------------------------------------------------------
+r229 | dgil | 2006-11-03 15:00:27 +0100 (Fri, 03 Nov 2006) | 1 line
+
+Specific connector for deffered prices (SF bug 1589922)
+------------------------------------------------------------------------
+r228 | dgil | 2006-11-03 09:49:24 +0100 (Fri, 03 Nov 2006) | 1 line
+
+Experimental Binary Package : 8 to 9 M bytes (SF bug 1477443)
+------------------------------------------------------------------------
+r227 | dgil | 2006-11-03 09:34:56 +0100 (Fri, 03 Nov 2006) | 2 lines
+
+Download EURONEXT list of quotes : use the MEP (SF bug 1589626)
+
+------------------------------------------------------------------------
+r226 | dgil | 2006-11-02 17:37:58 +0100 (Thu, 02 Nov 2006) | 1 line
+
+Typo
+------------------------------------------------------------------------
+r225 | dgil | 2006-11-02 14:29:38 +0100 (Thu, 02 Nov 2006) | 1 line
+
+Property View : should be independent (SF bug 1589102)
+------------------------------------------------------------------------
+r224 | dgil | 2006-11-02 11:54:13 +0100 (Thu, 02 Nov 2006) | 1 line
+
+Prepare the next snapshot ...
+------------------------------------------------------------------------
+r223 | dgil | 2006-11-02 11:52:24 +0100 (Thu, 02 Nov 2006) | 1 line
+
+Fix the new default quotes list
+------------------------------------------------------------------------
+r222 | dgil | 2006-11-02 11:51:32 +0100 (Thu, 02 Nov 2006) | 1 line
+
+Fix a bug when a quote has more than 1 property to save
+------------------------------------------------------------------------
+r221 | dgil | 2006-11-02 11:50:32 +0100 (Thu, 02 Nov 2006) | 1 line
+
+Fix a bug when a quote has more than 1 property to save
+------------------------------------------------------------------------
+r220 | dgil | 2006-11-02 11:33:24 +0100 (Thu, 02 Nov 2006) | 1 line
+
+After merging NEWREF branch ...
+------------------------------------------------------------------------
+r203 | dgil | 2006-11-01 10:02:59 +0100 (Wed, 01 Nov 2006) | 3 lines
+
+- Quote View : Properties Panel : Implement Import (SF bug 1392037)
+- Quote View : Properties Panel : Implement Export (SF bug 1392036)
+
+------------------------------------------------------------------------
+r195 | dgil | 2006-10-31 14:29:06 +0100 (Tue, 31 Oct 2006) | 1 line
+
+Matrix view : "Points Pivots" information (SF bug 1448784) - fix a special degenerated case
+------------------------------------------------------------------------
+r193 | dgil | 2006-10-31 14:19:09 +0100 (Tue, 31 Oct 2006) | 1 line
+
+some merge on quote properties (country,place and currency display)
+------------------------------------------------------------------------
+r179 | dgil | 2006-10-30 18:29:58 +0100 (Mon, 30 Oct 2006) | 1 line
+
+Typo
+------------------------------------------------------------------------
+r177 | dgil | 2006-10-30 16:18:53 +0100 (Mon, 30 Oct 2006) | 1 line
+
+Matrix view : "Points Pivots" information (SF bug 1448784)
+------------------------------------------------------------------------
+r176 | dgil | 2006-10-30 16:14:28 +0100 (Mon, 30 Oct 2006) | 1 line
+
+Matrix view : "Points Pivots" information (SF bug 1448784)
+------------------------------------------------------------------------
+r171 | dgil | 2006-10-29 18:44:15 +0100 (Sun, 29 Oct 2006) | 1 line
+
+assertionError (SF bug 1579983)
+------------------------------------------------------------------------
+r168 | dgil | 2006-10-29 11:30:16 +0100 (Sun, 29 Oct 2006) | 1 line
+
+Alternext : not access view graph (SF bug 1586254)
+------------------------------------------------------------------------
+r164 | dgil | 2006-10-28 23:57:22 +0200 (Sat, 28 Oct 2006) | 1 line
+
+Can't remove a file (SF bug 1586418)
+------------------------------------------------------------------------
+r158 | dgil | 2006-10-27 11:47:58 +0200 (Fri, 27 Oct 2006) | 1 line
+
+Be sure to have EURONEXT and AMEX connectors.
+------------------------------------------------------------------------
+r156 | dgil | 2006-10-27 11:14:06 +0200 (Fri, 27 Oct 2006) | 1 line
+
+Good format for user quotes list.
+------------------------------------------------------------------------
+r153 | dgil | 2006-10-26 23:04:39 +0200 (Thu, 26 Oct 2006) | 1 line
+
+RELNOTES
+------------------------------------------------------------------------
+r151 | dgil | 2006-10-26 17:28:10 +0200 (Thu, 26 Oct 2006) | 1 line
+
+Graph : display in-use period (SF bug 1339926)
+------------------------------------------------------------------------
+r147 | dgil | 2006-10-26 16:22:47 +0200 (Thu, 26 Oct 2006) | 1 line
+
+view live : not access with RINV (SF bug 1567054)
+------------------------------------------------------------------------
+r145 | dgil | 2006-10-26 15:11:15 +0200 (Thu, 26 Oct 2006) | 1 line
+
+Euronext has changed list format !
+------------------------------------------------------------------------
+r137 | dgil | 2006-10-25 20:51:23 +0200 (Wed, 25 Oct 2006) | 1 line
+
+Typo
+------------------------------------------------------------------------
+r131 | dgil | 2006-10-24 22:07:42 +0200 (Tue, 24 Oct 2006) | 2 lines
+
+quotes.txt : error in a NYSE quote (SF bug 1561805) : filter name by removing any ';' character
+
+------------------------------------------------------------------------
+r130 | dgil | 2006-10-21 11:17:40 +0200 (Sat, 21 Oct 2006) | 1 line
+
+Memory problem loading many portolios (SF bug 1565374)
+------------------------------------------------------------------------
+r129 | dgil | 2006-10-21 11:03:30 +0200 (Sat, 21 Oct 2006) | 1 line
+
+Convert to using the wx namespace (SF bug 1500964)
+------------------------------------------------------------------------
+r126 | dgil | 2006-10-21 09:41:06 +0200 (Sat, 21 Oct 2006) | 3 lines
+
+Convert to using the wx namespace (SF bug 1500964)
+
+
+------------------------------------------------------------------------
+r125 | dgil | 2006-10-21 00:24:41 +0200 (Sat, 21 Oct 2006) | 3 lines
+
+- Convert to using the wx namespace (SF bug 1500964)
+- migrate to wxPython 2.7.x (SF bug 1581494) - not working yet
+
+------------------------------------------------------------------------
+r121 | dgil | 2006-10-02 08:54:35 +0200 (Mon, 02 Oct 2006) | 1 line
+
+Some more quotes in data/places.txt
+------------------------------------------------------------------------
+r119 | dgil | 2006-09-26 22:40:37 +0200 (Tue, 26 Sep 2006) | 1 line
+
+Add test files from Michel
+------------------------------------------------------------------------
+r118 | dgil | 2006-09-22 17:04:17 +0200 (Fri, 22 Sep 2006) | 1 line
+
+Remove useless code
+------------------------------------------------------------------------
+r115 | dgil | 2006-09-22 16:39:03 +0200 (Fri, 22 Sep 2006) | 1 line
+
+Another fix on SF bug 1557368 (another KeyError)
+------------------------------------------------------------------------
+r114 | dgil | 2006-09-22 16:37:17 +0200 (Fri, 22 Sep 2006) | 1 line
+
+Another fix on SF bug 1557368 (another KeyError)
+------------------------------------------------------------------------
+r105 | dgil | 2006-09-20 20:01:48 +0200 (Wed, 20 Sep 2006) | 2 lines
+
+create branch ITRADE_0_4_5_new_quote_reference
+
+------------------------------------------------------------------------
+r103 | dgil | 2006-09-20 19:59:24 +0200 (Wed, 20 Sep 2006) | 1 line
+
+create branch ITRADE_0_4_5_new_quote_reference
+------------------------------------------------------------------------
+r101 | dgil | 2006-09-20 19:54:10 +0200 (Wed, 20 Sep 2006) | 1 line
+
+Merged from matplotlib 0.87.5
+------------------------------------------------------------------------
+r98 | dgil | 2006-09-14 07:36:01 +0200 (Thu, 14 Sep 2006) | 1 line
+
+Typo
+------------------------------------------------------------------------
+r97 | dgil | 2006-09-14 07:31:35 +0200 (Thu, 14 Sep 2006) | 1 line
+
+Typo
+------------------------------------------------------------------------
+r96 | dgil | 2006-09-13 21:51:49 +0200 (Wed, 13 Sep 2006) | 6 lines
+
+Attention :
+If you have some trouble running iTrade after migrating from a previous version,
+be sure you have uninstalled Matplotlib and NumArray/Numpy before installing
+the new versions of these libraries.
+
+
+------------------------------------------------------------------------
+r95 | dgil | 2006-09-13 10:23:48 +0200 (Wed, 13 Sep 2006) | 1 line
+
+Live : invalid clock display (SF bug 1557680)
+------------------------------------------------------------------------
+r92 | dgil | 2006-09-13 09:51:41 +0200 (Wed, 13 Sep 2006) | 1 line
+
+Live : bad indication "Disconnected" (SF bug 1549599)
+------------------------------------------------------------------------
+r91 | dgil | 2006-09-13 08:05:33 +0200 (Wed, 13 Sep 2006) | 5 lines
+
+- Live : remove traces in CONSOLE (better perf)
+- Live : live -2 or 0 instead of ATP / MX  (SF bug 1557631)
+- Live : Live: CMP can be empty !  (SF bug 1557629)
+- Live: Updated data/places.txt file (michel legrand)
+
+------------------------------------------------------------------------
+r90 | dgil | 2006-09-12 23:00:52 +0200 (Tue, 12 Sep 2006) | 1 line
+
+Removed unnecessary import
+------------------------------------------------------------------------
+r89 | dgil | 2006-09-12 22:59:48 +0200 (Tue, 12 Sep 2006) | 1 line
+
+Removed unnecessary import
+------------------------------------------------------------------------
+r88 | dgil | 2006-09-12 22:59:05 +0200 (Tue, 12 Sep 2006) | 1 line
+
+Typo
+------------------------------------------------------------------------
+r87 | dgil | 2006-09-12 22:55:54 +0200 (Tue, 12 Sep 2006) | 3 lines
+
+- Live : FMP Buy/Sell is inversed  (SF bug 1557356)
+- Live : exception because Notebook can be limited (SF bug 1557368)
+
+------------------------------------------------------------------------
+r85 | dgil | 2006-09-12 08:03:55 +0200 (Tue, 12 Sep 2006) | 1 line
+
+Typo
+------------------------------------------------------------------------
+r83 | dgil | 2006-09-12 08:02:20 +0200 (Tue, 12 Sep 2006) | 1 line
+
+[ 1552404 ] Patch1 : freeze before Euronext opening
+------------------------------------------------------------------------
+r82 | dgil | 2006-09-02 20:13:10 +0200 (Sat, 02 Sep 2006) | 1 line
+
+Prepare snapshot
+------------------------------------------------------------------------
+r79 | dgil | 2006-09-01 20:33:54 +0200 (Fri, 01 Sep 2006) | 1 line
+
+Some updates in data files
+------------------------------------------------------------------------
+r78 | dgil | 2006-09-01 20:31:30 +0200 (Fri, 01 Sep 2006) | 1 line
+
+@ -> at (avoid spam)
+------------------------------------------------------------------------
+r76 | dgil | 2006-08-31 23:28:29 +0200 (Thu, 31 Aug 2006) | 1 line
+
+Typo
+------------------------------------------------------------------------
+r72 | dgil | 2006-08-31 12:04:49 +0200 (Thu, 31 Aug 2006) | 1 line
+
+Resolve an issue on the state (UNKNOWN) of a closed quote
+------------------------------------------------------------------------
+r70 | dgil | 2006-08-31 11:29:36 +0200 (Thu, 31 Aug 2006) | 1 line
+
+[ SF bug 1549597 ] Patch1 : MLDUC quote : view
+------------------------------------------------------------------------
+r69 | dgil | 2006-08-31 11:06:52 +0200 (Thu, 31 Aug 2006) | 1 line
+
+Remove VIM specific parameters in sourcecode
+------------------------------------------------------------------------
+r68 | dgil | 2006-08-31 10:37:08 +0200 (Thu, 31 Aug 2006) | 3 lines
+
+- add a specific mechanism so the software will not freeze if place is wrong (add also a message on the console to detect such case)
+
+- add a way to map code (i.e. 027) with place (i.e. LYON) so the editing of the file data/places.txt will be easier
+------------------------------------------------------------------------
+r67 | dgil | 2006-08-31 09:58:31 +0200 (Thu, 31 Aug 2006) | 1 line
+
+In some case, lasttrade field can be empty
+------------------------------------------------------------------------
+r65 | dgil | 2006-08-30 23:24:12 +0200 (Wed, 30 Aug 2006) | 1 line
+
+add MLDUC in data/places.txt so software will not freeze on default portfolio (see SF bug 1549542)
+------------------------------------------------------------------------
+r64 | dgil | 2006-08-30 23:04:50 +0200 (Wed, 30 Aug 2006) | 1 line
+
+ACANTHE should be refreshed (see SF bug 1549542)
+------------------------------------------------------------------------
+r62 | dgil | 2006-08-30 20:39:49 +0200 (Wed, 30 Aug 2006) | 1 line
+
+Add the place of a quote
+------------------------------------------------------------------------
+r60 | dgil | 2006-08-20 14:31:10 +0200 (Sun, 20 Aug 2006) | 1 line
+
+Live connector for Euronext : some minor modifications
+------------------------------------------------------------------------
+r58 | dgil | 2006-08-20 09:59:33 +0200 (Sun, 20 Aug 2006) | 1 line
+
+Live connector for Euronext market is working again !
+------------------------------------------------------------------------
+r57 | dgil | 2006-08-20 09:50:06 +0200 (Sun, 20 Aug 2006) | 1 line
+
+Everything seems to work. But, need to wait market open to check so many little details.
+------------------------------------------------------------------------
+r56 | dgil | 2006-08-20 01:23:25 +0200 (Sun, 20 Aug 2006) | 1 line
+
+Live update has been reactivated. Seems to work well except that we are not able (yet) to detect data in the flux ...
+------------------------------------------------------------------------
+r55 | dgil | 2006-08-20 00:35:46 +0200 (Sun, 20 Aug 2006) | 2 lines
+
+Authentication scheme is working. The streaming server is returning something !
+Add some code to decode ... and it's working well :-)
+------------------------------------------------------------------------
+r54 | dgil | 2006-08-19 20:06:03 +0200 (Sat, 19 Aug 2006) | 2 lines
+
+Authentication scheme is working. The streaming server is returning something !
+Add some code for subscriptions
+------------------------------------------------------------------------
+r53 | dgil | 2006-08-19 13:41:10 +0200 (Sat, 19 Aug 2006) | 2 lines
+
+Authentication scheme is working. The streaming server is returning something !
+Add also some code cleanup
+------------------------------------------------------------------------
+r52 | dgil | 2006-08-19 13:36:00 +0200 (Sat, 19 Aug 2006) | 1 line
+
+Authentication scheme is working. The streaming server is returning something ! yep
+------------------------------------------------------------------------
+r51 | dgil | 2006-08-17 16:15:52 +0200 (Thu, 17 Aug 2006) | 1 line
+
+switch from numarray to numpy (0.9.8)
+------------------------------------------------------------------------
+r50 | dgil | 2006-06-12 23:07:47 +0200 (Mon, 12 Jun 2006) | 1 line
+
+Filter the NYSE symbol list (CUSIP better management)
+------------------------------------------------------------------------
+r49 | dgil | 2006-06-12 19:07:45 +0200 (Mon, 12 Jun 2006) | 4 lines
+
+- List of quotes : add filter by market (SF bug 1504296)
+- List of quotes : MMI to update the list (SF bug 1504485)
+- Import list plugin : NYSE (part of SF bug 1504294)
+
+------------------------------------------------------------------------
+r48 | dgil | 2006-06-12 12:13:21 +0200 (Mon, 12 Jun 2006) | 1 line
+
+NYSE symbol list download ...
+------------------------------------------------------------------------
+r47 | dgil | 2006-06-12 11:27:47 +0200 (Mon, 12 Jun 2006) | 1 line
+
+Typo (missing currency !)
+------------------------------------------------------------------------
+r46 | dgil | 2006-06-11 23:08:49 +0200 (Sun, 11 Jun 2006) | 5 lines
+
+Import list plugin : euronext (SF bug 1485056)
+
+ATTENTION: 
+1- quotes.txt format has been changed
+2- NASDAQ, NYSE and AMEX quotes not yet available under this new list !
+------------------------------------------------------------------------
+r45 | dgil | 2006-06-11 12:35:29 +0200 (Sun, 11 Jun 2006) | 1 line
+
+NOT WORKING - missing information ...
+------------------------------------------------------------------------
+r44 | dgil | 2006-06-11 12:34:50 +0200 (Sun, 11 Jun 2006) | 1 line
+
+Import list plugin : euronext (SF bug 1485056)
+------------------------------------------------------------------------
+r43 | dgil | 2006-06-11 12:33:49 +0200 (Sun, 11 Jun 2006) | 1 line
+
+Import list plugin : euronext (SF bug 1485056)
+------------------------------------------------------------------------
+r42 | dgil | 2006-06-11 12:33:24 +0200 (Sun, 11 Jun 2006) | 1 line
+
+Import list plugin : euronext (SF bug 1485056)
+------------------------------------------------------------------------
+r41 | dgil | 2006-06-05 18:58:35 +0200 (Mon, 05 Jun 2006) | 1 line
+
+Typo
+------------------------------------------------------------------------
+r40 | dgil | 2006-06-05 16:34:59 +0200 (Mon, 05 Jun 2006) | 1 line
+
+display correct time of trades (SF bug 1498701)
+------------------------------------------------------------------------
+r39 | dgil | 2006-06-05 16:11:36 +0200 (Mon, 05 Jun 2006) | 1 line
+
+Typo :-(
+------------------------------------------------------------------------
+r38 | dgil | 2006-06-05 16:04:46 +0200 (Mon, 05 Jun 2006) | 1 line
+
+Yahoo plugin : display correct time of the trades (SF bug 1498701)
+------------------------------------------------------------------------
+r37 | dgil | 2006-06-05 15:31:37 +0200 (Mon, 05 Jun 2006) | 1 line
+
+Yahoo plugin : ask and bid (SF bug 1497343). Activate live for yahoo
+------------------------------------------------------------------------
+r36 | dgil | 2006-06-04 20:29:09 +0200 (Sun, 04 Jun 2006) | 1 line
+
+Yahoo plugin : ask and bid (SF bug 1497343). Activate live for yahoo
+------------------------------------------------------------------------
+r35 | dgil | 2006-06-04 11:50:03 +0200 (Sun, 04 Jun 2006) | 1 line
+
+News : scan / clear button definitions (SF bug 1480417)
+------------------------------------------------------------------------
+r34 | dgil | 2006-06-04 11:32:23 +0200 (Sun, 04 Jun 2006) | 1 line
+
+code cleanup
+------------------------------------------------------------------------
+r33 | dgil | 2006-06-04 11:31:30 +0200 (Sun, 04 Jun 2006) | 1 line
+
+main currency in portfolio editing : use a combobox also
+------------------------------------------------------------------------
+r32 | dgil | 2006-06-04 11:20:58 +0200 (Sun, 04 Jun 2006) | 1 line
+
+NYSE and LSE + filter market name using combobox (SF bug 1473358)
+------------------------------------------------------------------------
+r31 | dgil | 2006-06-04 11:02:13 +0200 (Sun, 04 Jun 2006) | 1 line
+
+itrade_import.py was not working anymore ?! typo ?!
+------------------------------------------------------------------------
+r30 | dgil | 2006-06-03 18:45:20 +0200 (Sat, 03 Jun 2006) | 1 line
+
+Context Help in wxDialog (SF bug 1410679)
+------------------------------------------------------------------------
+r29 | dgil | 2006-06-02 08:31:39 +0200 (Fri, 02 Jun 2006) | 5 lines
+
+- currency front-end (SF bug 1470719)
+- currency back-end (SF bug 1470718)
+- number of shares display : use also separator (i.e. SF bug 1497092)
+
+
+------------------------------------------------------------------------
+r28 | dgil | 2006-06-01 09:21:23 +0200 (Thu, 01 Jun 2006) | 1 line
+
+Memorial Day
+------------------------------------------------------------------------
+r27 | dgil | 2006-05-29 20:42:47 +0200 (Mon, 29 May 2006) | 3 lines
+
+- Volume display : use separator (SF bug 1497092)
+- move list stuff from itrade_wxquote.py to itrade_wxlistquote.py
+
+------------------------------------------------------------------------
+r26 | dgil | 2006-05-28 20:16:43 +0200 (Sun, 28 May 2006) | 1 line
+
+Portfolio : remove a value : some issues on matrix (SF bug 1458054)
+------------------------------------------------------------------------
+r25 | dgil | 2006-05-28 19:47:02 +0200 (Sun, 28 May 2006) | 1 line
+
+Quote view : bad display (time/hours) (SF bug 1424415)
+------------------------------------------------------------------------
+r24 | dgil | 2006-05-28 16:18:08 +0200 (Sun, 28 May 2006) | 1 line
+
+Remove CVS $id$ in source file (SF bug 1496343)
+------------------------------------------------------------------------
+r23 | dgil | 2006-05-28 16:09:24 +0200 (Sun, 28 May 2006) | 2 lines
+
+Import plugin : number of years (SF bug 1485060)
+Go back to 0.4.5 development release
+------------------------------------------------------------------------
+r21 | dgil | 2006-05-28 14:17:19 +0200 (Sun, 28 May 2006) | 1 line
+
+v0.4.2 launch
+------------------------------------------------------------------------
+r20 | dgil | 2006-05-28 12:48:16 +0200 (Sun, 28 May 2006) | 1 line
+
+Prepare v0.4.2 Coca2 launch
+------------------------------------------------------------------------
+r17 | dgil | 2006-05-28 11:40:18 +0200 (Sun, 28 May 2006) | 1 line
+
+Reorg the SVN repository to have trunk, branches and tags
+------------------------------------------------------------------------
+r16 | dgil | 2006-05-28 11:31:30 +0200 (Sun, 28 May 2006) | 1 line
+
+Reorg the SVN repository to have trunk, branches and tags
+------------------------------------------------------------------------
+r15 | dgil | 2006-05-28 11:29:09 +0200 (Sun, 28 May 2006) | 1 line
+
+
+------------------------------------------------------------------------

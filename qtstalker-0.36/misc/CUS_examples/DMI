@@ -1,0 +1,7 @@
+enable=1
+plugin=CUS
+tabRow=2
+dateFlag=0
+Name=DMI - Directional Movement Index
+script=-dm := TALIB(MINUS_DI, 14)|+dm := TALIB(PLUS_DI, 14)|adx := TALIB(ADX, 14)|plot (-dm,#ff0000,-DI,Line)|plot (adx,#ffff00,ADX,Line)|plot (+dm,#00ff00,+DI,Line)
+logScale=0

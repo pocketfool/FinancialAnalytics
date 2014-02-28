@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module codename="org.aiotrade.platform.modules.indicator.basic">
+    <module_version install_time="1163675152073" last="true" origin="installer" specification_version="1.0">
+        <file crc="3941329499" name="config/Modules/org-aiotrade-platform-modules-indicator-basic.xml"/>
+        <file crc="1679622668" name="modules/org-aiotrade-platform-modules-indicator-basic.jar"/>
+    </module_version>
+</module>

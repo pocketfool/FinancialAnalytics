@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module codename="org.aiotrade.platform.core.ui">
+    <module_version install_time="1163675143441" last="true" origin="installer" specification_version="1.0">
+        <file crc="4256653452" name="config/Modules/org-aiotrade-platform-core-ui.xml"/>
+        <file crc="2685918200" name="modules/org-aiotrade-platform-core-ui.jar"/>
+    </module_version>
+</module>

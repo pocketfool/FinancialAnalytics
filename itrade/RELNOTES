@@ -1,0 +1,80 @@
+/iTrade/RELNOTES
+===============================================================================
+
+-------------------------------------------------------------------------------
+Version 0.4.6 - Nausicaa2
+-------------------------------------------------------------------------------
+
+ "python itrade.py --help"	for command line help
+
+ "python itrade.py -e" 		to display portfolio evaluation
+
+ "python itrade.py" 		to start using default language
+ "python itrade.py -d"		to start without network connection
+
+ "python itrade.py --lang=us" 	to start using us language
+ "python itrade.py --lang=fr" 	to start using fr language
+
+ "python itrade.py --verbose" 	to display verbose and debugging information
+
+ "python itrade.py --nopsyco" 	to stop using psyco library if installed
+
+ "python itrade.py -u <path>"	to start using a specific usrdata/ folder
+
+ "python itrade.py -x"		to activate experimental features
+
+-------------------------------------------------------------------------------
+Known Issues : v0.4.6 (under dev)
+-------------------------------------------------------------------------------
+
+- In the Operations and Graph Views, some icon are badly displayed (text or
+  lines are missing because of bad transparency management). This is an issue
+  with wxPython 2.6.x. This problem is fixed with wxPython 2.8.x
+  https://sourceforge.net/tracker/index.php?func=detail&aid=1641799&group_id=128261&atid=711187
+
+- Missing some Menu or Button labels
+  (accents not well supported on some Linux distribution)
+  https://sourceforge.net/tracker/index.php?func=detail&aid=1595157&group_id=128261&atid=711187
+
+- Portfolio with many lines are very long to refresh at starting
+  https://sourceforge.net/tracker/index.php?func=detail&aid=1611122&group_id=128261&atid=711187
+
+- The probability to have a crash at the end of the exit is very high. But
+  this crash has no impact (crash in a event kind of thread) except filling
+  the console or log file
+  https://sourceforge.net/tracker/index.php?func=detail&aid=1597926&group_id=128261&atid=711187
+
+- wxPython / python-wxaddons : on some Linux distro (ubuntu feisty for example)
+  wxaddons could be missing : "ImportError: No module named wxaddons.sized_controls"
+
+	deb http://wxpython.wxcommunity.com/apt/ubuntu/feisty /
+	deb-src http://wxpython.wxcommunity.com/apt/ubuntu/feisty /
+
+	install python-wxaddons package from /etc/apt/sources.list
+
+- Donwload LSE list of quotes is crashing python DLL :
+  check that your are using XLRD version 0.6.1 *final* or better.
+  the 0.6.1a4 release is known to crash iTrade during the second download of LSE
+
+===============================================================================
+Previous release notes
+===============================================================================
+
+-------------------------------------------------------------------------------
+Known Issues : v0.4.5
+-------------------------------------------------------------------------------
+
+- Proxy was not supported (historical data, list of quotes and live data cannot
+  be obtain through a proxy)
+
+- at launchtime, I got an alert box saying a specific DLL is not found (wxmsw26uh_vc.dll)
+  This is known issue from the matplotlib library - can be safely ignored
+  https://sourceforge.net/tracker/index.php?func=detail&aid=1550926&group_id=128261&atid=711187
+
+-------------------------------------------------------------------------------
+Known Issues : before
+-------------------------------------------------------------------------------
+
+Nothing really interesting to keep
+
+===============================================================================

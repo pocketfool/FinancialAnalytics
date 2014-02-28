@@ -1,0 +1,7 @@
+enable=0
+plugin=CUS
+tabRow=1
+dateFlag=1
+Name=DonchianChannels
+script=bars := BARS(Bar)|high-1 := UTIL(REF,High,1)|low-1 := UTIL(REF,Low,1)|high := TALIB(MAX,high-1,20)|low := TALIB(MIN,low-1,20)|plot (bars,#ff0000,Bars,Bar)|plot (high,#ff0000,HH,Line)|plot (low,#ff0000,LL,Line)
+logScale=0

@@ -1,0 +1,158 @@
+ProfitPy - An Automated Stock Trading Toolkit for Python
+=============================================================================
+ProfitPy 0.1 Released 11 September 2004
+
+
+What is ProfitPy?
+-----------------------------------------------------------------------------
+ProfitPy is a set of libraries and tools for the development, testing, and
+execution of automated stock trading systems[1].  The main web site for the
+toolkit is here:
+    
+    http://profitpy.sourceforge.net/
+
+Specifically, ProfitPy is a collection of Python packages, modules, and 
+scripts that work together to help you implement an automated stock trading 
+program (or programs).  The package features:
+
+  * A library with classes for accounts, orders, tickers, and more
+  * A GUI program for executing and plotting trades in real-time[2]
+  * A GUI tool to collect ticker data for off-line use
+  * A CLI tool to back-test trading strategies
+  * Dozens of technical indicators and plotting widgets to display them
+  * An X11 keystroke tool for automating the TWS application
+
+
+Screenshots
+-----------------------------------------------------------------------------
+A picture is worth a thousand words.  It beats documentation, at least:
+
+    http://profitpy.sourceforge.net/screenshots.html
+
+
+Where can I get ProfitPy?
+-----------------------------------------------------------------------------
+ProfitPy is available for download from SourceForge:
+
+    http://sourceforge.net/projects/profitpy
+
+
+What are the requirements?
+-----------------------------------------------------------------------------
+ProfitPy requires the following packages.  Newer versions may (or may not!) 
+be substituted:
+
+  * Python 2.3.4
+    http://www.python.org/
+
+  * PyKDE 3.11.3
+    http://www.riverbankcomputing.co.uk/pykde/
+
+  * PyQwt 4.0rc0 
+    http://sourceforge.net/projects/pyqwt/
+
+  * SciPy 0.3
+    http://www.scipy.org/
+
+  * IbPy 0.4
+    http://sourceforge.net/projects/ibpy/
+
+ProfitPy can make use of these optional components as well:
+
+  * The Eric3 Python IDE
+    http://www.die-offenbachs.de/detlev/eric3.html
+
+    The ProfitPy main GUI features a source code viewing widget.  If the 
+    Eric3 IDE is present and importable, its source editor widget will be 
+    used instead.
+
+  * X11::GUITest
+    http://sourceforge.net/projects/x11guitest
+
+    The main GUI and the collection tool make use of a keystroke automation
+    script for TWS.  This script requires the X11::GUITest Perl package.
+
+ProfitPy applications and tools connect to the Interactive Brokers[3] client 
+application to receive data and send orders.  This system, TWS, requires a 
+web browser capable of executing Sun(R) Java(tm) applets.  TWS can also be 
+started directly with Sun(R) Java(tm) and the stand-alone package supplied 
+by IB.
+
+
+What is Python?
+-----------------------------------------------------------------------------
+From the "What is Python?" page (http://python.org/doc/Summary.html):
+
+Python is an interpreted, interactive, object-oriented programming language. 
+It is often compared to Tcl, Perl, Scheme or Java.
+
+Python combines remarkable power with very clear syntax. It has modules, 
+classes, exceptions, very high level dynamic data types, and dynamic typing.  
+There are interfaces to many system calls and libraries, as well as to various
+windowing systems (X11, Motif, Tk, Mac, MFC). New built-in modules are easily 
+written in C or C++. Python is also usable as an extension language for 
+applications that need a programmable interface.
+
+The Python implementation is portable: it runs on many brands of UNIX, on 
+Windows, DOS, OS/2, Mac, Amiga... If your favorite system isn't listed here, 
+it may still be supported, if there's a C compiler for it. Ask around on 
+comp.lang.python -- or just try compiling Python yourself.
+
+The Python implementation is copyrighted but freely usable and distributable, 
+even for commercial use.
+
+
+What is TWS?
+-----------------------------------------------------------------------------
+From the page "Trader Execution and Clearing System Features" 
+(http://interactivebrokers.com/html/companyInfo/market_ib.html):
+
+* IB's Trader Workstation can be run directly from your browser, or you can 
+install it on your PC and run it from your desktop. This Java based 
+application allows traders to quickly enter orders and see results.
+
+* Direct Access: Unlike other "online" brokers that send your order through 
+an e-mail type system, IB offers a direct-access order entry system that 
+transmits your order to the proper market center, usually within one second 
+of entry.
+
+* Real-Time Streaming Quotes: Display real-time, streaming quotes for markets 
+of interest to the investor. Quotes are live and change continuously as the 
+markets change, no periodic manual update or "refresh" is required.
+
+
+What else?
+-----------------------------------------------------------------------------
+ProfitPy is Free Software and is concordantly licensed under the GPL.  Refer 
+to the LICENSE file in the distribution for more information.
+
+I never intended to release this code to the public.  Much of it is specific 
+to my trading applications.  Please note that the superficial design flaws 
+are very important, as they hide the fundamental ones.  YMMV.
+
+ProfitPy is not a product of Interactive Brokers, nor am I affiliated with 
+IB.  I am a satisfied IB customer, of course.
+
+The TWS demo system is available here:
+
+    http://interactivebrokers.com/cgi-pub/jtslink.pl?user_name=edemo
+
+
+Thank you!
+-----------------------------------------------------------------------------
+Thank you, for I am very interested in your experience with ProfitPy.  
+Please drop me an note with any feedback you have.
+
+
+Troy Melhase
+mailto:troy@gci.net
+
+
+[1]  I trade stocks, not futures, options, or anything else, just stocks.  
+ProfitPy reflects this, but I know of nothing that limits the code to only 
+stocks.
+
+[2]  Please excuse the misuse of "real time".  I understand that none of 
+this is true real time.
+
+[3]  Interactive Brokers website:  http://www.interactivebrokers.com/

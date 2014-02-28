@@ -1,0 +1,7 @@
+enable=1
+plugin=CUS
+tabRow=3
+dateFlag=0
+Name=Stochastic Oscillator Slow
+script=stoch := TALIB(STOCH,5,3,SMA,3,SMA,1)|ma := TALIB(STOCH,5,3,SMA,3,SMA,2)|oversold := UTIL(REF,20)|overbought := UTIL(REF,80)|plot (oversold,#00ff00,Oversold,Horizontal)|plot (overbought,#ff0000,Overbought,Horizontal)|plot (stoch,#ff0000,SlowK,Line)|plot (ma,#ffff00,SlowD,Dash)
+logScale=0

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module codename="org.aiotrade.platform.branding">
+    <module_version install_time="1163675091065" last="true" origin="installer" specification_version="1.0">
+        <file crc="3459937209" name="config/Modules/org-aiotrade-platform-branding.xml"/>
+        <file crc="1017501896" name="modules/org-aiotrade-platform-branding.jar"/>
+    </module_version>
+</module>

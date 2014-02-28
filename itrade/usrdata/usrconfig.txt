@@ -1,0 +1,11 @@
+[column]
+indicators = 8;0
+portfolio = 10;1
+stops = 10;0
+quotes = 11;1
+
+[net]
+connectiontimeout = 25
+
+[view]
+

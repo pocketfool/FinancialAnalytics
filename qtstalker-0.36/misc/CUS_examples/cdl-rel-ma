@@ -1,0 +1,7 @@
+enable=1
+plugin=CUS
+tabRow=1
+dateFlag=1
+Name=Relative Candles with MAs
+script=INCLUDECUS(cdl-rel)|SMA20 := TALIB(SMA,Close,20)|SMA40 := TALIB(SMA,Close,40)|SMA60 := TALIB(SMA,Close,60)|plot (SMA20,#ff0000,SMA20,Line)|plot (SMA40,#00ffff,SMA40,Line)|plot (SMA60,#ff00ff,SMA60,Line)
+logScale=1

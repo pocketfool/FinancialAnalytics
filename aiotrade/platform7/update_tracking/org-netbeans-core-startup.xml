@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module codename="org.netbeans.core.startup/1">
+    <module_version install_time="1161619674061" last="true" origin="installer" specification_version="1.7.0.1">
+        <file crc="1453211919" name="core/core.jar"/>
+    </module_version>
+</module>

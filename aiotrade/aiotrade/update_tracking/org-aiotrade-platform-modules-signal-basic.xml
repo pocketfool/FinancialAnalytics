@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module codename="org.aiotrade.platform.modules.signal.basic">
+    <module_version install_time="1163675155668" last="true" origin="installer" specification_version="1.0">
+        <file crc="2254801666" name="config/Modules/org-aiotrade-platform-modules-signal-basic.xml"/>
+        <file crc="4289668904" name="modules/org-aiotrade-platform-modules-signal-basic.jar"/>
+    </module_version>
+</module>

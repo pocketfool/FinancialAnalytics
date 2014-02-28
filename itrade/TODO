@@ -1,0 +1,199 @@
+/iTrade/TODO
+===============================================================================
+INTRODUCTION
+===============================================================================
+
+Functionnal features TODO list
+
+This file will go away soon after release beta 0.9. Please use the SourceForge
+tracker to submit any issue found after this release.
+
+Before reporting please check, whether someone else has already reported this.
+Working patches increase the chance to be included in the next release :-)
+
+Nausicaa2 is polishing existing features like indicators, charting and display.
+
+Known problems and major issues are tracked by the sourceforge bug tracker :
+http://sourceforge.net/tracker/?group_id=128261&atid=711187
+
+===============================================================================
+TODO ITEMS by VERSION
+ - : to be done
+ + : done
+ ~ : in progress
+===============================================================================
+
+Version 0.4.6 (Nausicaa2) - DONE - 2008/01/03
+ + Australian Market
+ + Extensions & Plugins basic Mechanism
+ + Matrix use the Notebook display
+ + Basic Stops Management
+ + Toronto Markets (yahoo connector)
+ + Switzerland Market (yahoo connector)
+ + Italian Market (yahoo connector)
+ + main market indicator
+ + Proxy Connection
+ + LSE Markets (yahoo connector)
+ + IRISH exchange (yahoo connector)
+ + MADRID exchange (yahoo connector)
+ + FRANKFURT exchange (yahoo connector)
+ ~ better Linux support
+
+Version 0.4.8 (Druuna)
+
+TO BE DEFINED
+
+ ~ "Points Pivots" feature
+ ~ VAT information
+ ~ more Charting enhancements
+ ~ better Linux support
+ ~ Nordic Market ?
+ ~ Boursorama Live broker ?
+ ~ Printing module
+ ~ Extensible Indicators back-end
+ - BourseDirect Live broker ?
+ - integrate TA-LIB ? -- under investigation
+
+Version 0.5 (Plume)
+
+TO BE DEFINED
+
+ ~ Fortuneo Live broker
+ ~ News aggregator (Google, Bourso, Balo)
+ ~ Money Computer (preview of Risk Management)
+ ~ www.lebalo.com (official french announces)
+ ~ full stops management
+ - alerts full back-end and front-end
+ - Deferred settlement service (SRD) alerts on dates/events
+ - data panel indicators, raw numerical, charting options
+ - more indicators (incl. RSI and MACD, oscillators)
+ - more MMI enhancements
+ - more Charting enhancements
+ - daily Japanese candlestick
+
+Version 0.6 (Stella Maris)
+
+TO BE DEFINED
+
+ - more indicators (schocastics)
+ - weekly Japanese candlestick
+ - more Japanese candlestick
+ - candlestick patterns
+ - graphical display of portfolio evaluations
+ - automated analysis (short and long term)
+
+Version 0.7 (Aaricia - The User Preview)
+
+TO BE DEFINED
+
+ - Full Risk & Money Management
+ - support and resistance
+ - multi-accounts ?
+ - full taxes and expenses management ?
+ - pressure indicator in the matrix ?
+ - split management ?
+
+Version 0.8 (AlefThau - Alpha Release)
+
+TO BE DEFINED
+
+ - file attachement to operations (i.e. official doc from broker)
+ - official alpha release
+
+Version 0.9 (Betadine - Beta Release)
+ - official beta release
+
+Version 1.0 (iTrade - Final Release)
+ - final release
+
+===============================================================================
+ITEMS POSTPONED (POST 1.0 RELEASE)
+===============================================================================
+
+Screening
+ - basic quotes screening
+ - more quotes screening
+ - full featured quotes screening
+ - get and display company information
+
+SDR and short positions
+ - full SDR management
+ - alerts for short
+
+===============================================================================
+ITEMS DONE by VERSION (History)
+===============================================================================
+
+Version 0.4.5 (Nausicaa) - 2006/12/10
+ + Multi-currencies support in portfolio and matrix
+ + Quotes Management (List Downloading, Editing, ...)
+ + Yahoo connector fully functionnal for NASDAQ/AMEX/NYSE markets
+ + Euronext connector for EURONEXT/ALTERNEXT/ML markets
+ + more MMI enhancements
+ + Import / Export historic data
+ + binary installation package for Windows
+ + RSI and Stochastic indicators
+
+Version 0.4.2 (Coca2) - Patch 1 - 2006/10/03
+ + Bug fixing
+ + realtime connector for live data is live again
+
+Version 0.4.2 (Coca2) - 2006/05/28
+ + MMI enhancements
+ + realtime connector for live data differed 15 min.
+
+Version 0.4 (Coca) - DONE - 2006/03/11
+ + generic live/import quotes data plugins
+ + realtime connector for live data (euronext market only)
+ + portfolio management (create, delete, rename, select)
+ + better autorefresh the trading matrix (thread)
+ + realtime front panel with notebook and last trades
+ + alerts back-end
+ + Deferred settlement service (SRD) basic
+
+Version 0.3 (Popotka - The Toy Software) - DONE - 2005/11/27
+ + US market support
+ + localisation (fr and us)
+ + better daily charting with pan, zoom and cursor
+ + display logo for tickers
+ + more indicators (Bollinger , VMA15, OVB)
+ + News (RSS Google / Boursorama)
+ + Progress bar for lengthly operations
+ + more efficient quote data storage and manipulation
+ + textual display of portfolio evaluations
+ + basic marketplace management (process and mmi)
+ + toolbar in matrix (at least : Quit, Save All, Refresh)
+
+Version 0.2 (Antiplona - The Obvious Hack release) - DONE - 2005/10/02
+ + loss/win stops display in matrix view
+ + better trading matrix / portfolio / stops screen display
+ + website launch with some screenshots
+ + find a great logo
+ + display information on the quote (google news, abcbourse, ...)
+ + add/remove quotes to/from the matrix
+ + basic indicators view in the matrix
+ + basic indicators (moving averages, volume)
+ + market days open/close
+ + basic stops management
+ + basic graph display
+ + operations management on a portfolio
+
+Version 0.1 (Pandora - Proof of Concept)	- DONE - 2005/08/16
+ + load quotes
+ + load operations
+ + load/save quotes data (CSV format)
+ + import quotes data from CSV file
+ + calculate cash / evaluation of portfolio
+ + import quotes data from abcbourse.com
+ + live update quotes data from abcbourse.com
+ + command line initial support
+ + initial display of the trading matrix with wxWindows
+ + quote window selector (by ticker, isin or name)
+ + skeleton display of a quote with wxWindows and matplotlib
+ + detachment of coupon / dividend
+ + automatic update (import/refresh) of quotes data
+ + basic taxes and expenses management
+ + full / live data on a quote -> quick loading of matrix
+ + very basic Japanese candlestick
+
+Project Registration / Start of Development - DONE - 2005/01/08

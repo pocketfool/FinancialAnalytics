@@ -1,0 +1,210 @@
+<!DOCTYPE UI><UI version="3.1" stdsetdef="1">
+<class>PlotForm</class>
+<widget class="QWidget">
+    <property name="name">
+        <cstring>PlotForm</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>800</width>
+            <height>600</height>
+        </rect>
+    </property>
+    <property name="minimumSize">
+        <size>
+            <width>800</width>
+            <height>600</height>
+        </size>
+    </property>
+    <property name="caption">
+        <string>Ticker Plot Tool</string>
+    </property>
+    <grid>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <widget class="QLayoutWidget" row="1" column="0">
+            <property name="name">
+                <cstring>layout2</cstring>
+            </property>
+            <hbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <spacer>
+                    <property name="name">
+                        <cstring>spacer1</cstring>
+                    </property>
+                    <property name="orientation">
+                        <enum>Horizontal</enum>
+                    </property>
+                    <property name="sizeType">
+                        <enum>Expanding</enum>
+                    </property>
+                    <property name="sizeHint">
+                        <size>
+                            <width>571</width>
+                            <height>21</height>
+                        </size>
+                    </property>
+                </spacer>
+                <widget class="QPushButton">
+                    <property name="name">
+                        <cstring>openButton</cstring>
+                    </property>
+                    <property name="text">
+                        <string>Open</string>
+                    </property>
+                </widget>
+                <widget class="QPushButton">
+                    <property name="name">
+                        <cstring>exitButton</cstring>
+                    </property>
+                    <property name="text">
+                        <string>Exit</string>
+                    </property>
+                </widget>
+            </hbox>
+        </widget>
+        <widget class="QSplitter" row="0" column="0">
+            <property name="name">
+                <cstring>splitter2</cstring>
+            </property>
+            <property name="sizePolicy">
+                <sizepolicy>
+                    <hsizetype>7</hsizetype>
+                    <vsizetype>5</vsizetype>
+                    <horstretch>3</horstretch>
+                    <verstretch>0</verstretch>
+                </sizepolicy>
+            </property>
+            <property name="orientation">
+                <enum>Horizontal</enum>
+            </property>
+            <widget class="QListView">
+                <column>
+                    <property name="text">
+                        <string>Id</string>
+                    </property>
+                    <property name="clickable">
+                        <bool>true</bool>
+                    </property>
+                    <property name="resizable">
+                        <bool>true</bool>
+                    </property>
+                </column>
+                <column>
+                    <property name="text">
+                        <string>Symbol</string>
+                    </property>
+                    <property name="clickable">
+                        <bool>true</bool>
+                    </property>
+                    <property name="resizable">
+                        <bool>true</bool>
+                    </property>
+                </column>
+                <column>
+                    <property name="text">
+                        <string>Length</string>
+                    </property>
+                    <property name="clickable">
+                        <bool>true</bool>
+                    </property>
+                    <property name="resizable">
+                        <bool>true</bool>
+                    </property>
+                </column>
+                <property name="name">
+                    <cstring>tickersListView</cstring>
+                </property>
+                <property name="sizePolicy">
+                    <sizepolicy>
+                        <hsizetype>7</hsizetype>
+                        <vsizetype>7</vsizetype>
+                        <horstretch>1</horstretch>
+                        <verstretch>0</verstretch>
+                    </sizepolicy>
+                </property>
+                <property name="minimumSize">
+                    <size>
+                        <width>0</width>
+                        <height>0</height>
+                    </size>
+                </property>
+                <property name="resizePolicy">
+                    <enum>Manual</enum>
+                </property>
+                <property name="vScrollBarMode">
+                    <enum>Auto</enum>
+                </property>
+                <property name="selectionMode">
+                    <enum>Single</enum>
+                </property>
+                <property name="allColumnsShowFocus">
+                    <bool>true</bool>
+                </property>
+                <property name="showSortIndicator">
+                    <bool>true</bool>
+                </property>
+                <property name="resizeMode">
+                    <enum>AllColumns</enum>
+                </property>
+            </widget>
+            <widget class="QTextEdit">
+                <property name="name">
+                    <cstring>stdoutTextEdit</cstring>
+                </property>
+                <property name="sizePolicy">
+                    <sizepolicy>
+                        <hsizetype>7</hsizetype>
+                        <vsizetype>7</vsizetype>
+                        <horstretch>2</horstretch>
+                        <verstretch>0</verstretch>
+                    </sizepolicy>
+                </property>
+                <property name="minimumSize">
+                    <size>
+                        <width>0</width>
+                        <height>0</height>
+                    </size>
+                </property>
+                <property name="font">
+                    <font>
+                        <family>Bitstream Vera Sans Mono</family>
+                    </font>
+                </property>
+                <property name="resizePolicy">
+                    <enum>Manual</enum>
+                </property>
+                <property name="vScrollBarMode">
+                    <enum>Auto</enum>
+                </property>
+                <property name="hScrollBarMode">
+                    <enum>Auto</enum>
+                </property>
+                <property name="textFormat">
+                    <enum>PlainText</enum>
+                </property>
+                <property name="wordWrap">
+                    <enum>NoWrap</enum>
+                </property>
+                <property name="overwriteMode">
+                    <bool>true</bool>
+                </property>
+            </widget>
+        </widget>
+    </grid>
+</widget>
+<connections>
+    <connection>
+        <sender>exitButton</sender>
+        <signal>released()</signal>
+        <receiver>PlotForm</receiver>
+        <slot>close()</slot>
+    </connection>
+</connections>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+The contents of this file are subject to the terms of the Common Development
+and Distribution License (the License). You may not use this file except in
+compliance with the License.
+
+You can obtain a copy of the License at http://www.netbeans.org/cddl.html
+or http://www.netbeans.org/cddl.txt.
+
+When distributing Covered Code, include this CDDL Header Notice in each file
+and include the License file at http://www.netbeans.org/cddl.txt.
+If applicable, add the following below the CDDL Header, with the fields
+enclosed by brackets [] replaced by your own identifying information:
+"Portions Copyrighted [year] [name of copyright owner]"
+
+The Original Software is NetBeans. The Initial Developer of the Original
+Software is Sun Microsystems, Inc. Portions Copyright 1997-2006 Sun
+Microsystems, Inc. All Rights Reserved.
+-->
+
+<!DOCTYPE transformations PUBLIC "-//NetBeans//DTD Module Automatic Dependencies 1.0//EN" "http://www.netbeans.org/dtds/module-auto-deps-1_0.dtd">
+
+<transformations version="1.0">
+    <transformationgroup>
+        <description>openide.jar split into smaller parts. See http://openide.netbeans.org/proposals/arch/modularize.html and use 'ant fix-dependencies' if your project is projectized.</description>
+        <exclusion codenamebase="org.openide.loaders" prefix="false"/>
+        <!--
+        <exclusion codenamebase="org.netbeans.core" prefix="true"/>
+        -->
+        <transformation>
+            <trigger-dependency type="cancel">
+                <module-dependency codenamebase="org.openide" major="1" spec="6.0"/>
+            </trigger-dependency>
+            <implies>
+                <result>
+                    <module-dependency codenamebase="org.openide.filesystems" spec="6.0"/>
+                    <module-dependency codenamebase="org.openide.util" spec="6.0"/>
+                    <module-dependency codenamebase="org.openide.util.enumerations" spec="6.0"/>
+                    <module-dependency codenamebase="org.openide.modules" spec="6.0"/>
+                    <module-dependency codenamebase="org.openide.nodes" spec="6.0"/>
+                    <module-dependency codenamebase="org.openide.explorer" spec="6.0"/>
+                    <module-dependency codenamebase="org.openide.awt" spec="6.0"/>
+                    <module-dependency codenamebase="org.openide.dialogs" spec="6.0"/>
+                    <module-dependency codenamebase="org.openide.compat" spec="6.0"/>
+                    <module-dependency codenamebase="org.openide.options" spec="6.0"/>
+                    <module-dependency codenamebase="org.openide.windows" spec="6.0"/>
+                    <module-dependency codenamebase="org.openide.text" spec="6.0"/>
+                    <module-dependency codenamebase="org.openide.actions" spec="6.0"/>
+                    <!-- better to include this as well, as people sometimes forget to specify dep on loaders -->
+                    <module-dependency codenamebase="org.openide.loaders" spec="5.3"/>
+                </result>
+            </implies>
+        </transformation>
+    </transformationgroup>
+
+</transformations>

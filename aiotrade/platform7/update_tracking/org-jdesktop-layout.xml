@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module codename="org.jdesktop.layout/1">
+    <module_version install_time="1161619785849" last="true" origin="installer" specification_version="1.4">
+        <file crc="1380471139" name="config/Modules/org-jdesktop-layout.xml"/>
+        <file crc="4144433032" name="docs/swing-layout-1.0.1-doc.zip"/>
+        <file crc="1335185624" name="modules/ext/swing-layout-1.0.1.jar"/>
+        <file crc="3468910845" name="modules/org-jdesktop-layout.jar"/>
+    </module_version>
+</module>

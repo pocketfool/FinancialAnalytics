@@ -1,0 +1,32 @@
+<!DOCTYPE kpartgui>
+<kpartgui version="1" name="MainWindow" >
+ <MenuBar>
+  <Menu name="Tools" >
+   <text>&amp;Tools</text>
+   <ActionList name="recent" />
+   <Action name="web_browser" />
+   <Action name="start_tws" />
+   <Action name="connect_tws" />
+  </Menu>
+  <Merge/>
+ </MenuBar>
+ <ToolBar noMerge="1" name="mainToolBar" >
+  <text>Main Toolbar</text>
+  <Text>Main</Text>
+  <Action name="file_new" />
+  <Separator name="separator_0" />
+  <Action name="start_tws" />
+  <Action name="connect_tws" />
+  <Action name="options_configure" />
+  <Separator name="separator_1" />
+  <Action name="file_quit" />
+ </ToolBar>
+ <ActionProperties>
+  <Action shortcut="Ctrl+A" name="help_about_app" />
+  <Action shortcut="Ctrl+W" name="file_close" />
+  <Action shortcut="Ctrl+T" name="start_tws" />
+  <Action shortcut="Ctrl+G" name="connect_tws" />
+  <Action shortcut="Ctrl+B" name="web_browser" />
+  <Action shortcut="Alt+N" name="file_new" />
+ </ActionProperties>
+</kpartgui>

@@ -1,0 +1,185 @@
+ProfitPy - API Documentation
+==============================================================================
+This document provides a brief tour of the various ways to write programs with
+the ProfitPy toolkit.
+
+
+Library Modules
+------------------------------------------------------------------------------
+ProiftPy includes a library of object types that model the various aspects of
+a trading system.  The main types in this library are:
+
+    AccountSupervisor - coordinates guidance with order handling
+    BrokerProxy - connects to TWS and proxies its messages to other objects
+    OrderSupervisor - submits, tracks, and mutates orders
+    OrderPolicyHandler - filters and maps positions to order attributes
+    TickerSupervisor - updates ticker objects and submits their guidance
+    TechnicalTicker - coordinates data with its indexes and a trading strategy
+    Session - conglomeration for each of the above
+
+The typical order of operations for a client is this:
+
+    1.  Client constructs a session object:
+
+        >>> import profit.lib.session as session
+        >>> my_session = session.Session()
+
+        Refer to the "Session Configuration" section for information on 
+        controlling how Session objects are constructed.
+
+    2.  The client connects the Session object to a running instance of TWS
+        and requests its data feeds:
+
+        >>> my_session.broker.connect(('localhost', 7496))
+        >>> my_session.broker.request_external()
+
+        At this point, TWS sends data to the objects contained within the
+        Session, and those objects can respond to TWS as needed.
+
+Once the Session is connected, it will begin automated trading.  Trading is
+triggered as follows:
+
+    1.  The account supervisor collects account data, such as available funds,
+        profit and loss, liquidation, etc.
+
+    2.  The ticker supervisor accepts ticker data, routes it to the appropriate
+        technical ticker object, and forwards its signals to the account 
+        supervisor.
+
+    3.  The account supervisor determines if the order can be processed.  It 
+        delegates this determination to its order handler, which by default is
+        an instance of policies.OrderPolicyHandler.
+
+    4.  If the order can be processed, it's submitted by one of the policy 
+        handlers.
+
+    5.  TWS will send order status information, and the session object defers 
+        these updates to its order supervisor.  The supervisor tracks the 
+        order, and if necessary, cancels it or modifies it based on its total
+        time to live.
+
+
+profit.lib.account
+------------------------------------
+The account module defines the AccountSupervisor and it's supporting types.  
+The purpose of an AccountSupervisor is to coordinate order requests from the
+ticker supervisor with the order checking and placement machinery.
+
+The AccountSupervisor tracks account values and controls the submission of new
+orders.  The 'put_ticker_signal' method allows other objects to submit a 
+guidance signal.  The ticker supervisor uses this method to suggest changes to
+positions on its various tickers.
+
+Session objects contain an AccountSupervisor named 'account'.
+
+
+profit.lib.base
+------------------------------------
+The base module contains a whole bunch of stuff that gets used almost 
+everywhere else in the toolkit.  It's not big, though.
+
+
+profit.lib.broker
+------------------------------------
+The broker module defines the BrokerProxy type.  Instances of this type handle
+connecting to TWS and feeding its incoming data to some other object.
+
+Session objects contain an BrokerProxy named 'broker'.
+
+
+profit.lib.coverage
+------------------------------------
+The coverage module is actually a script that can be used to test a trading 
+strategy against historical data.  Execute the script at a prompt to learn 
+more about its use.
+
+
+profit.lib.orders
+------------------------------------
+The orders module defines the OrderSupervisor for handling order messages.  
+This type creates OrderMonitor objects for orders as it's informed of them, 
+and also runs a thread to modify and cancel orders as necessary.
+
+The behavior of the OrderMutator thread is a very good candidate for 
+modification.
+
+Session objects contain an OrderSupervisor named 'orders'.
+
+
+profit.lib.policies
+------------------------------------
+The type OrderPolicyHandler in this module accepts or rejects order requests.
+Acceptable orders are submitted to TWS.
+
+To determine if an order is acceptable, an OrderPolicyHandler object will defer
+the question to its list of policies.  Each policy in the list will be given a
+chance to accept or veto an order.  If an order is not vetoed, the final policy
+submits the order to TWS.
+
+
+profit.lib.series
+------------------------------------
+This module contains the technical indicator types and composite types to manage 
+them.
+
+TechnicalTicker instances create multiple Series objects for tracking various
+price and size updates from TWS (such as bid price, last size, etc.).
+
+Strategy objects add various 'index' objects to each of these primary series.  
+When the primary series is updated with new data, each index is also updated 
+and given a chance to 
+
+The key concept here is that series objects are updated every time data for
+the ticker comes from TWS.  After the incoming data has been sent to the 
+ticker object and its indexes, the ticker supervisor type checks the ticker
+for a strategy object.  If present, this strategy object is used to return a
+signal.  The signal is then feed to the account supervisor for consideration.
+
+
+profit.lib.tickers
+------------------------------------
+This module defines the TechnicalTicker and TickerSupervisor types.
+
+TickerSupervisor implements behavior to accept all ticker messages from the 
+broker.  These individual messages are appended to the corresponding series of 
+the ticker object as they are received.  If present, the strategy of the ticker
+series is checked for an indication.  This indication is then forwarded to the
+account object for consideration.
+
+TickerSupervisor is a dict subclass, and allows ticker object look-up by both
+symbol and id:
+
+>>> my_session.tickers['DELL']
+<profit.lib.tickers.TechnicalTicker object at 0x40f0b2ac>
+>>> my_session.tickers[101]
+<profit.lib.tickers.TechnicalTicker object at 0x40439a8c>
+>>> my_session.tickers[101].symbol
+'ADBE'
+
+
+Session Configuration
+------------------------------------------------------------------------------
+Session objects can be configured with user-supplied factory functions.  
+These functions are called during the various phases of session object 
+contstruction.  To specify a user-defined trading strategy, a client might do
+something like this:
+
+>>> import profit.lib.session as session
+>>> my_session = session.Session(strategy_builder='mystrategy.factory')
+
+Note that the strategy_builder argument is a string; clients may specify 
+strings or callable objects.  In the case of strings, the string is taken to 
+mean the name of a callable item in an importable module or package.
+
+
+GUI Configuration
+------------------------------------------------------------------------------
+
+
+GUI Scripting
+------------------------------------------------------------------------------
+
+
+Strategy Objects
+------------------------------------------------------------------------------
+

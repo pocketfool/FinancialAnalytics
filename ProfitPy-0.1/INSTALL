@@ -1,0 +1,12 @@
+ProfitPy - Installation Instructions
+=============================================================================
+Sadly, there is no real installation script for the package.
+
+Before you continue, make sure you have the dependancies satisified.  These
+dependancies are listed in the README file.
+
+Once that's done, you have to make the 'profit' directory visible to your
+python interpreter.  You can do that by setting an appropriate PYTHONPATH 
+environment variable, or by moving the directory to some place that is 
+already in the python sys.path, for example, site-packages.
+

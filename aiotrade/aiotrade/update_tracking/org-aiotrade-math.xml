@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<module codename="org.aiotrade.math">
+    <module_version install_time="1163675088842" last="false" origin="installer" specification_version="1.0">
+        <file crc="3881277830" name="config/Modules/org-aiotrade-math.xml"/>
+        <file crc="2006005247" name="modules/org-aiotrade-math.jar"/>
+    </module_version>
+    <module_version install_time="1171656352125" last="true" origin="updater" specification_version="1.0.3.1">
+        <file crc="3881277830" name="config/Modules/org-aiotrade-math.xml"/>
+        <file crc="2659282570" name="modules/org-aiotrade-math.jar"/>
+    </module_version>
+</module>
